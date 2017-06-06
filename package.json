@@ -1,0 +1,36 @@
+{
+  "name": "@textkernel/nice-react",
+  "version": "0.1.0",
+  "description": "React components for Nice!",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@tkgit-01.textkernel.net:nice/nice-react.git"
+  },
+  "author": "Textkernel B.V.",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-es2016": "6.24.1",
+    "babel-preset-es2017": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "eslint-plugin-import": "2.3.0",
+    "eslint-plugin-jsx-a11y": "5.0.3",
+    "eslint-plugin-react": "7.0.1",
+    "eslint-watch": "3.1.0",
+    "prop-types": "15.5.10",
+    "react": "15.5.4",
+    "react-dom": "15.5.4"
+  },
+  "scripts": {
+    "build": "babel lib -d build",
+    "lint": "eslint src/**; exit 0",
+    "lint:watch": "esw -w src/**"
+  }
+}
