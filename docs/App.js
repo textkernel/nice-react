@@ -1,5 +1,6 @@
 import React from 'react';
-import Panel from 'nice-react/Panel';
+import { Panel } from 'nice-react';
+// import Panel from 'nice-react/Panel'; 
 
 const App = () => (
   <div>
