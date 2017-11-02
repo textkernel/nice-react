@@ -6,7 +6,8 @@
   "main": "./lib/index.js",
   "scripts": {
     "start": "webpack-dev-server -d --progress --colors --hot --config config/webpack.config.dev.js",
-    "build": "webpack --progress --config config/webpack.config.prod.js",
+    "build:lib": "webpack --progress --config config/webpack.config.prod.js",
+    "storybook": "start-storybook -p 9001 -c ./storybook",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
@@ -19,6 +20,7 @@
     "react-dom": "^15.5.0 || ^16.0.0"
   },
   "devDependencies": {
+    "@storybook/react": "^3.2.14",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",
