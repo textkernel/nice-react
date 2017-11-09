@@ -2,6 +2,9 @@
   "parser": "babel-eslint",
   "extends": "airbnb",
   "plugins": ["react", "import"],
+  "env": {
+    "jest": true
+  },
   "rules": {
       "indent": ["error", 2, {"SwitchCase": 1}],        
       "no-trailing-spaces": "off",
@@ -12,7 +15,8 @@
       "import/prefer-default-export": "off"
   },
   "globals": {
-    "document": true
+    "document": true,
+    "shallow": true
   },
   "settings": {
     "import/resolver": {
