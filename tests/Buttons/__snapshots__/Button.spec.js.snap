@@ -1,5 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Button /> should render size Button 1`] = `
+<a
+  className="nice-btn large"
+  href="#"
+>
+  Large
+</a>
+`;
+
+exports[`<Button /> should render style Button 1`] = `
+<a
+  className="nice-btn primary"
+  href="#"
+>
+  Primary
+</a>
+`;
+
+exports[`<Button /> should render style and size Button 1`] = `
+<a
+  className="nice-btn primary large"
+  href="#"
+>
+  Primary large
+</a>
+`;
+
 exports[`<Button /> should render the Button 1`] = `
 <a
   className="nice-btn"
