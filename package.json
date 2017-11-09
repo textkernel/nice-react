@@ -14,8 +14,13 @@
     "test:coverage": "jest --coverage"
   },
   "jest": {
-    "setupFiles": ["./config/shim.js","./config/jest.setup.js"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "setupFiles": [
+      "./config/shim.js",
+      "./config/jest.setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "dependencies": {
     "@textkernel/nice": "^1.2.1",
