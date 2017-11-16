@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../../lib/Buttons';
+import Button from '../../lib/Buttons';
 
 describe('<Button />', () => {
   it('should render the Button', () => {
