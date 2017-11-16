@@ -21,4 +21,12 @@ describe('<Button />', () => {
     const wrapper = shallow(<Button context="primary" size="large">Primary large</Button>);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should handle the onClick event', () => {
+    const onClickHandler = jest.fn();
+    const wrapper = shallow(<Button onClick={onClickHandler} context="primary" size="large">Primary large</Button>);
+    wrapper.find('a').simulate('click');
+
+    expect(onClickHandler).toHaveBeenCalled();
+  });
 });
