@@ -8,17 +8,17 @@ describe('<Button />', () => {
   });
 
   it('should render style Button', () => {
-    const wrapper = shallow(<Button ncStyle="primary">Primary</Button>);
+    const wrapper = shallow(<Button context="primary">Primary</Button>);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should render size Button', () => {
-    const wrapper = shallow(<Button ncSize="large">Large</Button>);
+    const wrapper = shallow(<Button size="large">Large</Button>);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should render style and size Button', () => {
-    const wrapper = shallow(<Button ncStyle="primary" ncSize="large">Primary large</Button>);
+    const wrapper = shallow(<Button context="primary" size="large">Primary large</Button>);
     expect(wrapper).toMatchSnapshot();
   });
 });
