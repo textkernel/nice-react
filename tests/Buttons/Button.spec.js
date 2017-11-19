@@ -25,7 +25,7 @@ describe('<Button />', () => {
   it('should handle the onClick event', () => {
     const onClickHandler = jest.fn();
     const wrapper = shallow(<Button onClick={onClickHandler} context="primary" size="large">Primary large</Button>);
-    wrapper.find('a').simulate('click');
+    wrapper.find('a').simulate('click', { preventDefault() {} });
 
     expect(onClickHandler).toHaveBeenCalled();
   });
