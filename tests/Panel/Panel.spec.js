@@ -18,7 +18,7 @@ describe('<Panel />', () => {
   });
 
   it('should render with different color theme', () => {
-    const wrapper = shallow(<Panel color='good' />);
+    const wrapper = shallow(<Panel context='good' />);
     expect(wrapper.find('.nice-panel').hasClass('good')).toBe(true);
   });
 });

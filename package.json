@@ -14,8 +14,13 @@
     "test:coverage": "jest --coverage"
   },
   "jest": {
-    "setupFiles": ["./config/shim.js","./config/jest.setup.js"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "setupFiles": [
+      "./config/shim.js",
+      "./config/jest.setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "dependencies": {
     "@textkernel/nice": "^1.2.1",
@@ -26,7 +31,9 @@
     "react-dom": "^15.5.0 || ^16.0.0"
   },
   "devDependencies": {
-    "@storybook/react": "^3.2.14",
+    "@storybook/addon-info": "^3.2.16",
+    "@storybook/addon-knobs": "^3.2.16",
+    "@storybook/react": "^3.2.16",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^21.2.0",
