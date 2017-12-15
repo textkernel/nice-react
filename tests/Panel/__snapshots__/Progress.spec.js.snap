@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Progress /> should render the Progress 1`] = `
+<div
+  className="nice-progress primary"
+>
+  <div
+    className="nice-progress-fill"
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    50%
+  </div>
+</div>
+`;
+
+exports[`<Progress /> should render the Progress with context 1`] = `
+<div
+  className="nice-progress good"
+>
+  <div
+    className="nice-progress-fill"
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    50%
+  </div>
+</div>
+`;
+
+exports[`<Progress /> should render the Progress with custom message 1`] = `
+<div
+  className="nice-progress primary"
+>
+  <div
+    className="nice-progress-fill"
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    Loading...
+  </div>
+</div>
+`;
+
+exports[`<Progress /> should render the Progress with custom message and context 1`] = `
+<div
+  className="nice-progress bad"
+>
+  <div
+    className="nice-progress-fill"
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    Loading...
+  </div>
+</div>
+`;
