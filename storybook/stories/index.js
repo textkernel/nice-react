@@ -1,1 +1,2 @@
 import './Panel';
+import './Loading';
