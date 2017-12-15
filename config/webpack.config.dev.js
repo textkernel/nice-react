@@ -56,7 +56,7 @@ module.exports = {
     alias: {
       'nice-react': path.resolve(__dirname, '../lib')
     },
-    modules: [path.resolve(__dirname, '../node_modules'), path.resolve(__dirname, '../lib')],
+    modules: [path.resolve(__dirname, '../node_modules')],
     extensions: ['.js', '.jsx'],
   },
 
