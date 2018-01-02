@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render size Button 1`] = `
+<a
+  className="nice-btn primary large"
+  href="#"
+  onClick={[Function]}
+>
+  Large
+</a>
+`;
+
+exports[`<Button /> should render style Button 1`] = `
+<a
+  className="nice-btn primary medium"
+  href="#"
+  onClick={[Function]}
+>
+  Primary
+</a>
+`;
+
+exports[`<Button /> should render style and size Button 1`] = `
+<a
+  className="nice-btn primary large"
+  href="#"
+  onClick={[Function]}
+>
+  Primary large
+</a>
+`;
+
+exports[`<Button /> should render the Button 1`] = `
+<a
+  className="nice-btn primary medium"
+  href="#"
+  onClick={[Function]}
+>
+  Default
+</a>
+`;
