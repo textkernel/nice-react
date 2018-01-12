@@ -31,7 +31,7 @@ stories.add('Default', () => (
     label: 'Third',
     disabled: true,
     icon: 'fa-bookmark'
-  }]} onSelect={ selection => console.log(selection) } context="brand" />
+  }]} onSelect={ selection => console.log(selection) } context="brand" autoHide={ 3000 } />
 ));
 
 stories.add('Multiple', () => (
@@ -52,7 +52,7 @@ stories.add('Multiple', () => (
   }, {
     label: 'Third',
     disabled: true
-  }]} onSelect={ selection => console.log(selection) } defaultSelection={ ['first'] } multiple />
+  }]} onSelect={ selection => console.log(selection) } defaultSelection={ ['first'] } autoHide={ false } multiple />
 ));
 
 stories.add('Radios', () => (
