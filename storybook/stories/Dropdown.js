@@ -11,7 +11,7 @@ stories.addDecorator((story, context) => withInfo('')(story)(context));
 stories.addDecorator(withKnobs);
 
 stories.add('Default', () => (
-  <Dropdown label="Nice dropdown" items={[{
+  <Dropdown label="Regular Dropdown" items={[{
     label: 'This is a dropdown heading',
     heading: true
   }, {
@@ -31,11 +31,11 @@ stories.add('Default', () => (
     label: 'Third',
     disabled: true,
     icon: 'fa-bookmark'
-  }]} onSelect={ selection => console.log(selection) } defaultSelection={ ['first'] } />
+  }]} onSelect={ selection => console.log(selection) } context="brand" />
 ));
 
 stories.add('Multiple', () => (
-  <Dropdown label="Nice dropdown" items={[{
+  <Dropdown label="Multiselect Checkboxes" items={[{
     label: 'This is a dropdown heading',
     heading: true
   }, {
@@ -56,7 +56,7 @@ stories.add('Multiple', () => (
 ));
 
 stories.add('Radios', () => (
-  <Dropdown label="Nice dropdown" items={[{
+  <Dropdown label="Radio Select" items={[{
     label: 'This is a dropdown heading',
     heading: true
   }, {
