@@ -23,7 +23,8 @@
     ]
   },
   "dependencies": {
-    "@textkernel/nice": "^1.2.1",
+    "@textkernel/nice": "^2.0.0",
+    "classnames": "^2.2.5",
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
