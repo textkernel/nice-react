@@ -18,7 +18,8 @@ stories.add('Default', () => (
     label: 'This is a short description for this dropdown',
     description: true
   }, {
-    label: 'First'
+    label: 'First',
+    value: 'first'
   }, {
     label: 'Second',
     context: 'bad'
@@ -27,7 +28,7 @@ stories.add('Default', () => (
   }, {
     label: 'Third',
     disabled: true
-  }]}>
+  }]} onSelect={ selection => console.log(selection) } defaultSelection={ ['first'] } multiple>
   </Dropdown>
 ));
 
