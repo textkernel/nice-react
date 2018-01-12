@@ -19,6 +19,30 @@ stories.add('Default', () => (
     description: true
   }, {
     label: 'First',
+    value: 'first',
+    icon: 'fa-download'
+  }, {
+    label: 'Second',
+    context: 'bad',
+    icon: 'fa-share'
+  }, {
+    separator: true
+  }, {
+    label: 'Third',
+    disabled: true,
+    icon: 'fa-bookmark'
+  }]} onSelect={ selection => console.log(selection) } defaultSelection={ ['first'] } />
+));
+
+stories.add('Multiple', () => (
+  <Dropdown label="Nice dropdown" items={[{
+    label: 'This is a dropdown heading',
+    heading: true
+  }, {
+    label: 'This is a short description for this dropdown',
+    description: true
+  }, {
+    label: 'First',
     value: 'first'
   }, {
     label: 'Second',
@@ -28,10 +52,26 @@ stories.add('Default', () => (
   }, {
     label: 'Third',
     disabled: true
-  }]} onSelect={ selection => console.log(selection) } defaultSelection={ ['first'] } multiple>
-  </Dropdown>
+  }]} onSelect={ selection => console.log(selection) } defaultSelection={ ['first'] } multiple />
 ));
 
-stories.add('Primary', () => (
-  <Dropdown context="primary" label="Primary"></Dropdown>
+stories.add('Radios', () => (
+  <Dropdown label="Nice dropdown" items={[{
+    label: 'This is a dropdown heading',
+    heading: true
+  }, {
+    label: 'This is a short description for this dropdown',
+    description: true
+  }, {
+    label: 'First',
+    value: 'first'
+  }, {
+    label: 'Second',
+    context: 'bad'
+  }, {
+    separator: true
+  }, {
+    label: 'Third',
+    disabled: true
+  }]} onSelect={ selection => console.log(selection) } radios />
 ));
