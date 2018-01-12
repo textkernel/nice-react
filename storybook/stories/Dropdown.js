@@ -1,8 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { withKnobsOptions, withKnobs, text, boolean, select, number } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
+import niceProps from '../../lib/props';
 
 import { Dropdown } from 'nice-react';
 
@@ -10,8 +11,17 @@ const stories = storiesOf('Dropdown', module);
 stories.addDecorator((story, context) => withInfo('')(story)(context));
 stories.addDecorator(withKnobs);
 
-stories.add('Default', () => (
-  <Dropdown label="Regular Dropdown" items={[{
+stories.add('Default', () => {
+  const contextOptions = niceProps.contexts;
+  const context = select('Context', contextOptions, niceProps.contexts[0]);
+  const radios = boolean('Radios', false);
+  const multiple = boolean('Multiselect', false);
+  const label = text('Label', 'Regular Dropdown');
+  const dropUp = boolean('Drop-up', false);
+  const alignLeft = boolean('Align left', false);
+  const timeout = number('autoHide', 3000);
+
+  return <Dropdown label={ label } items={[{
     label: 'This is a dropdown heading',
     heading: true
   }, {
@@ -31,8 +41,8 @@ stories.add('Default', () => (
     label: 'Third',
     disabled: true,
     icon: 'fa-bookmark'
-  }]} onSelect={ selection => console.log(selection) } context="brand" autoHide={ 3000 } />
-));
+  }]} onSelect={ selection => console.log(selection) } context={ context } autoHide={ timeout } radios={ radios } multiple={ multiple } dropUp={ dropUp } alignLeft={ alignLeft } />
+});
 
 stories.add('Multiple', () => (
   <Dropdown label="Multiselect Checkboxes" items={[{
