@@ -20,7 +20,8 @@ stories.add('Default', () => (
   }, {
     label: 'First'
   }, {
-    label: 'Second'
+    label: 'Second',
+    context: 'bad'
   }, {
     separator: true
   }, {
