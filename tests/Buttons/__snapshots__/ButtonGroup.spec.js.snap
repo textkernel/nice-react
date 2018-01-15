@@ -2,16 +2,11 @@
 
 exports[`<ButtonGroup /> should render the Buttons inside ButtonGroup 1`] = `
 <div
-  className={
-    Array [
-      "nice-btn-group",
-      "justified",
-      "small",
-    ]
-  }
+  className="nice-btn-group justified small"
 >
   <Button
-    context="primary"
+    context="default"
+    onClick={null}
     size="medium"
   >
     Default
