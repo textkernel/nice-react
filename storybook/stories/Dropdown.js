@@ -56,13 +56,14 @@ stories.add('Multiple', () => (
         value: 'first'
     }, {
         label: 'Second',
+        value: 'second',
         context: 'bad'
     }, {
         separator: true
     }, {
         label: 'Third',
         disabled: true
-    }]} onSelect={ selection => window.alert(selection) } defaultSelection={ ['first'] } autoHide={ false } multiple />
+    }]} onCollapse={ selection => window.alert(selection) } defaultSelection={ ['first'] } autoHide={ false } multiple />
 ));
 
 stories.add('Radios', () => (
@@ -77,6 +78,7 @@ stories.add('Radios', () => (
         value: 'first'
     }, {
         label: 'Second',
+        value: 'second',
         context: 'bad'
     }, {
         separator: true
