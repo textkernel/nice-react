@@ -41,3 +41,15 @@ stories.add('Medium', () => (
 stories.add('Small', () => (
   <Button size="small">Small</Button>
 ));
+
+stories.add('Link', () => (
+  <Button size="link">Link</Button>
+));
+
+stories.add('Good with icon', () => (
+  <Button context="good" icon="fa-check">Good with icon</Button>
+));
+
+stories.add('Alternative', () => (
+  <Button alternative={true} icon="fa-question">Alternative button</Button>
+));

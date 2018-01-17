@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonGroup /> should render the Buttons inside ButtonGroup 1`] = `
+<div
+  className="nice-btn-group justified small"
+>
+  <Button
+    alternative={false}
+    context="default"
+    icon={null}
+    onClick={null}
+    size="medium"
+  >
+    Default
+  </Button>
+</div>
+`;

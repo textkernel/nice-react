@@ -2,7 +2,7 @@
 
 exports[`<Button /> should render size Button 1`] = `
 <a
-  className="nice-btn primary large"
+  className="nice-btn default large"
   href="#"
   onClick={[Function]}
 >
@@ -32,7 +32,7 @@ exports[`<Button /> should render style and size Button 1`] = `
 
 exports[`<Button /> should render the Button 1`] = `
 <a
-  className="nice-btn primary medium"
+  className="nice-btn default medium"
   href="#"
   onClick={[Function]}
 >
