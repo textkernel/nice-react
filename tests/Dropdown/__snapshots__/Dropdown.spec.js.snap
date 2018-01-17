@@ -1,0 +1,270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dropdown /> should render Dropdown with different context and alignment 1`] = `
+<div
+  className="nice-dropdown primary medium drop-up align-left"
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <Button
+    context="primary"
+    onClick={[Function]}
+    size="medium"
+  >
+    Primary
+     
+    <i
+      className="icon fa-angle-down"
+    />
+  </Button>
+  <div
+    className="dropdown-menu"
+  >
+    <li
+      className=""
+      key="0"
+    >
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+        First
+      </a>
+    </li>
+    <li
+      className=""
+      key="1"
+    >
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+        Second
+      </a>
+    </li>
+    <li
+      className=""
+      key="2"
+    >
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+        Third
+      </a>
+    </li>
+  </div>
+</div>
+`;
+
+exports[`<Dropdown /> should render a simple Dropdown 1`] = `
+<div
+  className="nice-dropdown primary medium"
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <Button
+    context="primary"
+    onClick={[Function]}
+    size="medium"
+  >
+    Nice dropdown
+     
+    <i
+      className="icon fa-angle-down"
+    />
+  </Button>
+  <div
+    className="dropdown-menu"
+  >
+    <li
+      className="heading"
+      key="0"
+    >
+      <span>
+        This is a dropdown heading
+      </span>
+    </li>
+    <li
+      className="description"
+      key="1"
+    >
+      <span>
+        This is a short description for this dropdown
+      </span>
+    </li>
+    <li
+      className=""
+      key="2"
+    >
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+        <i
+          className="icon fa-download"
+        />
+        First
+      </a>
+    </li>
+    <li
+      className="bad"
+      key="3"
+    >
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+        <i
+          className="icon fa-share"
+        />
+        Second
+      </a>
+    </li>
+    <li
+      className="separator"
+      key="4"
+    />
+    <li
+      className="disabled"
+      key="5"
+    >
+      <a
+        href="#"
+        onClick={[Function]}
+      >
+        <i
+          className="icon fa-bookmark"
+        />
+        Third
+      </a>
+    </li>
+  </div>
+</div>
+`;
+
+exports[`<Dropdown /> should render with multiple selection 1`] = `
+<div
+  className="nice-dropdown primary medium"
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <Button
+    context="primary"
+    onClick={[Function]}
+    size="medium"
+  >
+    Multiselect
+     
+    <i
+      className="icon fa-angle-down"
+    />
+  </Button>
+  <div
+    className="dropdown-menu"
+  >
+    <li
+      className=""
+      key="0"
+    >
+      <label>
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        First
+      </label>
+    </li>
+    <li
+      className=""
+      key="1"
+    >
+      <label>
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        Second
+      </label>
+    </li>
+    <li
+      className=""
+      key="2"
+    >
+      <label>
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        Third
+      </label>
+    </li>
+  </div>
+</div>
+`;
+
+exports[`<Dropdown /> should render with radios 1`] = `
+<div
+  className="nice-dropdown primary medium"
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <Button
+    context="primary"
+    onClick={[Function]}
+    size="medium"
+  >
+    Multiselect
+     
+    <i
+      className="icon fa-angle-down"
+    />
+  </Button>
+  <div
+    className="dropdown-menu"
+  >
+    <li
+      className=""
+      key="0"
+    >
+      <label>
+        <input
+          checked={true}
+          onChange={[Function]}
+          type="radio"
+        />
+        First
+      </label>
+    </li>
+    <li
+      className=""
+      key="1"
+    >
+      <label>
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="radio"
+        />
+        Second
+      </label>
+    </li>
+    <li
+      className=""
+      key="2"
+    >
+      <label>
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="radio"
+        />
+        Third
+      </label>
+    </li>
+  </div>
+</div>
+`;

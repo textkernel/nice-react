@@ -1,69 +1,69 @@
 {
-  "name": "nice-react",
-  "author": "Nice! Circle",
-  "version": "1.0.0",
-  "description": "React Components for Nice!",
-  "main": "./lib/index.js",
-  "license": "MIT",
-  "scripts": {
-    "start": "webpack-dev-server -d --progress --colors --hot --config config/webpack.config.dev.js",
-    "build:lib": "webpack --progress --config config/webpack.config.prod.js",
-    "storybook": "start-storybook -p 9001 -c ./storybook",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
-  },
-  "jest": {
-    "setupFiles": [
-      "./config/shim.js",
-      "./config/jest.setup.js"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
-  },
-  "dependencies": {
-    "@textkernel/nice": "^2.0.0",
-    "classnames": "^2.2.5",
-    "prop-types": "^15.5.10"
-  },
-  "peerDependencies": {
-    "react": "^15.5.0 || ^16.0.0",
-    "react-dom": "^15.5.0 || ^16.0.0"
-  },
-  "devDependencies": {
-    "@storybook/addon-info": "^3.2.16",
-    "@storybook/addon-knobs": "^3.2.16",
-    "@storybook/react": "^3.2.16",
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^7.2.3",
-    "babel-jest": "^21.2.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "css-loader": "^0.28.7",
-    "enzyme": "^3.1.1",
-    "enzyme-adapter-react-16": "^1.0.4",
-    "enzyme-to-json": "^3.2.2",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^15.0.1",
-    "eslint-import-resolver-webpack": "^0.8.3",
-    "eslint-loader": "^1.8.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.0.1",
-    "eslint-plugin-react": "^7.1.0",
-    "file-loader": "^0.11.2",
-    "html-webpack-plugin": "^2.30.1",
-    "jest": "^21.2.1",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-hot-loader": "^1.3.1",
-    "react-test-renderer": "^16.0.0",
-    "style-loader": "^0.18.2",
-    "url-loader": "^0.5.9",
-    "webpack": "^3.5.5",
-    "webpack-cleanup-plugin": "^0.5.1",
-    "webpack-dev-server": "^2.7.1"
-  }
+    "name": "nice-react",
+    "author": "Nice! Circle",
+    "version": "1.0.0",
+    "description": "React Components for Nice!",
+    "main": "./lib/index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "webpack-dev-server -d --progress --colors --hot --config config/webpack.config.dev.js",
+        "build:lib": "webpack --progress --config config/webpack.config.prod.js",
+        "storybook": "start-storybook -p 9001 -c ./storybook",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage"
+    },
+    "jest": {
+        "setupFiles": [
+            "./config/shim.js",
+            "./config/jest.setup.js"
+        ],
+        "snapshotSerializers": [
+            "enzyme-to-json/serializer"
+        ]
+    },
+    "dependencies": {
+        "@textkernel/nice": "^2.0.0",
+        "classnames": "^2.2.5",
+        "prop-types": "^15.5.10"
+    },
+    "peerDependencies": {
+        "react": "^15.5.0 || ^16.0.0",
+        "react-dom": "^15.5.0 || ^16.0.0"
+    },
+    "devDependencies": {
+        "@storybook/addon-info": "^3.2.16",
+        "@storybook/addon-knobs": "^3.2.16",
+        "@storybook/react": "^3.2.16",
+        "babel-core": "^6.26.0",
+        "babel-eslint": "^7.2.3",
+        "babel-jest": "^21.2.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-env": "^1.6.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "css-loader": "^0.28.7",
+        "enzyme": "^3.1.1",
+        "enzyme-adapter-react-16": "^1.0.4",
+        "enzyme-to-json": "^3.2.2",
+        "eslint": "^3.19.0",
+        "eslint-config-airbnb": "^15.0.1",
+        "eslint-import-resolver-webpack": "^0.8.3",
+        "eslint-loader": "^1.8.0",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-jsx-a11y": "^5.0.1",
+        "eslint-plugin-react": "^7.1.0",
+        "file-loader": "^0.11.2",
+        "html-webpack-plugin": "^2.30.1",
+        "jest": "^21.2.1",
+        "react": "^16.0.0",
+        "react-dom": "^16.0.0",
+        "react-hot-loader": "^1.3.1",
+        "react-test-renderer": "^16.0.0",
+        "style-loader": "^0.18.2",
+        "url-loader": "^0.5.9",
+        "webpack": "^3.5.5",
+        "webpack-cleanup-plugin": "^0.5.1",
+        "webpack-dev-server": "^2.7.1"
+    }
 }
