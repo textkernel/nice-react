@@ -1,28 +1,42 @@
 {
-  "parser": "babel-eslint",
-  "extends": "airbnb",
-  "plugins": ["react", "import"],
-  "env": {
-    "jest": true
-  },
-  "rules": {
-      "indent": ["error", 2, {"SwitchCase": 1}],        
-      "no-trailing-spaces": "off",
-      "jsx-quotes": ["error", "prefer-single"],
-      "react/jsx-filename-extension": "off",
-      "eol-last": "off",
-      "comma-dangle": "off",
-      "import/prefer-default-export": "off"
-  },
-  "globals": {
-    "document": true,
-    "shallow": true
-  },
-  "settings": {
-    "import/resolver": {
-      "webpack": {
-        "config": "./config/webpack.config.dev.js"
-      }
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": ["react", "import"],
+    "env": {
+        "jest": true
+    },
+    "rules": {
+        "indent": ["error", 4, {"SwitchCase": 1}],                
+        "no-trailing-spaces": "off",
+        "jsx-quotes": ["error", "prefer-double"],
+        "react/jsx-first-prop-new-line": "off",
+        "jsx-a11y/href-no-hash": "off",
+        "jsx-a11y/label-has-for": "off",
+        "react/jsx-filename-extension": "off",
+        "react/jsx-max-props-per-line": "off",
+        "eol-last": "off",
+        "comma-dangle": "off",
+        "import/prefer-default-export": "off",
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": "off",
+        "react/jsx-curly-spacing": "off",
+        "react/jsx-closing-bracket-location": "off",
+        "react/jsx-wrap-multilines": "off",
+        "react/forbid-prop-types": "off",
+        "react/no-array-index-key": "off",
+        "no-console": "off",
+        "arrow-parens": "off",
+        "func-call-spacing": "off"
+    },
+    "globals": {
+        "document": true,
+        "shallow": true
+    },
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": "./config/webpack.config.dev.js"
+            }
+        }
     }
-  }
 }

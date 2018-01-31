@@ -11,45 +11,45 @@ stories.addDecorator((story, context) => withInfo('')(story)(context));
 stories.addDecorator(withKnobs);
 
 stories.add('Default', () => (
-  <Button onClick={() => alert('Default')}>Default</Button>
+    <Button onClick={() => alert('Default')}>Default</Button>
 ));
 
 stories.add('Primary', () => (
-  <Button context="primary">Primary</Button>
+    <Button context="primary">Primary</Button>
 ));
 
 stories.add('Warning', () => (
-  <Button context="warning">Warning</Button>
+    <Button context="warning">Warning</Button>
 ));
 
 stories.add('Good', () => (
-  <Button context="good">Good</Button>
+    <Button context="good">Good</Button>
 ));
 
 stories.add('Bad', () => (
-  <Button context="bad">Bad</Button>
+    <Button context="bad">Bad</Button>
 ));
 
 stories.add('Large', () => (
-  <Button size="large">Large</Button>
+    <Button size="large">Large</Button>
 ));
 
 stories.add('Medium', () => (
-  <Button size="medium">Medium</Button>
+    <Button size="medium">Medium</Button>
 ));
 
 stories.add('Small', () => (
-  <Button size="small">Small</Button>
+    <Button size="small">Small</Button>
 ));
 
 stories.add('Link', () => (
-  <Button size="link">Link</Button>
+    <Button size="link">Link</Button>
 ));
 
 stories.add('Good with icon', () => (
-  <Button context="good" icon="fa-check">Good with icon</Button>
+    <Button context="good" icon="fa-check">Good with icon</Button>
 ));
 
 stories.add('Alternative', () => (
-  <Button alternative={true} icon="fa-question">Alternative button</Button>
+    <Button alternative icon="fa-question">Alternative button</Button>
 ));

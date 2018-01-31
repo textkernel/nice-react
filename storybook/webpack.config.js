@@ -6,8 +6,8 @@ const genDefaultConfig = require('@storybook/react/dist/server/config/defaults/w
  */
 
 module.exports = (baseConfig, env) => {
-  const config = genDefaultConfig(baseConfig, env);
-  config.resolve.alias['nice-react'] = path.resolve(__dirname, '../lib');
+    const config = genDefaultConfig(baseConfig, env);
+    config.resolve.alias['nice-react'] = path.resolve(__dirname, '../lib');
 
-  return config;
+    return config;
 };
