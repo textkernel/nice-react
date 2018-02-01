@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> should render Modal.Content 1`] = `
+<div
+  className="nice-modal-body"
+>
+  Modal content
+</div>
+`;
+
+exports[`<Modal /> should render Modal.Footer 1`] = `
+<div
+  className="nice-modal-footer"
+>
+  Modal footer
+</div>
+`;
+
+exports[`<Modal /> should render Modal.Header 1`] = `
+<div
+  className="nice-modal-header"
+>
+  <a
+    className="nice-modal-close"
+    href="#"
+    onClick={[Function]}
+  >
+    <i
+      className="icon fa-times"
+    />
+  </a>
+  <h4>
+    Modal header
+  </h4>
+</div>
+`;
+
+exports[`<Modal /> should render a simple Modal 1`] = `
+<div
+  className="nice-modal info"
+>
+  <div
+    className="nice-modal-content"
+  >
+    <ModalHeader
+      onClose={null}
+    >
+      Modal header
+    </ModalHeader>
+    <ModalSub>
+      Modal sub header
+    </ModalSub>
+    <Component>
+      Modal content
+    </Component>
+    <ModalFooter>
+      Modal footer
+    </ModalFooter>
+  </div>
+</div>
+`;
+
+exports[`<Modal /> should render a viewport centered Modal 1`] = `
+<div
+  className="nice-modal info viewport-center tall wide"
+>
+  <div
+    className="nice-modal-content"
+  >
+    <ModalHeader
+      onClose={[Function]}
+    >
+      Modal header
+    </ModalHeader>
+    <ModalSub>
+      Modal sub header
+    </ModalSub>
+    <Component>
+      Modal content
+    </Component>
+    <ModalFooter>
+      Modal footer
+    </ModalFooter>
+  </div>
+</div>
+`;
