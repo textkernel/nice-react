@@ -17,7 +17,8 @@
   },
   "globals": {
     "document": true,
-    "shallow": true
+    "shallow": true,
+    "mount": true
   },
   "settings": {
     "import/resolver": {

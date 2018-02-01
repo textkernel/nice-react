@@ -1,126 +1,491 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Scale /> should render omitting a label 1`] = `
-<div
-  className="nice-scale"
+exports[`<ScaleGroup /> <ScaleItem /> should render with all labels 1`] = `
+<ScaleGroup
+  className=""
+  name="my-radio-name"
+  onChange={[Function]}
+  tickLabels={true}
 >
-  <ol
-    className="nice-scale-selection"
+  <div
+    className="nice-scale "
   >
-    <li
-      key="1"
+    <ol
+      className="nice-scale-selection"
     >
-      <label>
-        <input
-          name="projectid-radios"
-          onChange={[Function]}
-          type="radio"
-          value={1}
-        />
-        <span />
-        <span
-          className="nice-scale-label"
+      <ScaleItem
+        className=""
+        key=".0"
+        label="Nice to have"
+        name="my-radio-name"
+        onSelect={[Function]}
+        tickLabel={true}
+        value={1}
+      >
+        <li
+          key="1"
         >
-          Nice to have
-        </span>
-      </label>
-    </li>
-    <li
-      key="5"
-    >
-      <label>
-        <input
-          name="projectid-radios"
-          onChange={[Function]}
-          type="radio"
-          value={5}
-        />
-        <span />
-      </label>
-    </li>
-    <li
-      key="10"
-    >
-      <label>
-        <input
-          name="projectid-radios"
-          onChange={[Function]}
-          type="radio"
-          value={10}
-        />
-        <span />
-        <span
-          className="nice-scale-label"
+          <label>
+            <input
+              name="my-radio-name"
+              onChange={[Function]}
+              type="radio"
+              value={1}
+            />
+            <span />
+            <span
+              className=" nice-scale-label"
+            >
+              Nice to have
+            </span>
+          </label>
+        </li>
+      </ScaleItem>
+      <ScaleItem
+        className=""
+        key=".1"
+        label="Good to have"
+        name="my-radio-name"
+        onSelect={[Function]}
+        tickLabel={true}
+        value={5}
+      >
+        <li
+          key="5"
         >
-          Must have
-        </span>
-      </label>
-    </li>
-  </ol>
-</div>
+          <label>
+            <input
+              name="my-radio-name"
+              onChange={[Function]}
+              type="radio"
+              value={5}
+            />
+            <span />
+            <span
+              className=" nice-scale-label"
+            >
+              Good to have
+            </span>
+          </label>
+        </li>
+      </ScaleItem>
+      <ScaleItem
+        className=""
+        key=".2"
+        label="Must have"
+        name="my-radio-name"
+        onSelect={[Function]}
+        tickLabel={true}
+        value={10}
+      >
+        <li
+          key="10"
+        >
+          <label>
+            <input
+              name="my-radio-name"
+              onChange={[Function]}
+              type="radio"
+              value={10}
+            />
+            <span />
+            <span
+              className=" nice-scale-label"
+            >
+              Must have
+            </span>
+          </label>
+        </li>
+      </ScaleItem>
+    </ol>
+  </div>
+</ScaleGroup>
 `;
 
-exports[`<Scale /> should render with all labels 1`] = `
-<div
-  className="nice-scale"
+exports[`<ScaleGroup /> <ScaleItem /> should render with custom classes over items 1`] = `
+<ScaleGroup
+  className=""
+  name="projectid-radios"
+  onChange={[Function]}
+  tickLabels={true}
 >
-  <ol
-    className="nice-scale-selection"
+  <div
+    className="nice-scale "
   >
-    <li
-      key="1"
+    <ol
+      className="nice-scale-selection"
     >
-      <label>
-        <input
-          name="projectid-radios"
-          onChange={[Function]}
-          type="radio"
-          value={1}
-        />
-        <span />
-        <span
-          className="nice-scale-label"
+      <ScaleItem
+        className="text-bold"
+        key=".0"
+        label="Nice to have"
+        name="projectid-radios"
+        onSelect={[Function]}
+        tickLabel={true}
+        value={1}
+      >
+        <li
+          key="1"
         >
-          Nice to have
-        </span>
-      </label>
-    </li>
-    <li
-      key="5"
+          <label>
+            <input
+              name="projectid-radios"
+              onChange={[Function]}
+              type="radio"
+              value={1}
+            />
+            <span />
+            <span
+              className="text-bold nice-scale-label"
+            >
+              Nice to have
+            </span>
+          </label>
+        </li>
+      </ScaleItem>
+      <ScaleItem
+        className="text-bold text-italic"
+        key=".1"
+        label=""
+        name="projectid-radios"
+        onSelect={[Function]}
+        tickLabel={true}
+        value={5}
+      >
+        <li
+          key="5"
+        >
+          <label>
+            <input
+              name="projectid-radios"
+              onChange={[Function]}
+              type="radio"
+              value={5}
+            />
+            <span />
+          </label>
+        </li>
+      </ScaleItem>
+      <ScaleItem
+        className="text-uppercase text-brand"
+        key=".2"
+        label="Must have"
+        name="projectid-radios"
+        onSelect={[Function]}
+        tickLabel={true}
+        value={10}
+      >
+        <li
+          key="10"
+        >
+          <label>
+            <input
+              name="projectid-radios"
+              onChange={[Function]}
+              type="radio"
+              value={10}
+            />
+            <span />
+            <span
+              className="text-uppercase text-brand nice-scale-label"
+            >
+              Must have
+            </span>
+          </label>
+        </li>
+      </ScaleItem>
+    </ol>
+  </div>
+</ScaleGroup>
+`;
+
+exports[`<ScaleGroup /> <ScaleItem /> should render with custom classes over outernist element 1`] = `
+<ScaleGroup
+  className="nice-bg-info"
+  name="projectid-radios"
+  onChange={[Function]}
+  tickLabels={true}
+>
+  <div
+    className="nice-scale nice-bg-info"
+  >
+    <ol
+      className="nice-scale-selection"
     >
-      <label>
-        <input
-          name="projectid-radios"
-          onChange={[Function]}
-          type="radio"
-          value={5}
-        />
-        <span />
-        <span
-          className="nice-scale-label"
+      <ScaleItem
+        className=""
+        key=".0"
+        label="Nice to have"
+        name="projectid-radios"
+        onSelect={[Function]}
+        tickLabel={true}
+        value={1}
+      >
+        <li
+          key="1"
         >
-          Good to have
-        </span>
-      </label>
-    </li>
-    <li
-      key="10"
+          <label>
+            <input
+              name="projectid-radios"
+              onChange={[Function]}
+              type="radio"
+              value={1}
+            />
+            <span />
+            <span
+              className=" nice-scale-label"
+            >
+              Nice to have
+            </span>
+          </label>
+        </li>
+      </ScaleItem>
+      <ScaleItem
+        className=""
+        key=".1"
+        label=""
+        name="projectid-radios"
+        onSelect={[Function]}
+        tickLabel={true}
+        value={5}
+      >
+        <li
+          key="5"
+        >
+          <label>
+            <input
+              name="projectid-radios"
+              onChange={[Function]}
+              type="radio"
+              value={5}
+            />
+            <span />
+          </label>
+        </li>
+      </ScaleItem>
+      <ScaleItem
+        className=""
+        key=".2"
+        label="Must have"
+        name="projectid-radios"
+        onSelect={[Function]}
+        tickLabel={true}
+        value={10}
+      >
+        <li
+          key="10"
+        >
+          <label>
+            <input
+              name="projectid-radios"
+              onChange={[Function]}
+              type="radio"
+              value={10}
+            />
+            <span />
+            <span
+              className=" nice-scale-label"
+            >
+              Must have
+            </span>
+          </label>
+        </li>
+      </ScaleItem>
+    </ol>
+  </div>
+</ScaleGroup>
+`;
+
+exports[`<ScaleGroup /> <ScaleItem /> should render without one label 1`] = `
+<ScaleGroup
+  className=""
+  name="my-radio-name"
+  onChange={[Function]}
+  tickLabels={true}
+>
+  <div
+    className="nice-scale "
+  >
+    <ol
+      className="nice-scale-selection"
     >
-      <label>
-        <input
-          name="projectid-radios"
-          onChange={[Function]}
-          type="radio"
-          value={10}
-        />
-        <span />
-        <span
-          className="nice-scale-label"
+      <ScaleItem
+        className=""
+        key=".0"
+        label="Nice to have"
+        name="my-radio-name"
+        onSelect={[Function]}
+        tickLabel={true}
+        value={1}
+      >
+        <li
+          key="1"
         >
-          Must have
-        </span>
-      </label>
-    </li>
-  </ol>
-</div>
+          <label>
+            <input
+              name="my-radio-name"
+              onChange={[Function]}
+              type="radio"
+              value={1}
+            />
+            <span />
+            <span
+              className=" nice-scale-label"
+            >
+              Nice to have
+            </span>
+          </label>
+        </li>
+      </ScaleItem>
+      <ScaleItem
+        className=""
+        key=".1"
+        label=""
+        name="my-radio-name"
+        onSelect={[Function]}
+        tickLabel={true}
+        value={5}
+      >
+        <li
+          key="5"
+        >
+          <label>
+            <input
+              name="my-radio-name"
+              onChange={[Function]}
+              type="radio"
+              value={5}
+            />
+            <span />
+          </label>
+        </li>
+      </ScaleItem>
+      <ScaleItem
+        className=""
+        key=".2"
+        label="Must have"
+        name="my-radio-name"
+        onSelect={[Function]}
+        tickLabel={true}
+        value={10}
+      >
+        <li
+          key="10"
+        >
+          <label>
+            <input
+              name="my-radio-name"
+              onChange={[Function]}
+              type="radio"
+              value={10}
+            />
+            <span />
+            <span
+              className=" nice-scale-label"
+            >
+              Must have
+            </span>
+          </label>
+        </li>
+      </ScaleItem>
+    </ol>
+  </div>
+</ScaleGroup>
+`;
+
+exports[`<ScaleGroup /> <ScaleItem /> should render without tick labels 1`] = `
+<ScaleGroup
+  className=""
+  name="my-radio-name"
+  onChange={[Function]}
+  tickLabels={false}
+>
+  <div
+    className="nice-scale "
+  >
+    <ol
+      className="nice-scale-selection"
+    >
+      <ScaleItem
+        className=""
+        key=".0"
+        label="Nice to have"
+        name="my-radio-name"
+        onSelect={[Function]}
+        tickLabel={false}
+        value={1}
+      >
+        <li
+          key="1"
+        >
+          <label>
+            <input
+              name="my-radio-name"
+              onChange={[Function]}
+              type="radio"
+              value={1}
+            />
+            <span />
+            <span
+              className=" "
+            >
+              Nice to have
+            </span>
+          </label>
+        </li>
+      </ScaleItem>
+      <ScaleItem
+        className=""
+        key=".1"
+        label=""
+        name="my-radio-name"
+        onSelect={[Function]}
+        tickLabel={false}
+        value={5}
+      >
+        <li
+          key="5"
+        >
+          <label>
+            <input
+              name="my-radio-name"
+              onChange={[Function]}
+              type="radio"
+              value={5}
+            />
+            <span />
+          </label>
+        </li>
+      </ScaleItem>
+      <ScaleItem
+        className=""
+        key=".2"
+        label="Must have"
+        name="my-radio-name"
+        onSelect={[Function]}
+        tickLabel={false}
+        value={10}
+      >
+        <li
+          key="10"
+        >
+          <label>
+            <input
+              name="my-radio-name"
+              onChange={[Function]}
+              type="radio"
+              value={10}
+            />
+            <span />
+            <span
+              className=" "
+            >
+              Must have
+            </span>
+          </label>
+        </li>
+      </ScaleItem>
+    </ol>
+  </div>
+</ScaleGroup>
 `;
