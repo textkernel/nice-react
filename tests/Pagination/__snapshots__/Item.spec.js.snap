@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination.Item /> should render current Item 1`] = `
+<li
+  className={
+    Array [
+      "current",
+    ]
+  }
+>
+  <a
+    href="#"
+    onClick={[Function]}
+  />
+</li>
+`;
+
+exports[`<Pagination.Item /> should render disabled Item 1`] = `
+<li
+  className={
+    Array [
+      "disabled",
+    ]
+  }
+>
+  <span
+    href=""
+    onClick={null}
+  />
+</li>
+`;

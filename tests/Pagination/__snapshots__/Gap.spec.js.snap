@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination.Gap /> should render pagination Gap 1`] = `
+<li
+  className="disabled"
+>
+  <span>
+    …
+  </span>
+</li>
+`;
