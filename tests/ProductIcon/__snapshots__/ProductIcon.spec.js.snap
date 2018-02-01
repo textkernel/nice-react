@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductIcon /> should render an icon 1`] = `
+<i
+  className="product-icon jobfeed "
+  style={null}
+/>
+`;
+
+exports[`<ProductIcon /> should render with extra classes and styles 1`] = `
+<i
+  className="product-icon jobfeed text-color-brand"
+  style={
+    Object {
+      "fontSize": "3em",
+    }
+  }
+/>
+`;
+
+exports[`<ProductIcon /> should return null 1`] = `""`;

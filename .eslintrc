@@ -26,7 +26,8 @@
         "react/no-array-index-key": "off",
         "no-console": "off",
         "arrow-parens": "off",
-        "func-call-spacing": "off"
+        "func-call-spacing": "off",
+        "template-curly-spacing": "off"
     },
     "globals": {
         "document": true,
