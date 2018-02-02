@@ -41,8 +41,9 @@ stories.add('Custom properties', () => {
     const message = text('Message', 'Change me');
     const heading = text('Heading', '');
     const buttonLabel = text('Button label', '');
+    const position = text('Position', '');
 
-    return <Alert context={ context } heading={ heading } buttonLabel={ buttonLabel } onClick={ () => {} }>
+    return <Alert context={ context } heading={ heading } buttonLabel={ buttonLabel } onClick={ () => {} } position={ position }>
     	{ message }
     </Alert>
 });
