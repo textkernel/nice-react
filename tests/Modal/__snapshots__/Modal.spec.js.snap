@@ -3,6 +3,7 @@
 exports[`<Modal /> should render Modal.Content 1`] = `
 <div
   className="nice-modal-body"
+  style={null}
 >
   Modal content
 </div>
@@ -51,7 +52,9 @@ exports[`<Modal /> should render a hidden, viewport centered Modal with overlay 
     <ModalSub>
       Modal sub header
     </ModalSub>
-    <Component>
+    <Component
+      padding={null}
+    >
       Modal content
     </Component>
     <ModalFooter>
@@ -80,7 +83,9 @@ exports[`<Modal /> should render a simple Modal 1`] = `
       <ModalSub>
         Modal sub header
       </ModalSub>
-      <Component>
+      <Component
+        padding={null}
+      >
         Modal content
       </Component>
       <ModalFooter>
@@ -115,7 +120,9 @@ exports[`<Modal /> should render a styled Modal 1`] = `
       <ModalSub>
         Modal sub header
       </ModalSub>
-      <Component>
+      <Component
+        padding={null}
+      >
         Modal content
       </Component>
       <ModalFooter>
