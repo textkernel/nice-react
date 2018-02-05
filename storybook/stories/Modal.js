@@ -14,7 +14,7 @@ stories.addDecorator(withKnobs);
 stories.add('Default', () => {
     const context = select('Context', props.modalContexts, 'info');
 
-    return <Modal context={ context }>
+    return <Modal context={ context } overlay={ false }>
         <Modal.Header onClose={ () => alert('You clicked Close!') }>
             This is a modal dialog
         </Modal.Header>
