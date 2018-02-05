@@ -5,3 +5,4 @@ import './Dropdown';
 import './Loading';
 import './ProductIcon';
 import './Progress';
+import './Scale';
