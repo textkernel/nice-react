@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, boolean, select } from '@storybook/addon-knobs';
+import { withKnobs, button, boolean, object, select, text } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 import props from '../../lib/props';
 
@@ -83,3 +83,36 @@ stories.add('Header only', () => (<Modal context="info">
         </Modal.Footer>
     </Modal>
 ));
+
+stories.add('Customize properties', () => {
+    const context = select('Context', props.modalContexts, props.modalContexts[0]);
+    const content = text('Content', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.');
+    const header = text('Header', 'This is a modal dialog');
+    const sub = text('Sub heading', 'A less important sub heading');
+    const center = boolean('Center in viewport', true);
+    const overlay = boolean('Show overlay', true);
+    const hasClose = boolean('Header has onClose method', true);
+    const styles = object('Inline styles', { width: '800px' });
+    const tall = boolean('Tall', true);
+    const wide = boolean('Wide', true);
+
+    return <Modal context={ context } viewportCenter={ center } overlay={ overlay } tall={ tall } wide={ wide } style={ styles }>
+        <Modal.Header onClose={ hasClose ? () => { } : null }>
+            { header }
+        </Modal.Header>
+        <Modal.Sub>
+            { sub }
+        </Modal.Sub>
+        <Modal.Content>
+            { content }
+        </Modal.Content>
+        <Modal.Footer>
+            <Button context="link">
+                Que?
+            </Button>
+            <Button context="primary" pullRight>
+                I see
+            </Button>
+        </Modal.Footer>
+    </Modal>;
+});

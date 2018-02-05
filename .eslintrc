@@ -24,6 +24,7 @@
         "react/jsx-wrap-multilines": "off",
         "react/forbid-prop-types": "off",
         "react/no-array-index-key": "off",
+        "template-curly-spacing": "off",
         "no-console": "off",
         "arrow-parens": "off",
         "func-call-spacing": "off",
