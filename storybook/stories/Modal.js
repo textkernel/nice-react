@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, button, boolean, object, select, text } from '@storybook/addon-knobs';
+import { withKnobs, boolean, number, object, select, text } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 import props from '../../lib/props';
 
@@ -96,6 +96,7 @@ stories.add('Customize properties', () => {
     const tall = boolean('Tall', true);
     const wide = boolean('Wide', true);
     const hidden = boolean('Hidden', false);
+    const padding = number('Padding', 15);
 
     return <Modal context={ context } viewportCenter={ center } overlay={ overlay } tall={ tall } wide={ wide } style={ styles } hidden={ hidden }>
         <Modal.Header onClose={ hasClose ? () => { } : null }>
@@ -104,7 +105,7 @@ stories.add('Customize properties', () => {
         <Modal.Sub>
             { sub }
         </Modal.Sub>
-        <Modal.Content>
+        <Modal.Content padding={ padding }>
             { content }
         </Modal.Content>
         <Modal.Footer>
