@@ -74,7 +74,7 @@ stories.add('with custom classes over outermost element', () => {
     ];
     
     return (
-      <ScaleGroup name='projectid-radios' className='nice-bg-info' onChange={ action('radio-click') }> 
+      <ScaleGroup name='projectid-radios' className='text-uppercase' onChange={ action('radio-click') }> 
         <ScaleItem label='Nice to have' value={1} />
         <ScaleItem value={5} />
         <ScaleItem label='Must have' value={10} />
