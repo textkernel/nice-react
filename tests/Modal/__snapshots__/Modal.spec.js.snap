@@ -37,30 +37,26 @@ exports[`<Modal /> should render Modal.Header 1`] = `
 
 exports[`<Modal /> should render a hidden, viewport centered Modal with overlay 1`] = `
 <div
-  className="nice-modal-overlay"
+  className="nice-modal info viewport-center hidden tall wide"
+  style={Object {}}
 >
   <div
-    className="nice-modal info viewport-center hidden tall wide"
-    style={Object {}}
+    className="nice-modal-content"
   >
-    <div
-      className="nice-modal-content"
+    <ModalHeader
+      onClose={[Function]}
     >
-      <ModalHeader
-        onClose={[Function]}
-      >
-        Modal header
-      </ModalHeader>
-      <ModalSub>
-        Modal sub header
-      </ModalSub>
-      <Component>
-        Modal content
-      </Component>
-      <ModalFooter>
-        Modal footer
-      </ModalFooter>
-    </div>
+      Modal header
+    </ModalHeader>
+    <ModalSub>
+      Modal sub header
+    </ModalSub>
+    <Component>
+      Modal content
+    </Component>
+    <ModalFooter>
+      Modal footer
+    </ModalFooter>
   </div>
 </div>
 `;
