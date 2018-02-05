@@ -30,6 +30,20 @@ describe('<ScaleGroup /> <ScaleItem />', () => {
 });
 
 describe('<ScaleGroup /> <ScaleItem />', () => {
+    it('should render as controlled component', () => {
+        const wrapper = mount(
+          <ScaleGroup name='my-radio-name' value={10}> 
+            <ScaleItem label='Nice to have' value={1} />
+            <ScaleItem value={5} />
+            <ScaleItem label='Must have' value={10} />
+          </ScaleGroup>
+        );
+    
+        expect(wrapper).toMatchSnapshot();
+    });
+});
+
+describe('<ScaleGroup /> <ScaleItem />', () => {
     it('should render without tick labels', () => {
         const wrapper = mount(
           <ScaleGroup tickLabels={false} name='my-radio-name'> 

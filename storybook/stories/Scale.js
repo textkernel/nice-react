@@ -29,6 +29,16 @@ stories.add('without one label', () => {
     );
 });
 
+stories.add('as controlled component', () => {
+  return (
+    <ScaleGroup name='projectid-radios' value={5} onChange={ action('radio-click') }> 
+      <ScaleItem label='Nice to have' value={1} />
+      <ScaleItem label='Good to have' value={5} />
+      <ScaleItem label='Must have' value={10} />
+    </ScaleGroup>
+  );
+});
+
 stories.add('without tick labels', () => {
     return (
       <ScaleGroup name='projectid-radios' tickLabels={false} onChange={ action('radio-click') }> 
