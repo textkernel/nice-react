@@ -95,8 +95,9 @@ stories.add('Customize properties', () => {
     const styles = object('Inline styles', { width: '800px' });
     const tall = boolean('Tall', true);
     const wide = boolean('Wide', true);
+    const hidden = boolean('Hidden', false);
 
-    return <Modal context={ context } viewportCenter={ center } overlay={ overlay } tall={ tall } wide={ wide } style={ styles }>
+    return <Modal context={ context } viewportCenter={ center } overlay={ overlay && !hidden } tall={ tall } wide={ wide } style={ styles } hidden={ hidden }>
         <Modal.Header onClose={ hasClose ? () => { } : null }>
             { header }
         </Modal.Header>

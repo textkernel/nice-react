@@ -20,9 +20,28 @@ describe('<Modal />', () => {
         expect(wrapper).toMatchSnapshot();
     });
 
-    it('should render a viewport centered Modal', () => {
+    it('should render a hidden, viewport centered Modal with overlay', () => {
         const mockCallback = jest.fn();
-        const wrapper = shallow(<Modal context="info" viewportCenter tall wide>
+        const wrapper = shallow(<Modal context="info" viewportCenter overlay tall wide hidden>
+            <Modal.Header onClose={ mockCallback }>
+                Modal header
+            </Modal.Header>
+            <Modal.Sub>
+                Modal sub header
+            </Modal.Sub>
+            <Modal.Content>
+                Modal content
+            </Modal.Content>
+            <Modal.Footer>
+                Modal footer
+            </Modal.Footer>
+        </Modal>);
+        expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render a styled Modal', () => {
+        const mockCallback = jest.fn();
+        const wrapper = shallow(<Modal context="info" style={{ width: '600px', height: '600px' }}>
             <Modal.Header onClose={ mockCallback }>
                 Modal header
             </Modal.Header>

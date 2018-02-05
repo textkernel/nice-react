@@ -35,52 +35,97 @@ exports[`<Modal /> should render Modal.Header 1`] = `
 </div>
 `;
 
-exports[`<Modal /> should render a simple Modal 1`] = `
+exports[`<Modal /> should render a hidden, viewport centered Modal with overlay 1`] = `
 <div
-  className="nice-modal info"
+  className="nice-modal-overlay"
 >
   <div
-    className="nice-modal-content"
+    className="nice-modal info viewport-center hidden tall wide"
+    style={Object {}}
   >
-    <ModalHeader
-      onClose={null}
+    <div
+      className="nice-modal-content"
     >
-      Modal header
-    </ModalHeader>
-    <ModalSub>
-      Modal sub header
-    </ModalSub>
-    <Component>
-      Modal content
-    </Component>
-    <ModalFooter>
-      Modal footer
-    </ModalFooter>
+      <ModalHeader
+        onClose={[Function]}
+      >
+        Modal header
+      </ModalHeader>
+      <ModalSub>
+        Modal sub header
+      </ModalSub>
+      <Component>
+        Modal content
+      </Component>
+      <ModalFooter>
+        Modal footer
+      </ModalFooter>
+    </div>
   </div>
 </div>
 `;
 
-exports[`<Modal /> should render a viewport centered Modal 1`] = `
+exports[`<Modal /> should render a simple Modal 1`] = `
 <div
-  className="nice-modal info viewport-center tall wide"
+  className="nice-modal-overlay"
 >
   <div
-    className="nice-modal-content"
+    className="nice-modal info"
+    style={Object {}}
   >
-    <ModalHeader
-      onClose={[Function]}
+    <div
+      className="nice-modal-content"
     >
-      Modal header
-    </ModalHeader>
-    <ModalSub>
-      Modal sub header
-    </ModalSub>
-    <Component>
-      Modal content
-    </Component>
-    <ModalFooter>
-      Modal footer
-    </ModalFooter>
+      <ModalHeader
+        onClose={null}
+      >
+        Modal header
+      </ModalHeader>
+      <ModalSub>
+        Modal sub header
+      </ModalSub>
+      <Component>
+        Modal content
+      </Component>
+      <ModalFooter>
+        Modal footer
+      </ModalFooter>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Modal /> should render a styled Modal 1`] = `
+<div
+  className="nice-modal-overlay"
+>
+  <div
+    className="nice-modal info"
+    style={
+      Object {
+        "height": "600px",
+        "width": "600px",
+      }
+    }
+  >
+    <div
+      className="nice-modal-content"
+    >
+      <ModalHeader
+        onClose={[Function]}
+      >
+        Modal header
+      </ModalHeader>
+      <ModalSub>
+        Modal sub header
+      </ModalSub>
+      <Component>
+        Modal content
+      </Component>
+      <ModalFooter>
+        Modal footer
+      </ModalFooter>
+    </div>
   </div>
 </div>
 `;
