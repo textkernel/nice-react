@@ -1,8 +1,9 @@
-import './Panel';
+import './Alert';
 import './Button';
 import './ButtonGroup';
 import './Dropdown';
 import './Loading';
 import './ProductIcon';
+import './Panel';
 import './Progress';
 import './Scale';
