@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Breadcrumb /> should render default Breadcrumb 1`] = `
+<ol
+  className="nice-breadcrumb null"
+>
+  <Item
+    current={false}
+    icon={null}
+    onClick={[Function]}
+    text="Level 1"
+    value={null}
+  />
+  <Item
+    current={false}
+    icon={null}
+    onClick={[Function]}
+    text="Level 2"
+    value={null}
+  />
+  <Item
+    current={false}
+    icon={null}
+    onClick={[Function]}
+    text="Level 3"
+    value={null}
+  />
+</ol>
+`;
+
+exports[`<Breadcrumb /> should render small Breadcrumb 1`] = `
+<ol
+  className="nice-breadcrumb small"
+>
+  <Item
+    current={false}
+    icon={null}
+    onClick={[Function]}
+    text="Level 1"
+    value={null}
+  />
+  <Item
+    current={false}
+    icon={null}
+    onClick={[Function]}
+    text="Level 2"
+    value={null}
+  />
+  <Item
+    current={false}
+    icon={null}
+    onClick={[Function]}
+    text="Level 3"
+    value={null}
+  />
+</ol>
+`;

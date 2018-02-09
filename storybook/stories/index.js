@@ -3,4 +3,4 @@ import './Button';
 import './ButtonGroup';
 import './Progress';
 import './Loading';
-import './Breadcrumbs'
+import './Breadcrumb';
