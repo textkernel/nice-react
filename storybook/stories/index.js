@@ -7,3 +7,5 @@ import './ProductIcon';
 import './Panel';
 import './Progress';
 import './Scale';
+import './Loading';
+import './Breadcrumb';

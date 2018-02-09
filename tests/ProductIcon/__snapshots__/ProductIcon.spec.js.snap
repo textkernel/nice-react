@@ -7,6 +7,8 @@ exports[`<ProductIcon /> should render an icon 1`] = `
 />
 `;
 
+exports[`<ProductIcon /> should render nothing 1`] = `""`;
+
 exports[`<ProductIcon /> should render with extra classes and styles 1`] = `
 <i
   className="product-icon jobfeed text-color-brand"
