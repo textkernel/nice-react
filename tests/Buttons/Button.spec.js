@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../../lib/Buttons';
+import { Button } from '../../lib/Button';
 
 describe('<Button />', () => {
   it('should render the Button', () => {
@@ -25,7 +25,7 @@ describe('<Button />', () => {
   it('should handle the onClick event', () => {
     const onClickHandler = jest.fn();
     const wrapper = shallow(<Button onClick={onClickHandler} context="primary" size="large">Primary large</Button>);
-    wrapper.find('a').simulate('click', { preventDefault() {} });
+    wrapper.find('button').simulate('click', { preventDefault() {} });
 
     expect(onClickHandler).toHaveBeenCalled();
   });

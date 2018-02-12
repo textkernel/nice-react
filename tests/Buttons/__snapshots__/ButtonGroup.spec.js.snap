@@ -7,6 +7,7 @@ exports[`<ButtonGroup /> should render the Buttons inside ButtonGroup 1`] = `
   <Button
     alternative={false}
     context="default"
+    href={null}
     icon={null}
     onClick={null}
     size="medium"

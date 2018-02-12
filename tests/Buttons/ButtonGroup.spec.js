@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonGroup } from '../../lib/Buttons';
+import { Button, ButtonGroup } from '../../lib/Button';
 
 describe('<ButtonGroup />', () => {
   it('should render the Buttons inside ButtonGroup', () => {

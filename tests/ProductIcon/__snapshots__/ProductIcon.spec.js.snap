@@ -19,5 +19,3 @@ exports[`<ProductIcon /> should render with extra classes and styles 1`] = `
   }
 />
 `;
-
-exports[`<ProductIcon /> should return null 1`] = `""`;
