@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> should render Modal.Content 1`] = `
+<div
+  className="nice-modal-body"
+  style={null}
+>
+  Modal content
+</div>
+`;
+
+exports[`<Modal /> should render Modal.Footer 1`] = `
+<div
+  className="nice-modal-footer"
+>
+  Modal footer
+</div>
+`;
+
+exports[`<Modal /> should render Modal.Header 1`] = `
+<div
+  className="nice-modal-header"
+>
+  <a
+    className="nice-modal-close"
+    href="#"
+    onClick={[Function]}
+  >
+    <i
+      className="icon fa-times"
+    />
+  </a>
+  <h4>
+    Modal header
+  </h4>
+</div>
+`;
+
+exports[`<Modal /> should render a hidden, viewport centered Modal with overlay 1`] = `
+<div
+  className="nice-modal info viewport-center hidden tall wide"
+  style={Object {}}
+>
+  <div
+    className="nice-modal-content"
+  >
+    <ModalHeader
+      onClose={[Function]}
+    >
+      Modal header
+    </ModalHeader>
+    <ModalSub>
+      Modal sub header
+    </ModalSub>
+    <Component
+      padding={null}
+    >
+      Modal content
+    </Component>
+    <ModalFooter>
+      Modal footer
+    </ModalFooter>
+  </div>
+</div>
+`;
+
+exports[`<Modal /> should render a simple Modal 1`] = `
+<div
+  className="nice-modal-overlay"
+>
+  <div
+    className="nice-modal info"
+    style={Object {}}
+  >
+    <div
+      className="nice-modal-content"
+    >
+      <ModalHeader
+        onClose={null}
+      >
+        Modal header
+      </ModalHeader>
+      <ModalSub>
+        Modal sub header
+      </ModalSub>
+      <Component
+        padding={null}
+      >
+        Modal content
+      </Component>
+      <ModalFooter>
+        Modal footer
+      </ModalFooter>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Modal /> should render a styled Modal 1`] = `
+<div
+  className="nice-modal-overlay"
+>
+  <div
+    className="nice-modal info"
+    style={
+      Object {
+        "height": "600px",
+        "width": "600px",
+      }
+    }
+  >
+    <div
+      className="nice-modal-content"
+    >
+      <ModalHeader
+        onClose={[Function]}
+      >
+        Modal header
+      </ModalHeader>
+      <ModalSub>
+        Modal sub header
+      </ModalSub>
+      <Component
+        padding={null}
+      >
+        Modal content
+      </Component>
+      <ModalFooter>
+        Modal footer
+      </ModalFooter>
+    </div>
+  </div>
+</div>
+`;

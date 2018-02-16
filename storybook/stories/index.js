@@ -3,6 +3,7 @@ import './Button';
 import './ButtonGroup';
 import './Dropdown';
 import './Loading';
+import './Modal';
 import './ProductIcon';
 import './Panel';
 import './Progress';
