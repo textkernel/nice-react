@@ -1,12 +1,12 @@
 import './Alert';
 import './Button';
 import './ButtonGroup';
+import './Breadcrumb';
 import './Dropdown';
 import './Loading';
 import './Modal';
-import './ProductIcon';
+import './Pagination';
 import './Panel';
+import './ProductIcon';
 import './Progress';
 import './Scale';
-import './Loading';
-import './Breadcrumb';

@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> should render bordered Pagination 1`] = `
+<nav>
+  <ul
+    className="nice-pagination bordered"
+    role="navigation"
+  >
+    <Item
+      current={true}
+      disabled={false}
+      onClick={null}
+    >
+      1
+    </Item>
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      2
+    </Item>
+    <Gap />
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      4
+    </Item>
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      5
+    </Item>
+  </ul>
+</nav>
+`;
+
+exports[`<Pagination /> should render default Pagination 1`] = `
+<nav>
+  <ul
+    className="nice-pagination"
+    role="navigation"
+  >
+    <Item
+      current={false}
+      disabled={true}
+      onClick={null}
+    >
+      « Previous
+    </Item>
+    <Item
+      current={true}
+      disabled={false}
+      onClick={null}
+    >
+      1
+    </Item>
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      2
+    </Item>
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      3
+    </Item>
+    <Gap />
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      4
+    </Item>
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      5
+    </Item>
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      Next »
+    </Item>
+  </ul>
+</nav>
+`;
+
+exports[`<Pagination /> should render large Pagination 1`] = `
+<nav>
+  <ul
+    className="nice-pagination large"
+    role="navigation"
+  >
+    <Item
+      current={true}
+      disabled={false}
+      onClick={null}
+    >
+      1
+    </Item>
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      2
+    </Item>
+    <Gap />
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      4
+    </Item>
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      5
+    </Item>
+  </ul>
+</nav>
+`;
+
+exports[`<Pagination /> should render small Pagination 1`] = `
+<nav>
+  <ul
+    className="nice-pagination small"
+    role="navigation"
+  >
+    <Item
+      current={true}
+      disabled={false}
+      onClick={null}
+    >
+      1
+    </Item>
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      2
+    </Item>
+    <Gap />
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      4
+    </Item>
+    <Item
+      current={false}
+      disabled={false}
+      onClick={null}
+    >
+      5
+    </Item>
+  </ul>
+</nav>
+`;
