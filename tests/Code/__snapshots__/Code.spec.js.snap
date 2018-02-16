@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Code /> should render a Code block with custom context, size and icon 1`] = `
+<div
+  className="nice-code-container"
+>
+  <div
+    className="nice-code-heading good icon fa-code"
+  >
+    Custom context
+  </div>
+  <code
+    className="restrain-m"
+  >
+    {
+    "some": "json"
+}
+  </code>
+</div>
+`;
+
+exports[`<Code /> should render a Code block with heading and syntax 1`] = `
+<div
+  className="nice-code-container"
+>
+  <div
+    className="nice-code-heading"
+  >
+    Sample code block
+    <div
+      className="nice-code-syntax"
+    >
+      JSON
+    </div>
+  </div>
+  <code
+    className="restrain-s"
+  >
+    {
+    "some": "json"
+}
+  </code>
+</div>
+`;
+
+exports[`<Code /> should render a Code block with heading but no syntax 1`] = `
+<div
+  className="nice-code-container"
+>
+  <div
+    className="nice-code-heading"
+  >
+    Sample code block
+  </div>
+  <code
+    className="restrain-s"
+  >
+    {
+    "some": "json"
+}
+  </code>
+</div>
+`;
+
+exports[`<Code /> should render a Code block without heading 1`] = `
+<div
+  className="nice-code-container"
+>
+  <code
+    className="restrain-s"
+  >
+    {
+    "some": "json"
+}
+  </code>
+</div>
+`;

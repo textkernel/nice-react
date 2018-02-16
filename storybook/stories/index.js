@@ -1,6 +1,7 @@
 import './Alert';
 import './Button';
 import './ButtonGroup';
+import './Code';
 import './Dropdown';
 import './Loading';
 import './ProductIcon';
