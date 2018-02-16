@@ -72,7 +72,7 @@ stories.add('Large', () => (
     </Pagination>
 ));
 
-stories.add('with dynamic properties', () => {
+stories.add('Custom properties', () => {
     const sizes = select('Size', props.paginationSizes);
     const bordered = boolean('Bordered', false);
     const prevDisabled = !boolean('Previous enabled', false);
