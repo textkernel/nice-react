@@ -10,6 +10,7 @@ exports[`<ButtonGroup /> should render the Buttons inside ButtonGroup 1`] = `
     href={null}
     icon={null}
     onClick={null}
+    pullRight={false}
     size="medium"
   >
     Default

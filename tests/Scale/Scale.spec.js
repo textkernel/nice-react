@@ -1,100 +1,100 @@
 import React from 'react';
-import { ScaleGroup, ScaleItem } from '../../lib/Scale';
+import Scale from '../../lib/Scale';
 
-describe('<ScaleGroup /> <ScaleItem />', () => {
+describe('<Scale /> <Scale.Item />', () => {
     it('should render with all labels', () => {
         const wrapper = mount(
-          <ScaleGroup name='my-radio-name'> 
-            <ScaleItem label='Nice to have' value={1} />
-            <ScaleItem label='Good to have' value={5} />
-            <ScaleItem label='Must have' value={10} />
-          </ScaleGroup>
+          <Scale name='my-radio-name'> 
+            <Scale.Item label='Nice to have' value={1} />
+            <Scale.Item label='Good to have' value={5} />
+            <Scale.Item label='Must have' value={10} />
+          </Scale>
       );
         
         expect(wrapper).toMatchSnapshot();
     });
 });
 
-describe('<ScaleGroup /> <ScaleItem />', () => {
+describe('<Scale /> <Scale.Item />', () => {
     it('should render without one label', () => {
         const wrapper = mount(
-          <ScaleGroup name='my-radio-name'> 
-            <ScaleItem label='Nice to have' value={1} />
-            <ScaleItem value={5} />
-            <ScaleItem label='Must have' value={10} />
-          </ScaleGroup>
+          <Scale name='my-radio-name'> 
+            <Scale.Item label='Nice to have' value={1} />
+            <Scale.Item value={5} />
+            <Scale.Item label='Must have' value={10} />
+          </Scale>
         );
     
         expect(wrapper).toMatchSnapshot();
     });
 });
 
-describe('<ScaleGroup /> <ScaleItem />', () => {
+describe('<Scale /> <Scale.Item />', () => {
     it('should render as controlled component', () => {
         const wrapper = mount(
-          <ScaleGroup name='my-radio-name' value={10}> 
-            <ScaleItem label='Nice to have' value={1} />
-            <ScaleItem value={5} />
-            <ScaleItem label='Must have' value={10} />
-          </ScaleGroup>
+          <Scale name='my-radio-name' value={10}> 
+            <Scale.Item label='Nice to have' value={1} />
+            <Scale.Item value={5} />
+            <Scale.Item label='Must have' value={10} />
+          </Scale>
         );
     
         expect(wrapper).toMatchSnapshot();
     });
 });
 
-describe('<ScaleGroup /> <ScaleItem />', () => {
+describe('<Scale /> <Scale.Item />', () => {
     it('should render without tick labels', () => {
         const wrapper = mount(
-          <ScaleGroup tickLabels={false} name='my-radio-name'> 
-            <ScaleItem label='Nice to have' value={1} />
-            <ScaleItem value={5} />
-            <ScaleItem label='Must have' value={10} />
-          </ScaleGroup>
+          <Scale tickLabels={false} name='my-radio-name'> 
+            <Scale.Item label='Nice to have' value={1} />
+            <Scale.Item value={5} />
+            <Scale.Item label='Must have' value={10} />
+          </Scale>
         );
         
         expect(wrapper).toMatchSnapshot();
     });
 });
 
-describe('<ScaleGroup /> <ScaleItem />', () => {
+describe('<Scale /> <Scale.Item />', () => {
     it('should render with custom classes over items', () => {
         const wrapper = mount(
-          <ScaleGroup name='projectid-radios'>
-            <ScaleItem label='Nice to have' value={1} className='text-bold' />
-            <ScaleItem value={5} className='text-bold text-italic' />
-            <ScaleItem label='Must have' value={10} className='text-uppercase text-brand' />
-          </ScaleGroup>
+          <Scale name='projectid-radios'>
+            <Scale.Item label='Nice to have' value={1} className='text-bold' />
+            <Scale.Item value={5} className='text-bold text-italic' />
+            <Scale.Item label='Must have' value={10} className='text-uppercase text-brand' />
+          </Scale>
         );
         
         expect(wrapper).toMatchSnapshot();
     });
 });
 
-describe('<ScaleGroup /> <ScaleItem />', () => {
+describe('<Scale /> <Scale.Item />', () => {
     it('should render with custom classes over outermost element', () => {
         const wrapper = mount(
-          <ScaleGroup name='projectid-radios' className='nice-bg-info'>
-            <ScaleItem label='Nice to have' value={1} />
-            <ScaleItem value={5} />
-            <ScaleItem label='Must have' value={10} />
-          </ScaleGroup>
+          <Scale name='projectid-radios' className='nice-bg-info'>
+            <Scale.Item label='Nice to have' value={1} />
+            <Scale.Item value={5} />
+            <Scale.Item label='Must have' value={10} />
+          </Scale>
         );
         
         expect(wrapper).toMatchSnapshot();
     });
 });
 
-describe('<ScaleGroup /> <ScaleItem />', () => {
+describe('<Scale /> <Scale.Item />', () => {
     it('should handle the onChange event', () => {
         const onChangeHandler = jest.fn();
 
         const wrapper = mount(
-          <ScaleGroup name='projectid-radios' onChange={onChangeHandler}>
-            <ScaleItem label='Nice to have' value={1} />
-            <ScaleItem value={5} />
-            <ScaleItem label='Must have' value={10} />
-          </ScaleGroup>
+          <Scale name='projectid-radios' onChange={onChangeHandler}>
+            <Scale.Item label='Nice to have' value={1} />
+            <Scale.Item value={5} />
+            <Scale.Item label='Must have' value={10} />
+          </Scale>
         );
         
         wrapper.find('input').at(0).simulate('change');

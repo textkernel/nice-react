@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 
-import { ScaleGroup, ScaleItem } from 'nice-react';
+import { Scale } from 'nice-react';
 
 const stories = storiesOf('Scale', module);
 
@@ -11,41 +11,41 @@ stories.addDecorator((story, context) => withInfo('')(story)(context));
 
 stories.add('with all labels', () => {
     return (
-      <ScaleGroup name='projectid-radios' onChange={ action('radio-click') }> 
-        <ScaleItem label='Nice to have' value={1} />
-        <ScaleItem label='Good to have' value={5} />
-        <ScaleItem label='Must have' value={10} />
-      </ScaleGroup>
+      <Scale name='projectid-radios' onChange={ action('radio-click') }> 
+        <Scale.Item label='Nice to have' value={1} />
+        <Scale.Item label='Good to have' value={5} />
+        <Scale.Item label='Must have' value={10} />
+      </Scale>
     );
 });
 
 stories.add('without one label', () => {
     return (
-      <ScaleGroup name='projectid-radios' onChange={ action('radio-click') }> 
-        <ScaleItem label='Nice to have' value={1} />
-        <ScaleItem value={5} />
-        <ScaleItem label='Must have' value={10} />
-      </ScaleGroup>
+      <Scale name='projectid-radios' onChange={ action('radio-click') }> 
+        <Scale.Item label='Nice to have' value={1} />
+        <Scale.Item value={5} />
+        <Scale.Item label='Must have' value={10} />
+      </Scale>
     );
 });
 
 stories.add('as controlled component', () => {
   return (
-    <ScaleGroup name='projectid-radios' value={5} onChange={ action('radio-click') }> 
-      <ScaleItem label='Nice to have' value={1} />
-      <ScaleItem label='Good to have' value={5} />
-      <ScaleItem label='Must have' value={10} />
-    </ScaleGroup>
+    <Scale name='projectid-radios' value={5} onChange={ action('radio-click') }> 
+      <Scale.Item label='Nice to have' value={1} />
+      <Scale.Item label='Good to have' value={5} />
+      <Scale.Item label='Must have' value={10} />
+    </Scale>
   );
 });
 
 stories.add('without tick labels', () => {
     return (
-      <ScaleGroup name='projectid-radios' tickLabels={false} onChange={ action('radio-click') }> 
-        <ScaleItem label='Nice to have' value={1} />
-        <ScaleItem value={5} />
-        <ScaleItem label='Must have' value={10} />
-      </ScaleGroup>
+      <Scale name='projectid-radios' tickLabels={false} onChange={ action('radio-click') }> 
+        <Scale.Item label='Nice to have' value={1} />
+        <Scale.Item value={5} />
+        <Scale.Item label='Must have' value={10} />
+      </Scale>
     );
 });
   
@@ -58,11 +58,11 @@ stories.add('with custom classes over items', () => {
     ];
     
     return (
-      <ScaleGroup name='projectid-radios' tickLabels={false} onChange={ action('radio-click') }> 
-        <ScaleItem label='Nice to have' value={1} className='text-bold'/>
-        <ScaleItem value={5} className='text-bold text-italic' />
-        <ScaleItem label='Must have' value={10} className='text-uppercase text-brand' />
-      </ScaleGroup>
+      <Scale name='projectid-radios' tickLabels={false} onChange={ action('radio-click') }> 
+        <Scale.Item label='Nice to have' value={1} className='text-bold'/>
+        <Scale.Item value={5} className='text-bold text-italic' />
+        <Scale.Item label='Must have' value={10} className='text-uppercase text-brand' />
+      </Scale>
     );
 });
 
@@ -74,10 +74,10 @@ stories.add('with custom classes over outermost element', () => {
     ];
     
     return (
-      <ScaleGroup name='projectid-radios' className='text-uppercase' onChange={ action('radio-click') }> 
-        <ScaleItem label='Nice to have' value={1} />
-        <ScaleItem value={5} />
-        <ScaleItem label='Must have' value={10} />
-      </ScaleGroup>
+      <Scale name='projectid-radios' className='text-uppercase' onChange={ action('radio-click') }> 
+        <Scale.Item label='Nice to have' value={1} />
+        <Scale.Item value={5} />
+        <Scale.Item label='Must have' value={10} />
+      </Scale>
     );
 });
