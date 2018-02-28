@@ -45,7 +45,7 @@ exports[`<Menu /> should render default (horizontal) Menu 1`] = `
 
 exports[`<Menu /> should render stacked / narrow menu 1`] = `
 <ul
-  className="nice-menu has-icons stacked narrow"
+  className="nice-menu has-icons narrow stacked"
 >
   <Item
     className="icon fa-home"
