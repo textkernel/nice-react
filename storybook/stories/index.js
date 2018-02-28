@@ -2,6 +2,7 @@ import './Alert';
 import './Button';
 import './ButtonGroup';
 import './Breadcrumb';
+import './Code';
 import './Dropdown';
 import './Loading';
 import './Modal';

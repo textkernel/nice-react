@@ -37,7 +37,7 @@ stories.add('With button', () => (
 
 stories.add('Custom properties', () => {
     const contextOptions = props.alertContexts;
-    const context = select('Context', contextOptions, props.alertContexts[0]);
+    const context = select('Context', contextOptions, contextOptions[0]);
     const message = text('Message', 'Change me');
     const heading = text('Heading', '');
     const buttonLabel = text('Button label', '');
