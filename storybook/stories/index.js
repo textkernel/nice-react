@@ -5,6 +5,7 @@ import './Breadcrumb';
 import './Code';
 import './Dropdown';
 import './Loading';
+import './Menu';
 import './Modal';
 import './Pagination';
 import './Panel';
