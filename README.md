@@ -35,7 +35,14 @@ Several quick start options are available:
 ## Testing
 
 ### Storybook
-Nice! React supports [Storybook](https://storybook.js.org/). Make sure you have Storybook installed (globally), run `npm run storybook` and go to `http://localhost:9001` to check out examples of all components.
+Nice! React supports [Storybook](https://storybook.js.org/).
+
+1. Make sure you have Storybook installed (globally)
+    ```bash
+    $ npm i -g @storybook/cli
+    ```
+2. Run `npm run storybook`
+3. Go to `http://localhost:9001` to check out examples of all components
 
 ### Tests
 * Run tests: `npm test`
