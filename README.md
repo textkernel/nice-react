@@ -29,7 +29,9 @@ Several quick start options are available:
 
 2. Include the component in your page
     ```jsx
-    <Alert context="primary" heading="I'm a nice React component!"  />
+    <Alert context="primary" heading="I'm a nice React component!">
+        Some content
+    </Alert>
     ```
 
 ## Testing
