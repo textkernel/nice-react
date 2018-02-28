@@ -37,7 +37,7 @@ Several quick start options are available:
 ### Storybook
 Nice! React supports [Storybook](https://storybook.js.org/).
 
-1. Make sure you have Storybook installed (globally)
+1. Make sure you have Storybook installed (globally):
     ```bash
     $ npm i -g @storybook/cli
     ```
