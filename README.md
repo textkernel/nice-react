@@ -22,7 +22,6 @@ Several quick start options are available:
     ````
     ...or using ES6 import:
 
-
     ```js
     import Alert from 'nice-react';
     ```
@@ -34,7 +33,7 @@ Several quick start options are available:
     </Alert>
     ```
 
-## Testing
+## Examples & Testing
 
 ### Storybook
 Nice! React supports [Storybook](https://storybook.js.org/).
@@ -48,10 +47,10 @@ Nice! React supports [Storybook](https://storybook.js.org/).
 
 3. Go to `http://localhost:9001` to check out examples of all components
 
-## Tests
+### Tests
 * Run tests: `npm test`
-* Run tests in watch mode: `npm test:watch`
-* Coverage report: `npm test:coverage`
+* Run tests in watch mode: `npm run test:watch`
+* Coverage report: `npm run test:coverage`
 
 ## Bugs and feature requests
 Found a bug or have a feature request? [Please open a new issue](https://github.com/textkernel/nice-react/issues/new).
