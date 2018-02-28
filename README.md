@@ -7,7 +7,7 @@ Several quick start options are available:
 
 * Clone the repo:
     ```bash
-    $ git clone https://github.com/textkernel/nice-react.git`
+    $ git clone https://github.com/textkernel/nice-react.git
     ```
 
 * Install with [npm](https://www.npmjs.com/package/@textkernel/nice-react): 
@@ -17,23 +17,20 @@ Several quick start options are available:
 
 ## Usage
 1. Import the desired UI component from the library, e.g.:
-
-```js
-const { Alert } = require('nice-react');
-````
-
-...or using ES6 import:
+    ```js
+    const { Alert } = require('nice-react');
+    ````
+    ...or using ES6 import:
 
 
-```js
-import Alert from 'nice-react';
-```
+    ```js
+    import Alert from 'nice-react';
+    ```
 
 2. Include the component in your page
-
-```jsx
-<Alert context="primary" heading="I'm a nice React component!"  />
-```
+    ```jsx
+    <Alert context="primary" heading="I'm a nice React component!"  />
+    ```
 
 ## Testing
 
