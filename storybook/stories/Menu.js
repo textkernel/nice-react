@@ -48,9 +48,7 @@ stories.add('Custom properties', () => {
     return (<Menu stacked={ stacked } narrow={ narrow } icons={ icons }>
         {
             Array(items).fill(0).map((v, k) => (
-                <Menu.Item current={ currentItem && k + 1 === currentItem } onClick={ onClick } >
-                    Menu item { k + 1 }
-                </Menu.Item>
+                <Menu.Item current={ currentItem && k + 1 === currentItem } onClick={ onClick } label={ `Menu item ${ k + 1 }` } />
             ))
         }
     </Menu>);
