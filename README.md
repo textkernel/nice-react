@@ -41,7 +41,9 @@ Nice! React supports [Storybook](https://storybook.js.org/).
     ```bash
     $ npm i -g @storybook/cli
     ```
+
 2. Run `npm run storybook`
+
 3. Go to `http://localhost:9001` to check out examples of all components
 
 ### Tests
