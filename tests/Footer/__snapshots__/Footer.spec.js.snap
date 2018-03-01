@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should render a default Footer 1`] = `
+<footer
+  className="nice-footer"
+>
+  <div
+    className="nice-container"
+  >
+    <p
+      className="pull-left"
+    >
+      © 
+      2018
+      <span
+        className="text-brand"
+      >
+        textkernel
+      </span>
+    </p>
+    <ul
+      className="nice-footer-menu"
+    >
+      <Link
+        className="icon fa-balance-scale"
+        href="https://github.com/textkernel/nice/blob/master/LICENSE"
+        onClick={null}
+        target="_blank"
+      >
+        Project License
+      </Link>
+      <Link
+        className="icon fa-github"
+        href="https://github.com/textkernel/nice/"
+        onClick={null}
+        target="_blank"
+      >
+        Source
+      </Link>
+      <Link
+        className="additional-icon fw frontify"
+        href="https://app.frontify.com/d/apB5ernOJZzj/textkernel-branding-guideline"
+        onClick={null}
+        target="_blank"
+      >
+        Brand Guidelines
+      </Link>
+      <Link
+        className="product-icon textkernel"
+        href="http://textkernel.com"
+        onClick={null}
+        target="_blank"
+      >
+        Textkernel
+      </Link>
+    </ul>
+  </div>
+</footer>
+`;
+
+exports[`<Footer /> should render a fluid Footer without copyright 1`] = `
+<footer
+  className="nice-footer"
+>
+  <div
+    className="nice-container-fluid"
+  >
+    <p
+      className="pull-left"
+    >
+      © 
+      2018
+      <span
+        className="text-brand"
+      >
+        textkernel
+      </span>
+    </p>
+    <ul
+      className="nice-footer-menu"
+    >
+      <Link
+        className={null}
+        href="#"
+        onClick={null}
+        target={null}
+      >
+        Test
+      </Link>
+    </ul>
+  </div>
+</footer>
+`;
