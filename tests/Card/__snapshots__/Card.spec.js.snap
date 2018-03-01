@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> should render Card with subs, without controls 1`] = `
+<div
+  className="nice-card brand"
+  style={
+    Object {
+      "float": "none",
+      "width": "300px",
+    }
+  }
+>
+  <div
+    className="nice-card-title"
+  >
+    <h3>
+      This is a card with subs
+    </h3>
+  </div>
+  <div
+    className="nice-card-content"
+    key="0/.0"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper nulla ac quam hendrerit pharetra.
+  </div>
+  <Sub
+    className="icon fa-reply"
+    key=".1"
+  >
+    In semper vel lectus sed finibus. Donec in erat risus. Aenean in lectus massa. Phasellus id malesuada arcu, vel ultricies enim.
+  </Sub>
+  <Sub
+    className="icon fa-reply"
+    key=".2"
+  >
+    In semper vel lectus sed finibus. Donec in erat risus. Aenean in lectus massa. Phasellus id malesuada arcu, vel ultricies enim.
+  </Sub>
+</div>
+`;
+
+exports[`<Card /> should render default Card without subs 1`] = `
+<div
+  className="nice-card has-controls"
+  style={
+    Object {
+      "float": "none",
+      "width": "300px",
+    }
+  }
+>
+  <div
+    className="nice-card-title"
+  >
+    <h3>
+      This is a card
+    </h3>
+  </div>
+  <img
+    className="nice-card-image"
+    src="//placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97150&w=300&h=150"
+  />
+  <div
+    className="nice-card-content"
+    key="0/.0"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper nulla ac quam hendrerit pharetra.
+  </div>
+  <div
+    className="nice-card-controls"
+  >
+    <a
+      className="nice-card-control"
+      href="#"
+      key="0"
+      onClick={[Function]}
+    >
+      OK
+    </a>
+    <a
+      className="nice-card-control disabled"
+      href="#"
+      key="1"
+      onClick={[Function]}
+    >
+      Dismiss
+    </a>
+  </div>
+</div>
+`;
