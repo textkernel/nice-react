@@ -1,8 +1,15 @@
-import './Panel';
+import './Alert';
 import './Button';
 import './ButtonGroup';
+import './Breadcrumb';
+import './Code';
 import './Dropdown';
 import './Loading';
 import './LoginDialog';
+import './Menu';
+import './Modal';
+import './Pagination';
+import './Panel';
 import './ProductIcon';
 import './Progress';
+import './Scale';

@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Breadcrumb.Item /> should render Item as current Breadcrumb 1`] = `
+<li>
+  <a
+    className="current"
+    href="javascript:;"
+    onClick={[Function]}
+  >
+    Level 1
+  </a>
+</li>
+`;
+
+exports[`<Breadcrumb.Item /> should render Item with children 1`] = `
+<li>
+  <a
+    className=""
+    href="javascript:;"
+    onClick={[Function]}
+  >
+    Level 2
+  </a>
+  <ul>
+     
+    <Item
+      current={false}
+      icon={null}
+      onClick={[Function]}
+      text="Some child node 1"
+      value={null}
+    />
+    <Item
+      current={false}
+      icon={null}
+      onClick={[Function]}
+      text="Some child node 2"
+      value={null}
+    />
+     
+  </ul>
+</li>
+`;
+
+exports[`<Breadcrumb.Item /> should render Item with icon 1`] = `
+<li>
+  <a
+    className="icon fa-star"
+    href="javascript:;"
+    onClick={[Function]}
+  >
+    Level 1
+  </a>
+</li>
+`;
+
+exports[`<Breadcrumb.Item /> should render clickable Item 1`] = `
+<li>
+  <a
+    className=""
+    href="javascript:;"
+    onClick={[Function]}
+  >
+    Level 1
+  </a>
+</li>
+`;

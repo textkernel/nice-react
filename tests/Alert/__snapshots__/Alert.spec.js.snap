@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Alert /> should render Alert with heading 1`] = `
+<div
+  className="nice-alert warning"
+>
+  <div
+    className="nice-alert-heading"
+  >
+    Warning
+  </div>
+  <strong>
+    Heads up
+  </strong>
+   This is a warning
+</div>
+`;
+
+exports[`<Alert /> should render Alert with icon button 1`] = `
+<div
+  className="nice-alert bad"
+>
+  <strong>
+    Uh oh...
+  </strong>
+   Something is wrong
+  <a
+    className="nice-alert-dismiss"
+    href="#"
+    onClick={[Function]}
+  >
+    <i
+      className="icon fa-angle-down"
+    />
+  </a>
+</div>
+`;
+
+exports[`<Alert /> should render Alert with large button 1`] = `
+<div
+  className="nice-alert good"
+>
+  <div
+    className="nice-alert-wrapper"
+  >
+    <div
+      className="nice-alert-content"
+    >
+      <strong>
+        Great success
+      </strong>
+       All good!
+    </div>
+    <a
+      className="nice-alert-button"
+      href="#"
+      onClick={[Function]}
+    >
+      Dismiss
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<Alert /> should render the default Alert 1`] = `
+<div
+  className="nice-alert info"
+>
+  <strong>
+    Hey you!
+  </strong>
+   Here is some information
+</div>
+`;

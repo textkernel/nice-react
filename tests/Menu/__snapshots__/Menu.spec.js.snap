@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> should render default (horizontal) Menu 1`] = `
+<ul
+  className="nice-menu"
+>
+  <Item
+    className="icon fa-home"
+    current={true}
+    disabled={false}
+    href="#"
+    label="Home"
+    onClick={[Function]}
+    target={null}
+  />
+  <Item
+    className="icon fa-map-pin"
+    current={false}
+    disabled={false}
+    href="#"
+    label="Cities"
+    onClick={[Function]}
+    target={null}
+  />
+  <Item
+    className={null}
+    current={false}
+    disabled={false}
+    href="#"
+    label="Regions"
+    onClick={[Function]}
+    target={null}
+  />
+  <Item
+    className="icon fa-globe"
+    current={false}
+    disabled={true}
+    href="#"
+    label="Countries"
+    onClick={[Function]}
+    target={null}
+  />
+</ul>
+`;
+
+exports[`<Menu /> should render stacked / narrow menu 1`] = `
+<ul
+  className="nice-menu has-icons narrow stacked"
+>
+  <Item
+    className="icon fa-home"
+    current={true}
+    disabled={false}
+    href="#"
+    label="Home"
+    onClick={[Function]}
+    target={null}
+  />
+  <Item
+    className="icon fa-map-pin"
+    current={false}
+    disabled={false}
+    href="#"
+    label="Cities"
+    onClick={[Function]}
+    target={null}
+  >
+    <Item
+      className={null}
+      current={false}
+      disabled={false}
+      href="#"
+      label="Amsterdam"
+      onClick={[Function]}
+      target={null}
+    />
+    <Item
+      className={null}
+      current={false}
+      disabled={false}
+      href="#"
+      label="Paris"
+      onClick={[Function]}
+      target={null}
+    />
+    <Item
+      className={null}
+      current={false}
+      disabled={true}
+      href="#"
+      label="Berlin"
+      onClick={[Function]}
+      target={null}
+    />
+    <Item
+      className={null}
+      current={false}
+      disabled={false}
+      href="#"
+      label="Rome"
+      onClick={[Function]}
+      target={null}
+    />
+    <Item
+      className={null}
+      current={false}
+      disabled={false}
+      href="#"
+      label="Madrid"
+      onClick={[Function]}
+      target={null}
+    />
+  </Item>
+  <Item
+    className={null}
+    current={false}
+    disabled={false}
+    href="#"
+    label="Regions"
+    onClick={[Function]}
+    target={null}
+  />
+  <Item
+    className="icon fa-globe"
+    current={false}
+    disabled={true}
+    href="#"
+    label="Countries"
+    onClick={[Function]}
+    target={null}
+  />
+</ul>
+`;

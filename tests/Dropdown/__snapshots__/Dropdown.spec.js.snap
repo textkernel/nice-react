@@ -7,8 +7,12 @@ exports[`<Dropdown /> should render Dropdown with different context and alignmen
   onMouseOver={[Function]}
 >
   <Button
+    alternative={false}
     context="primary"
+    href={null}
+    icon={null}
     onClick={[Function]}
+    pullRight={false}
     size="medium"
   >
     Primary
@@ -64,8 +68,12 @@ exports[`<Dropdown /> should render a simple Dropdown 1`] = `
   onMouseOver={[Function]}
 >
   <Button
+    alternative={false}
     context="primary"
+    href={null}
+    icon={null}
     onClick={[Function]}
+    pullRight={false}
     size="medium"
   >
     Nice dropdown
@@ -150,8 +158,12 @@ exports[`<Dropdown /> should render with multiple selection 1`] = `
   onMouseOver={[Function]}
 >
   <Button
+    alternative={false}
     context="primary"
+    href={null}
+    icon={null}
     onClick={[Function]}
+    pullRight={false}
     size="medium"
   >
     Multiselect
@@ -213,8 +225,12 @@ exports[`<Dropdown /> should render with radios 1`] = `
   onMouseOver={[Function]}
 >
   <Button
+    alternative={false}
     context="primary"
+    href={null}
+    icon={null}
     onClick={[Function]}
+    pullRight={false}
     size="medium"
   >
     Multiselect
