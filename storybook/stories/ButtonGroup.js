@@ -10,24 +10,40 @@ const stories = storiesOf('ButtonGroup', module);
 stories.addDecorator((story, context) => withInfo('')(story)(context));
 stories.addDecorator(withKnobs);
 
-stories.add('Single Button', () => (
-  <ButtonGroup>
-    <Button onClick={() => alert('Single')}>Single</Button>
-  </ButtonGroup>
+const onClick = e => {
+    alert('Click');
+};
+
+stories.add('Default', () => (
+    <ButtonGroup>
+        <Button onClick={ onClick }>
+            Button 1
+        </Button>
+        <Button onClick={ onClick }>
+            Button 2
+        </Button>
+    </ButtonGroup>
 ));
 
 stories.add('Justified', () => (
-  <ButtonGroup position="justified">
-    <Button>Some</Button>
-    <Button>Justified</Button>
-    <Button>Buttons</Button>
-  </ButtonGroup>
+    <ButtonGroup justified>
+        <Button href="#">Some</Button>
+        <Button href="#">Justified</Button>
+        <Button href="#">Buttons</Button>
+    </ButtonGroup>
 ));
 
 stories.add('Stacked', () => (
-  <ButtonGroup position="stacked">
-    <Button>Some</Button>
-    <Button>Stacked</Button>
-    <Button>Buttons</Button>
-  </ButtonGroup>
+    <ButtonGroup stacked>
+        <Button>Some</Button>
+        <Button>Stacked</Button>
+        <Button>Buttons</Button>
+    </ButtonGroup>
+));
+
+stories.add('Small', () => (
+    <ButtonGroup size="small">
+        <Button>Small</Button>
+        <Button>Buttons</Button>
+    </ButtonGroup>
 ));

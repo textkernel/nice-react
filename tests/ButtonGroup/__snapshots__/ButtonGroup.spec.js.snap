@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonGroup /> should render a justified ButtonGroup 1`] = `
+<div
+  className="nice-btn-group justified"
+>
+  <Button
+    alternative={false}
+    context="default"
+    href="#"
+    icon={null}
+    onClick={null}
+    pullRight={false}
+    size="medium"
+  >
+    Some
+  </Button>
+  <Button
+    alternative={false}
+    context="default"
+    href="#"
+    icon={null}
+    onClick={null}
+    pullRight={false}
+    size="medium"
+  >
+    Justified
+  </Button>
+  <Button
+    alternative={false}
+    context="default"
+    href="#"
+    icon={null}
+    onClick={null}
+    pullRight={false}
+    size="medium"
+  >
+    Buttons
+  </Button>
+</div>
+`;
+
+exports[`<ButtonGroup /> should render a small ButtonGroup 1`] = `
+<div
+  className="nice-btn-group"
+>
+  <Button
+    alternative={false}
+    context="default"
+    href={null}
+    icon={null}
+    onClick={null}
+    pullRight={false}
+    size="medium"
+  >
+    Some
+  </Button>
+  <Button
+    alternative={false}
+    context="default"
+    href={null}
+    icon={null}
+    onClick={null}
+    pullRight={false}
+    size="medium"
+  >
+    Stacked
+  </Button>
+  <Button
+    alternative={false}
+    context="default"
+    href={null}
+    icon={null}
+    onClick={null}
+    pullRight={false}
+    size="medium"
+  >
+    Buttons
+  </Button>
+</div>
+`;
+
+exports[`<ButtonGroup /> should render a stacked ButtonGroup 1`] = `
+<div
+  className="nice-btn-group stacked"
+>
+  <Button
+    alternative={false}
+    context="default"
+    href={null}
+    icon={null}
+    onClick={null}
+    pullRight={false}
+    size="medium"
+  >
+    Some
+  </Button>
+  <Button
+    alternative={false}
+    context="default"
+    href={null}
+    icon={null}
+    onClick={null}
+    pullRight={false}
+    size="medium"
+  >
+    Stacked
+  </Button>
+  <Button
+    alternative={false}
+    context="default"
+    href={null}
+    icon={null}
+    onClick={null}
+    pullRight={false}
+    size="medium"
+  >
+    Buttons
+  </Button>
+</div>
+`;
+
+exports[`<ButtonGroup /> should render the Buttons inside ButtonGroup 1`] = `
+<div
+  className="nice-btn-group"
+>
+  <Button
+    alternative={false}
+    context="default"
+    href={null}
+    icon={null}
+    onClick={null}
+    pullRight={false}
+    size="medium"
+  >
+    Button 1
+  </Button>
+  <Button
+    alternative={false}
+    context="default"
+    href={null}
+    icon={null}
+    onClick={null}
+    pullRight={false}
+    size="medium"
+  >
+    Button 2
+  </Button>
+</div>
+`;
