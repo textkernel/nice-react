@@ -13,3 +13,4 @@ import './Panel';
 import './ProductIcon';
 import './Progress';
 import './Scale';
+import './Tabs';
