@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header.Menu.Item /> should render default header menu Item 1`] = `
+<li
+  className="highlight primary fixed-width w125"
+>
+  <a
+    className={null}
+    href="http://textkernel.com"
+    onClick={[Function]}
+    target={null}
+  >
+    Menu 1
+  </a>
+  <ul>
+    <Item
+      className={null}
+      context={null}
+      href="#"
+      key=".0"
+      label="Item 1"
+      level={1}
+      onClick={null}
+      target={null}
+      width={null}
+    />
+    <Item
+      className={null}
+      context={null}
+      href="#"
+      key=".1"
+      label="Item 2"
+      level={1}
+      onClick={null}
+      target={null}
+      width={null}
+    />
+    <Item
+      className={null}
+      context={null}
+      href="#"
+      key=".2"
+      label="Item 3"
+      level={1}
+      onClick={null}
+      target={null}
+      width={null}
+    />
+  </ul>
+</li>
+`;

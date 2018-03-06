@@ -1,0 +1,342 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render default Header 1`] = `
+<header
+  className="nice-header fixed"
+>
+  <div
+    className="nice-header-container fluid"
+  >
+    <h1
+      className="nice-header-brand"
+    >
+      <a
+        href="/"
+        title="Nice! React Components"
+      >
+        <svg
+          height={30}
+          width={170}
+        >
+          <image
+            height={30}
+            src="//nice.textkernel.nl/assets/textkernel@2x.png"
+            width={170}
+            xlinkHref="//nice.textkernel.nl/assets/textkernel.svg"
+          />
+        </svg>
+      </a>
+    </h1>
+    <div
+      className="nice-header-collapse"
+    >
+      <span
+        className="nice-header-product"
+      >
+        Nice! React Components
+      </span>
+      <form
+        className="nice-header-form"
+        onSubmit={[Function]}
+      >
+        <div
+          className="nice-header-input-wrapper"
+        >
+          <input
+            className="nice-form-control"
+            placeholder="Search..."
+            type="text"
+          />
+          <button
+            type="submit"
+          >
+            <i
+              className="fa fa-search"
+            />
+          </button>
+        </div>
+      </form>
+      <Menu
+        alternate={false}
+        level={0}
+      >
+        <Item
+          className={null}
+          context="primary"
+          href="#"
+          label="Menu 1"
+          level={0}
+          onClick={null}
+          target={null}
+          width="125"
+        >
+          <Item
+            className={null}
+            context={null}
+            href="#"
+            label="Item 1"
+            level={0}
+            onClick={null}
+            target={null}
+            width={null}
+          />
+          <Item
+            className={null}
+            context={null}
+            href="#"
+            label="Item 2"
+            level={0}
+            onClick={null}
+            target={null}
+            width={null}
+          />
+          <Item
+            className={null}
+            context={null}
+            href="#"
+            label="Item 3"
+            level={0}
+            onClick={null}
+            target={null}
+            width={null}
+          >
+            <Item
+              className={null}
+              context={null}
+              href="#"
+              label="Item 3.1"
+              level={0}
+              onClick={null}
+              target={null}
+              width={null}
+            />
+            <Item
+              className={null}
+              context={null}
+              href="#"
+              label="Item 3.2"
+              level={0}
+              onClick={null}
+              target={null}
+              width={null}
+            />
+            <Item
+              className={null}
+              context={null}
+              href="#"
+              label="Item 3.3"
+              level={0}
+              onClick={null}
+              target={null}
+              width={null}
+            />
+            <Item
+              className={null}
+              context={null}
+              href="#"
+              label="Item 3.4"
+              level={0}
+              onClick={null}
+              target={null}
+              width={null}
+            />
+          </Item>
+          <Item
+            className={null}
+            context={null}
+            href="#"
+            label="Item 4"
+            level={0}
+            onClick={null}
+            target={null}
+            width={null}
+          />
+        </Item>
+        <Item
+          className={null}
+          context="good"
+          href="#"
+          label="Menu 2"
+          level={0}
+          onClick={null}
+          target={null}
+          width="125"
+        >
+          <Item
+            className={null}
+            context={null}
+            href="#"
+            label="Item 1"
+            level={0}
+            onClick={null}
+            target={null}
+            width={null}
+          />
+          <Item
+            className={null}
+            context={null}
+            href="#"
+            label="Item 2"
+            level={0}
+            onClick={null}
+            target={null}
+            width={null}
+          />
+          <Item
+            className={null}
+            context={null}
+            href="#"
+            label="Item 3"
+            level={0}
+            onClick={null}
+            target={null}
+            width={null}
+          >
+            <Item
+              className={null}
+              context={null}
+              href="#"
+              label="Item 3.1"
+              level={0}
+              onClick={null}
+              target={null}
+              width={null}
+            />
+            <Item
+              className={null}
+              context={null}
+              href="#"
+              label="Item 3.2"
+              level={0}
+              onClick={null}
+              target={null}
+              width={null}
+            />
+            <Item
+              className={null}
+              context={null}
+              href="#"
+              label="Item 3.3"
+              level={0}
+              onClick={null}
+              target={null}
+              width={null}
+            />
+            <Item
+              className={null}
+              context={null}
+              href="#"
+              label="Item 3.4"
+              level={0}
+              onClick={null}
+              target={null}
+              width={null}
+            />
+          </Item>
+          <Item
+            className={null}
+            context={null}
+            href="#"
+            label="Item 4"
+            level={0}
+            onClick={null}
+            target={null}
+            width={null}
+          />
+        </Item>
+        <Item
+          className="product-icon textkernel"
+          context="brand"
+          href="https://textkernel.com"
+          label="Textkernel"
+          level={0}
+          onClick={null}
+          target="_blank"
+          width="125"
+        />
+      </Menu>
+      <Menu
+        alternate={true}
+        level={0}
+      >
+        <Item
+          className={null}
+          context={null}
+          href="#"
+          label="Alternate 1"
+          level={0}
+          onClick={null}
+          target={null}
+          width={null}
+        >
+          <Item
+            className={null}
+            context={null}
+            href="#"
+            label="Item 1"
+            level={0}
+            onClick={null}
+            target={null}
+            width={null}
+          />
+          <Item
+            className={null}
+            context={null}
+            href="#"
+            label="Item 2"
+            level={0}
+            onClick={null}
+            target={null}
+            width={null}
+          />
+        </Item>
+        <Item
+          className={null}
+          context={null}
+          href="#"
+          label="Alternate 2"
+          level={0}
+          onClick={null}
+          target={null}
+          width={null}
+        >
+          <Item
+            className={null}
+            context={null}
+            href="#"
+            label="Item 1"
+            level={0}
+            onClick={null}
+            target={null}
+            width={null}
+          />
+          <Item
+            className={null}
+            context={null}
+            href="#"
+            label="Item 2"
+            level={0}
+            onClick={null}
+            target={null}
+            width={null}
+          />
+        </Item>
+      </Menu>
+    </div>
+    <button
+      className="nice-header-toggle collapsed"
+      type="button"
+    >
+      <span
+        className="icon-bar top-bar"
+      />
+      <span
+        className="icon-bar middle-bar"
+      />
+      <span
+        className="icon-bar bottom-bar"
+      />
+    </button>
+  </div>
+</header>
+`;

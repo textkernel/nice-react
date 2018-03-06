@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header.Menu /> should render alternate header menu group 1`] = `
+<ul
+  className="nice-header-menu menu-alt"
+>
+  <Item
+    className={null}
+    context={null}
+    href="#"
+    key=".0"
+    label="Item 1"
+    level={0}
+    onClick={null}
+    target={null}
+    width={null}
+  />
+  <Item
+    className={null}
+    context={null}
+    href="#"
+    key=".1"
+    label="Item 2"
+    level={0}
+    onClick={null}
+    target={null}
+    width={null}
+  />
+</ul>
+`;
+
+exports[`<Header.Menu /> should render default header menu group 1`] = `
+<ul
+  className="nice-header-menu"
+>
+  <Item
+    className={null}
+    context={null}
+    href="#"
+    key=".0"
+    label="Item 1"
+    level={0}
+    onClick={null}
+    target={null}
+    width={null}
+  />
+  <Item
+    className={null}
+    context={null}
+    href="#"
+    key=".1"
+    label="Item 2"
+    level={0}
+    onClick={null}
+    target={null}
+    width={null}
+  />
+</ul>
+`;
