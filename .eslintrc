@@ -9,34 +9,34 @@
         "jest": true
     },
     "rules": {
-        "indent": ["error", 4, {"SwitchCase": 1}],                
-        "no-trailing-spaces": "off",
-        "jsx-quotes": ["error", "prefer-double"],
-        "react/jsx-first-prop-new-line": "off",
+        "arrow-parens": "off",
+        "class-methods-use-this": "off",
+        "comma-dangle": "off",
+        "eol-last": "off",
+        "func-call-spacing": "off",
+        "import/prefer-default-export": "off",
+        "indent": ["error", 4, {"SwitchCase": 1}],
         "jsx-a11y/href-no-hash": "off",
         "jsx-a11y/label-has-for": "off",
+        "jsx-quotes": ["error", "prefer-double"],
+        "no-console": "off",
+        "no-trailing-spaces": "off",
+        "react/forbid-prop-types": "off",
+        "react/jsx-closing-bracket-location": "off",
+        "react/jsx-curly-spacing": "off",
         "react/jsx-filename-extension": "off",
-        "react/jsx-max-props-per-line": "off",
-        "eol-last": "off",
-        "comma-dangle": "off",
-        "import/prefer-default-export": "off",
+        "react/jsx-first-prop-new-line": "off",
         "react/jsx-indent": "off",
         "react/jsx-indent-props": "off",
-        "react/jsx-curly-spacing": "off",
-        "react/jsx-closing-bracket-location": "off",
+        "react/jsx-max-props-per-line": "off",
         "react/jsx-wrap-multilines": "off",
-        "react/forbid-prop-types": "off",
         "react/no-array-index-key": "off",
-        "template-curly-spacing": "off",
-        "no-console": "off",
-        "arrow-parens": "off",
-        "func-call-spacing": "off",
-        "class-methods-use-this": "off"
+        "template-curly-spacing": "off"
     },
     "globals": {
         "document": true,
-        "shallow": true,
-        "mount": true
+        "mount": true,
+        "shallow": true
     },
     "settings": {
         "import/resolver": {
