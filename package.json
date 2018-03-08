@@ -22,6 +22,9 @@
             "enzyme-to-json/serializer"
         ]
     },
+    "browserify": {
+        "transform": ["babelify"]
+    },
     "dependencies": {
         "@textkernel/nice": "^2.0.0",
         "prop-types": "^15.5.10"
