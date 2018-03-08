@@ -30,7 +30,8 @@
         "template-curly-spacing": "off",
         "no-console": "off",
         "arrow-parens": "off",
-        "func-call-spacing": "off"
+        "func-call-spacing": "off",
+        "class-methods-use-this": "off"
     },
     "globals": {
         "document": true,
