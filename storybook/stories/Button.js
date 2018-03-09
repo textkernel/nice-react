@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, select, text } from '@storybook/addon-knobs';
+import { withKnobs, boolean, select, text } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 
@@ -35,8 +35,9 @@ stories.add('Custom properties', () => {
     const size = select('Size', sizes, sizes[1]);
     const icon = text('Icon', '');
     const href = text('Href (will turn it into an a-tag', '');
+    const submit = !href && boolean('Submit-type', false);
 
-    return (<Button context={ context } size={ size } icon={ icon } href={ href }>
+    return (<Button context={ context } size={ size } icon={ icon } href={ href } submit={ submit }>
         I'm a button
     </Button>);
 });
