@@ -37,7 +37,7 @@ exports[`<Scale /> <Scale.Item /> should render as controlled component 1`] = `
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Nice to have
             </span>
@@ -92,7 +92,7 @@ exports[`<Scale /> <Scale.Item /> should render as controlled component 1`] = `
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Must have
             </span>
@@ -141,7 +141,7 @@ exports[`<Scale /> <Scale.Item /> should render with all labels 1`] = `
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Nice to have
             </span>
@@ -171,7 +171,7 @@ exports[`<Scale /> <Scale.Item /> should render with all labels 1`] = `
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Good to have
             </span>
@@ -201,7 +201,7 @@ exports[`<Scale /> <Scale.Item /> should render with all labels 1`] = `
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Must have
             </span>
@@ -354,7 +354,7 @@ exports[`<Scale /> <Scale.Item /> should render with custom classes over outermo
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Nice to have
             </span>
@@ -409,7 +409,7 @@ exports[`<Scale /> <Scale.Item /> should render with custom classes over outermo
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Must have
             </span>
@@ -458,7 +458,7 @@ exports[`<Scale /> <Scale.Item /> should render without one label 1`] = `
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Nice to have
             </span>
@@ -513,7 +513,7 @@ exports[`<Scale /> <Scale.Item /> should render without one label 1`] = `
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Must have
             </span>
@@ -562,7 +562,7 @@ exports[`<Scale /> <Scale.Item /> should render without tick labels 1`] = `
             />
             <span />
             <span
-              className=" "
+              className=""
             >
               Nice to have
             </span>
@@ -617,7 +617,7 @@ exports[`<Scale /> <Scale.Item /> should render without tick labels 1`] = `
             />
             <span />
             <span
-              className=" "
+              className=""
             >
               Must have
             </span>
