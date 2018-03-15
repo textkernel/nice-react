@@ -41,7 +41,9 @@ stories.add('Default', () => {
             width: '300px'
         }}
     >
-        <span>{ content }</span>
+        <Card.Content>
+            { content }
+        </Card.Content>
         {
             Array(subs).fill(0).map((v, k) => (
                 <Card.Sub className="icon fa-reply" key={ k }>
