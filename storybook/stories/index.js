@@ -4,6 +4,7 @@ import './ButtonGroup';
 import './Breadcrumb';
 import './Code';
 import './Dropdown';
+import './Footer';
 import './Header';
 import './Loading';
 import './Menu';
