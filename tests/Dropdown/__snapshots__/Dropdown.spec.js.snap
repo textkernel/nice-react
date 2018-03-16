@@ -14,6 +14,7 @@ exports[`<Dropdown /> should render Dropdown with different context and alignmen
     onClick={[Function]}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Primary
      
@@ -75,6 +76,7 @@ exports[`<Dropdown /> should render a simple Dropdown 1`] = `
     onClick={[Function]}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Nice dropdown
      
@@ -165,6 +167,7 @@ exports[`<Dropdown /> should render with multiple selection 1`] = `
     onClick={[Function]}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Multiselect
      
@@ -232,6 +235,7 @@ exports[`<Dropdown /> should render with radios 1`] = `
     onClick={[Function]}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Multiselect
      

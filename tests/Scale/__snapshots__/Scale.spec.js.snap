@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ScaleGroup /> <ScaleItem /> should render as controlled component 1`] = `
-<ScaleGroup
+exports[`<Scale /> <Scale.Item /> should render as controlled component 1`] = `
+<Scale
   className=""
   name="my-radio-name"
   onChange={[Function]}
@@ -14,7 +14,7 @@ exports[`<ScaleGroup /> <ScaleItem /> should render as controlled component 1`] 
     <ol
       className="nice-scale-selection"
     >
-      <ScaleItem
+      <Item
         checked={false}
         className=""
         key=".0"
@@ -37,14 +37,14 @@ exports[`<ScaleGroup /> <ScaleItem /> should render as controlled component 1`] 
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Nice to have
             </span>
           </label>
         </li>
-      </ScaleItem>
-      <ScaleItem
+      </Item>
+      <Item
         checked={false}
         className=""
         key=".1"
@@ -68,8 +68,8 @@ exports[`<ScaleGroup /> <ScaleItem /> should render as controlled component 1`] 
             <span />
           </label>
         </li>
-      </ScaleItem>
-      <ScaleItem
+      </Item>
+      <Item
         checked={true}
         className=""
         key=".2"
@@ -92,20 +92,20 @@ exports[`<ScaleGroup /> <ScaleItem /> should render as controlled component 1`] 
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Must have
             </span>
           </label>
         </li>
-      </ScaleItem>
+      </Item>
     </ol>
   </div>
-</ScaleGroup>
+</Scale>
 `;
 
-exports[`<ScaleGroup /> <ScaleItem /> should render with all labels 1`] = `
-<ScaleGroup
+exports[`<Scale /> <Scale.Item /> should render with all labels 1`] = `
+<Scale
   className=""
   name="my-radio-name"
   onChange={[Function]}
@@ -118,7 +118,7 @@ exports[`<ScaleGroup /> <ScaleItem /> should render with all labels 1`] = `
     <ol
       className="nice-scale-selection"
     >
-      <ScaleItem
+      <Item
         checked={false}
         className=""
         key=".0"
@@ -141,14 +141,14 @@ exports[`<ScaleGroup /> <ScaleItem /> should render with all labels 1`] = `
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Nice to have
             </span>
           </label>
         </li>
-      </ScaleItem>
-      <ScaleItem
+      </Item>
+      <Item
         checked={false}
         className=""
         key=".1"
@@ -171,14 +171,14 @@ exports[`<ScaleGroup /> <ScaleItem /> should render with all labels 1`] = `
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Good to have
             </span>
           </label>
         </li>
-      </ScaleItem>
-      <ScaleItem
+      </Item>
+      <Item
         checked={false}
         className=""
         key=".2"
@@ -201,20 +201,20 @@ exports[`<ScaleGroup /> <ScaleItem /> should render with all labels 1`] = `
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Must have
             </span>
           </label>
         </li>
-      </ScaleItem>
+      </Item>
     </ol>
   </div>
-</ScaleGroup>
+</Scale>
 `;
 
-exports[`<ScaleGroup /> <ScaleItem /> should render with custom classes over items 1`] = `
-<ScaleGroup
+exports[`<Scale /> <Scale.Item /> should render with custom classes over items 1`] = `
+<Scale
   className=""
   name="projectid-radios"
   onChange={[Function]}
@@ -227,7 +227,7 @@ exports[`<ScaleGroup /> <ScaleItem /> should render with custom classes over ite
     <ol
       className="nice-scale-selection"
     >
-      <ScaleItem
+      <Item
         checked={false}
         className="text-bold"
         key=".0"
@@ -256,8 +256,8 @@ exports[`<ScaleGroup /> <ScaleItem /> should render with custom classes over ite
             </span>
           </label>
         </li>
-      </ScaleItem>
-      <ScaleItem
+      </Item>
+      <Item
         checked={false}
         className="text-bold text-italic"
         key=".1"
@@ -281,8 +281,8 @@ exports[`<ScaleGroup /> <ScaleItem /> should render with custom classes over ite
             <span />
           </label>
         </li>
-      </ScaleItem>
-      <ScaleItem
+      </Item>
+      <Item
         checked={false}
         className="text-uppercase text-brand"
         key=".2"
@@ -311,14 +311,14 @@ exports[`<ScaleGroup /> <ScaleItem /> should render with custom classes over ite
             </span>
           </label>
         </li>
-      </ScaleItem>
+      </Item>
     </ol>
   </div>
-</ScaleGroup>
+</Scale>
 `;
 
-exports[`<ScaleGroup /> <ScaleItem /> should render with custom classes over outermost element 1`] = `
-<ScaleGroup
+exports[`<Scale /> <Scale.Item /> should render with custom classes over outermost element 1`] = `
+<Scale
   className="nice-bg-info"
   name="projectid-radios"
   onChange={[Function]}
@@ -331,7 +331,7 @@ exports[`<ScaleGroup /> <ScaleItem /> should render with custom classes over out
     <ol
       className="nice-scale-selection"
     >
-      <ScaleItem
+      <Item
         checked={false}
         className=""
         key=".0"
@@ -354,14 +354,14 @@ exports[`<ScaleGroup /> <ScaleItem /> should render with custom classes over out
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Nice to have
             </span>
           </label>
         </li>
-      </ScaleItem>
-      <ScaleItem
+      </Item>
+      <Item
         checked={false}
         className=""
         key=".1"
@@ -385,8 +385,8 @@ exports[`<ScaleGroup /> <ScaleItem /> should render with custom classes over out
             <span />
           </label>
         </li>
-      </ScaleItem>
-      <ScaleItem
+      </Item>
+      <Item
         checked={false}
         className=""
         key=".2"
@@ -409,20 +409,20 @@ exports[`<ScaleGroup /> <ScaleItem /> should render with custom classes over out
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Must have
             </span>
           </label>
         </li>
-      </ScaleItem>
+      </Item>
     </ol>
   </div>
-</ScaleGroup>
+</Scale>
 `;
 
-exports[`<ScaleGroup /> <ScaleItem /> should render without one label 1`] = `
-<ScaleGroup
+exports[`<Scale /> <Scale.Item /> should render without one label 1`] = `
+<Scale
   className=""
   name="my-radio-name"
   onChange={[Function]}
@@ -435,7 +435,7 @@ exports[`<ScaleGroup /> <ScaleItem /> should render without one label 1`] = `
     <ol
       className="nice-scale-selection"
     >
-      <ScaleItem
+      <Item
         checked={false}
         className=""
         key=".0"
@@ -458,14 +458,14 @@ exports[`<ScaleGroup /> <ScaleItem /> should render without one label 1`] = `
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Nice to have
             </span>
           </label>
         </li>
-      </ScaleItem>
-      <ScaleItem
+      </Item>
+      <Item
         checked={false}
         className=""
         key=".1"
@@ -489,8 +489,8 @@ exports[`<ScaleGroup /> <ScaleItem /> should render without one label 1`] = `
             <span />
           </label>
         </li>
-      </ScaleItem>
-      <ScaleItem
+      </Item>
+      <Item
         checked={false}
         className=""
         key=".2"
@@ -513,20 +513,20 @@ exports[`<ScaleGroup /> <ScaleItem /> should render without one label 1`] = `
             />
             <span />
             <span
-              className=" nice-scale-label"
+              className="nice-scale-label"
             >
               Must have
             </span>
           </label>
         </li>
-      </ScaleItem>
+      </Item>
     </ol>
   </div>
-</ScaleGroup>
+</Scale>
 `;
 
-exports[`<ScaleGroup /> <ScaleItem /> should render without tick labels 1`] = `
-<ScaleGroup
+exports[`<Scale /> <Scale.Item /> should render without tick labels 1`] = `
+<Scale
   className=""
   name="my-radio-name"
   onChange={[Function]}
@@ -539,7 +539,7 @@ exports[`<ScaleGroup /> <ScaleItem /> should render without tick labels 1`] = `
     <ol
       className="nice-scale-selection"
     >
-      <ScaleItem
+      <Item
         checked={false}
         className=""
         key=".0"
@@ -562,14 +562,14 @@ exports[`<ScaleGroup /> <ScaleItem /> should render without tick labels 1`] = `
             />
             <span />
             <span
-              className=" "
+              className=""
             >
               Nice to have
             </span>
           </label>
         </li>
-      </ScaleItem>
-      <ScaleItem
+      </Item>
+      <Item
         checked={false}
         className=""
         key=".1"
@@ -593,8 +593,8 @@ exports[`<ScaleGroup /> <ScaleItem /> should render without tick labels 1`] = `
             <span />
           </label>
         </li>
-      </ScaleItem>
-      <ScaleItem
+      </Item>
+      <Item
         checked={false}
         className=""
         key=".2"
@@ -617,14 +617,14 @@ exports[`<ScaleGroup /> <ScaleItem /> should render without tick labels 1`] = `
             />
             <span />
             <span
-              className=" "
+              className=""
             >
               Must have
             </span>
           </label>
         </li>
-      </ScaleItem>
+      </Item>
     </ol>
   </div>
-</ScaleGroup>
+</Scale>
 `;

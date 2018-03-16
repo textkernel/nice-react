@@ -12,6 +12,7 @@ exports[`<ButtonGroup /> should render a justified ButtonGroup 1`] = `
     onClick={null}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Some
   </Button>
@@ -23,6 +24,7 @@ exports[`<ButtonGroup /> should render a justified ButtonGroup 1`] = `
     onClick={null}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Justified
   </Button>
@@ -34,6 +36,7 @@ exports[`<ButtonGroup /> should render a justified ButtonGroup 1`] = `
     onClick={null}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Buttons
   </Button>
@@ -52,6 +55,7 @@ exports[`<ButtonGroup /> should render a small ButtonGroup 1`] = `
     onClick={null}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Some
   </Button>
@@ -63,6 +67,7 @@ exports[`<ButtonGroup /> should render a small ButtonGroup 1`] = `
     onClick={null}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Stacked
   </Button>
@@ -74,6 +79,7 @@ exports[`<ButtonGroup /> should render a small ButtonGroup 1`] = `
     onClick={null}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Buttons
   </Button>
@@ -92,6 +98,7 @@ exports[`<ButtonGroup /> should render a stacked ButtonGroup 1`] = `
     onClick={null}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Some
   </Button>
@@ -103,6 +110,7 @@ exports[`<ButtonGroup /> should render a stacked ButtonGroup 1`] = `
     onClick={null}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Stacked
   </Button>
@@ -114,6 +122,7 @@ exports[`<ButtonGroup /> should render a stacked ButtonGroup 1`] = `
     onClick={null}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Buttons
   </Button>
@@ -132,6 +141,7 @@ exports[`<ButtonGroup /> should render the Buttons inside ButtonGroup 1`] = `
     onClick={null}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Button 1
   </Button>
@@ -143,6 +153,7 @@ exports[`<ButtonGroup /> should render the Buttons inside ButtonGroup 1`] = `
     onClick={null}
     pullRight={false}
     size="medium"
+    submit={false}
   >
     Button 2
   </Button>

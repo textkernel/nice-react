@@ -12,6 +12,7 @@ exports[`<Header /> should render default Header 1`] = `
     >
       <a
         href="/"
+        onClick={[Function]}
         title="Nice! React Components"
       >
         <svg
