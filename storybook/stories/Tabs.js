@@ -15,11 +15,14 @@ stories.add('Simple tabs', () => {
             <Tab badge="56" icon="fa-home" headerText="First">
                 <p>Tab number zero</p>
             </Tab>
-            <Tab headerText="Second Tab">
+            <Tab headerText="Second Tab" icon="fa-angle-down">
                 <p>Tab number two</p>
             </Tab>
-            <Tab headerText="Third Tab">
+            <Tab headerText="Third Tab" badge="4">
                 <p>Tab number three</p>
+            </Tab>
+            <Tab headerText="Fourth Tab">
+                <p>Tab number four</p>
             </Tab>
         </Tabs>
     );
