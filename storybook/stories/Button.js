@@ -32,12 +32,20 @@ stories.add('Alternative', () => (
 stories.add('Custom properties', () => {
     const { buttonContexts: contexts, buttonSizes: sizes } = props;
     const context = select('Context', contexts, contexts[0]);
+    const disabled = boolean('Disabled', false);
     const size = select('Size', sizes, sizes[1]);
     const icon = text('Icon', '');
     const href = text('Href (will turn it into an a-tag', '');
     const submit = !href && boolean('Submit-type', false);
 
-    return (<Button context={ context } size={ size } icon={ icon } href={ href } submit={ submit }>
+    return (<Button
+        context={ context }
+        disabled={ disabled }
+        size={ size }
+        icon={ icon }
+        href={ href }
+        submit={ submit }
+    >
         I'm a button
     </Button>);
 });
