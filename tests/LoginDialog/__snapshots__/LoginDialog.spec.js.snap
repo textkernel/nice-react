@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginDialog /> should render a default LoginDialog 1`] = `
+<div
+  className="nice-login"
+>
+  <div
+    className="nice-login-brand"
+  >
+    <span
+      className="text-brand"
+    >
+      textkernel
+    </span>
+  </div>
+  <div
+    className="nice-login-intro"
+  >
+    <div
+      className="nice-login-intro-logo"
+    >
+      <ProductIcon
+        className=""
+        product="textkernel"
+        style={null}
+      />
+    </div>
+    <div
+      className="nice-login-intro-content"
+    >
+      Welcome to Textkernel. Please log in using your credentials to access your account.
+    </div>
+    <div
+      className="nice-login-loading"
+    />
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="nice-form-group"
+    >
+      <label
+        htmlFor="nice-login-username"
+      >
+        Username
+      </label>
+      <input
+        className="nice-form-control"
+        id="nice-login-username"
+        placeholder="Username..."
+        type="email"
+      />
+    </div>
+    <div
+      className="nice-form-group"
+    >
+      <label
+        htmlFor="nice-login-account"
+      >
+        Account
+      </label>
+      <input
+        className="nice-form-control"
+        id="nice-login-account"
+        placeholder="Account name..."
+        type="text"
+      />
+    </div>
+    <div
+      className="nice-form-group"
+    >
+      <label
+        htmlFor="nice-login-password"
+      >
+        Password
+      </label>
+      <input
+        className="nice-form-control"
+        id="nice-login-password"
+        placeholder="Password..."
+        type="password"
+      />
+    </div>
+    <div
+      className="nice-form-group"
+    >
+      <input
+        className="nice-toggle"
+        id="login-remember"
+        type="checkbox"
+      />
+      <label
+        className="nice-toggle-btn off-muted"
+        htmlFor="login-remember"
+      >
+        Remember me on this device
+      </label>
+    </div>
+    <div
+      className="nice-form-group"
+    >
+      <Button
+        alternative={false}
+        className=""
+        context="link"
+        href={null}
+        icon={null}
+        onClick={null}
+        pullRight={false}
+        size="medium"
+        style={
+          Object {
+            "paddingLeft": 0,
+            "paddingRight": 0,
+          }
+        }
+        submit={true}
+      >
+        <i
+          className="icon fa-question"
+        />
+         Lost your credentials?
+      </Button>
+      <Button
+        alternative={false}
+        className="pull-right"
+        context="primary"
+        href={null}
+        icon={null}
+        onClick={null}
+        pullRight={false}
+        size="medium"
+        style={null}
+        submit={true}
+      >
+        Login
+      </Button>
+    </div>
+  </form>
+  <div
+    className="nice-login-version clearfix"
+  >
+    Nice v1.2.3
+    <span
+      className="text-brand pull-right"
+    >
+      by textkernel
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<LoginDialog /> should render a loading LoginDialog without attribution / version 1`] = `
+<div
+  className="nice-login"
+>
+  <div
+    className="nice-login-brand"
+  >
+    <span
+      className="text-brand"
+    >
+      textkernel
+    </span>
+  </div>
+  <div
+    className="nice-login-intro"
+  >
+    <div
+      className="nice-login-intro-logo"
+    >
+      <ProductIcon
+        className=""
+        product="textkernel"
+        style={null}
+      />
+    </div>
+    <div
+      className="nice-login-intro-content"
+    >
+      Welcome to Textkernel. Please log in using your credentials to access your account.
+    </div>
+    <div
+      className="nice-login-loading shown"
+    />
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="nice-form-group"
+    >
+      <label
+        htmlFor="nice-login-username"
+      >
+        Username
+      </label>
+      <input
+        className="nice-form-control"
+        id="nice-login-username"
+        placeholder="Username..."
+        type="email"
+      />
+    </div>
+    <div
+      className="nice-form-group"
+    >
+      <label
+        htmlFor="nice-login-account"
+      >
+        Account
+      </label>
+      <input
+        className="nice-form-control"
+        id="nice-login-account"
+        placeholder="Account name..."
+        type="text"
+      />
+    </div>
+    <div
+      className="nice-form-group"
+    >
+      <label
+        htmlFor="nice-login-password"
+      >
+        Password
+      </label>
+      <input
+        className="nice-form-control"
+        id="nice-login-password"
+        placeholder="Password..."
+        type="password"
+      />
+    </div>
+    <div
+      className="nice-form-group"
+    >
+      <input
+        className="nice-toggle"
+        id="login-remember"
+        type="checkbox"
+      />
+      <label
+        className="nice-toggle-btn off-muted"
+        htmlFor="login-remember"
+      >
+        Remember me on this device
+      </label>
+    </div>
+    <div
+      className="nice-form-group"
+    >
+      <Button
+        alternative={false}
+        className=""
+        context="link"
+        href={null}
+        icon={null}
+        onClick={null}
+        pullRight={false}
+        size="medium"
+        style={
+          Object {
+            "paddingLeft": 0,
+            "paddingRight": 0,
+          }
+        }
+        submit={true}
+      >
+        <i
+          className="icon fa-question"
+        />
+         Lost your credentials?
+      </Button>
+      <Button
+        alternative={false}
+        className="pull-right"
+        context="primary"
+        href={null}
+        icon={null}
+        onClick={null}
+        pullRight={false}
+        size="medium"
+        style={null}
+        submit={true}
+      >
+        Login
+      </Button>
+    </div>
+  </form>
+  <div
+    className="nice-login-version clearfix"
+  >
+    Nice v1.2.3
+  </div>
+</div>
+`;

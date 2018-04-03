@@ -8,6 +8,7 @@ import './Dropdown';
 import './Footer';
 import './Header';
 import './Loading';
+import './LoginDialog';
 import './Menu';
 import './Modal';
 import './Pagination';
