@@ -13,6 +13,7 @@ import './Menu';
 import './Modal';
 import './Pagination';
 import './Panel';
+import './Popover';
 import './ProductIcon';
 import './Progress';
 import './Scale';
