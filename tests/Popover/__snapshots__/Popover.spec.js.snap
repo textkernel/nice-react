@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Popover /> should render a Popover 1`] = `
+<div
+  className="nice-popover info bottom right"
+  style={null}
+>
+  <div
+    className="nice-popover-title"
+  >
+    This is a popover
+  </div>
+  <div
+    className="nice-popover-body"
+  >
+    <img
+      className="nice-popover-image"
+      src="//placeholdit.imgix.net/~text?txtsize=33&txt=Image&w=125&h=100"
+    />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat diam eget tortor facilisis, ut iaculis augue feugiat.
+  </div>
+  <div
+    className="nice-popover-controls"
+  >
+    <a
+      className="nice-popover-control text-bold"
+      href="#"
+      key="0"
+      onClick={[Function]}
+    >
+      OK
+    </a>
+  </div>
+</div>
+`;

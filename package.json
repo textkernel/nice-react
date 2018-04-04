@@ -3,7 +3,7 @@
     "author": "Nice! Circle",
     "version": "1.0.0",
     "description": "React Components for Nice!",
-    "main": "./lib/index.js",
+    "main": "./dist/nice-react.min.js",
     "license": "MIT",
     "scripts": {
         "start": "webpack-dev-server -d --progress --colors --hot --config config/webpack.config.dev.js",
@@ -22,8 +22,12 @@
             "enzyme-to-json/serializer"
         ]
     },
+    "browserify": {
+        "transform": ["babelify"]
+    },
     "dependencies": {
         "@textkernel/nice": "^2.0.0",
+        "classnames": "^2.2.5",
         "prop-types": "^15.5.10"
     },
     "peerDependencies": {
@@ -41,7 +45,6 @@
         "babel-preset-env": "^1.6.0",
         "babel-preset-react": "^6.24.1",
         "babel-preset-stage-2": "^6.24.1",
-        "classnames": "^2.2.5",
         "css-loader": "^0.28.7",
         "enzyme": "^3.1.1",
         "enzyme-adapter-react-16": "^1.0.4",

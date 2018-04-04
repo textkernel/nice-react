@@ -33,6 +33,27 @@ Several quick start options are available:
     </Alert>
     ```
 
+Some components have sub-components of their own. These are defined as class properties of the main 
+component, so no need to import them separately. For example, the `Pagination` component comes with
+`Item` and `Gap` which can be used like this:
+
+```js
+import Pagination from 'nice-react';
+
+<Pagination>
+    <Pagination.Item disabled>
+        &laquo; Previous
+    </Pagination.Item>
+    <Pagination.Item current>
+        1
+    </Pagination.Item>
+    <Pagination.Gap />
+    <Pagination.Item>
+        3
+    </Pagination.Item>
+</Pagination>
+```
+
 ## Examples & Testing
 
 ### Storybook

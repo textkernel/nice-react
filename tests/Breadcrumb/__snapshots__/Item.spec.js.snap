@@ -4,7 +4,7 @@ exports[`<Breadcrumb.Item /> should render Item as current Breadcrumb 1`] = `
 <li>
   <a
     className="current"
-    href="javascript:;"
+    href="#"
     onClick={[Function]}
   >
     Level 1
@@ -16,7 +16,7 @@ exports[`<Breadcrumb.Item /> should render Item with children 1`] = `
 <li>
   <a
     className=""
-    href="javascript:;"
+    href="#"
     onClick={[Function]}
   >
     Level 2
@@ -46,7 +46,7 @@ exports[`<Breadcrumb.Item /> should render Item with icon 1`] = `
 <li>
   <a
     className="icon fa-star"
-    href="javascript:;"
+    href="#"
     onClick={[Function]}
   >
     Level 1
@@ -58,7 +58,7 @@ exports[`<Breadcrumb.Item /> should render clickable Item 1`] = `
 <li>
   <a
     className=""
-    href="javascript:;"
+    href="#"
     onClick={[Function]}
   >
     Level 1
