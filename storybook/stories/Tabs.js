@@ -11,8 +11,8 @@ stories.addDecorator((story, context) => withInfo('')(story)(context));
 
 stories.add('Simple tabs', () => {
     return (
-        <Tabs>
-            <Tab badge="56" icon="fa-home" headerText="First">
+        <Tabs onChangeTab={(tabIndex) => alert(`Tab ${tabIndex} selected!`)}>
+            <Tab headerText="First" badge="56" icon="fa-home">
                 <p>Tab number zero</p>
             </Tab>
             <Tab headerText="Second Tab" icon="fa-angle-down">
