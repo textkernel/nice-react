@@ -24,7 +24,9 @@
         ]
     },
     "browserify": {
-        "transform": ["babelify"]
+        "transform": [
+            "babelify"
+        ]
     },
     "dependencies": {
         "@textkernel/nice": "^2.0.0",
