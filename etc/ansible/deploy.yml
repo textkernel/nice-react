@@ -1,0 +1,10 @@
+---
+- hosts: production
+  user: alex
+  vars:
+    username: alex
+    project_root: "../../../../.."
+    app_root: /srv/nice/nice-react
+    ansible_become_pass: powergenius13
+  roles:
+    - deploy

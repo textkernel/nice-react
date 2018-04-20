@@ -1,0 +1,24 @@
+---
+- name: Change ownership of /srv from root to alex
+  become: true
+  file:
+    path: /srv
+    owner: alex
+    group: alex
+    mode: 0755
+    recurse: yes
+
+- name: Copy source code files to remote
+  synchronize:
+    src: "{{ project_root }}"
+    dest: "{{ app_root }}"
+
+- name: Run docker compose down
+  command: docker-compose down --volumes
+  args:
+    chdir: "{{ app_root }}"
+
+- name: Run docker compose up
+  command: docker-compose up -d --build
+  args:
+    chdir: "{{ app_root }}"

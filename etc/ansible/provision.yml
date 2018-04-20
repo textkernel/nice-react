@@ -1,0 +1,15 @@
+---
+- hosts: production
+  user: root
+  vars:
+    username: alex
+    public_key: ~/.ssh/id_rsa.pub
+    password: $6$23Id.CjcUUs$IMYRSSynaV1NTzf9Km3vzVEFcz59uQALeENIU3Bm0jvr4Q/2VN1LOdAvldZ7vO01PgdwA6REiWaO1Lyb9cYqR/
+    ntp_timezone: Europe/Amsterdam
+    docker_compose_version: 1.18.0
+  roles:
+    - common
+    - ufw
+    - user
+    - ssh
+    - docker

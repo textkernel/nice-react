@@ -1,0 +1,35 @@
+---
+- name: Install ufw
+  apt:
+    name: nginx
+    state: present
+    update_cache: yes
+
+- name: Enable firewall
+  ufw:
+    state: enabled
+    policy: deny
+
+- name: Allow HTTP
+  ufw:
+    rule: allow
+    port: 80
+    proto: tcp
+
+- name: Allow HTTPS
+  ufw: 
+    rule: allow
+    port: 443
+    proto: tcp
+
+- name: Allow SSH
+  ufw:
+    rule: allow
+    port: 22
+    proto: tcp
+
+- name: Enable ssh login rate limits
+  ufw:
+    rule: limit
+    port: ssh
+    proto: tcp
