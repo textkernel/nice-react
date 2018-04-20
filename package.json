@@ -9,6 +9,7 @@
         "start": "webpack-dev-server -d --progress --colors --hot --config config/webpack.config.dev.js",
         "build:lib": "webpack --progress --config config/webpack.config.prod.js",
         "storybook": "start-storybook -p 9001 -c ./storybook",
+        "build-storybook": "build-storybook --config-dir ./storybook --output-dir ./storybook-static",
         "test": "jest",
         "test:watch": "jest --watch",
         "test:coverage": "jest --coverage"
