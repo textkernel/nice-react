@@ -17,8 +17,8 @@ describe('<Toggle />', () => {
         expect(wrapper).toMatchSnapshot();
     });
 
-    it('should render a toggle with custom class + muted label when switched off', () => {
-        const wrapper = shallow(<Toggle className="custom-class" offMuted>Muted label</Toggle>);
+    it('should render a toggle with custom class / style + muted label when switched off', () => {
+        const wrapper = shallow(<Toggle className="custom-class" style={{ visibility: 'hidden' }} offMuted>Muted label</Toggle>);
         expect(wrapper).toMatchSnapshot();
   });
 });

@@ -11,6 +11,7 @@ exports[`<Toggle /> should render a disabled Toggle 1`] = `
   />
   <label
     className="nice-toggle-btn"
+    style={Object {}}
   >
     Disabled toggle
   </label>
@@ -28,6 +29,7 @@ exports[`<Toggle /> should render a simple Toggle 1`] = `
   />
   <label
     className="nice-toggle-btn"
+    style={Object {}}
   >
     Label
   </label>
@@ -45,13 +47,14 @@ exports[`<Toggle /> should render a small primary Toggle that is on by default 1
   />
   <label
     className="nice-toggle-btn small"
+    style={Object {}}
   >
     Label
   </label>
 </span>
 `;
 
-exports[`<Toggle /> should render a toggle with custom class + muted label when switched off 1`] = `
+exports[`<Toggle /> should render a toggle with custom class / style + muted label when switched off 1`] = `
 <span>
   <input
     checked={false}
@@ -62,6 +65,11 @@ exports[`<Toggle /> should render a toggle with custom class + muted label when 
   />
   <label
     className="nice-toggle-btn off-muted custom-class"
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
   >
     Muted label
   </label>
