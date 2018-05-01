@@ -16,10 +16,11 @@ stories.add('Custom properties', () => {
     const context = select('Context', contextOptions, null);
     const disabled = boolean('Disabled', false);
     const on = boolean('On', false);
+    const small = boolean('Small', false);
     const label = text('Label', '');
     const offMuted = boolean('Muted label when switched off', false);
 
-    return <Toggle context={ context } disabled={ disabled } on={ on } offMuted={ offMuted }>
+    return <Toggle context={ context } disabled={ disabled } on={ on } offMuted={ offMuted } small={ small }>
         { label }
     </Toggle>;
 });
