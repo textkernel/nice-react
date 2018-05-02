@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tab } from '../../lib/Tabs';
 
-describe('<Tab/>', () => {
+describe.skip('<Tab/>', () => {
 
     let Component = null;
     let onClickHandler = null;

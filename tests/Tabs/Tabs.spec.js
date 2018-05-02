@@ -2,7 +2,7 @@ import React from 'react';
 import { Tabs, Tab } from '../../lib/Tabs';
 import { Button, ButtonGroup } from '../../lib/Button';
 
-describe('<Tabs/>', () => {
+describe.skip('<Tabs/>', () => {
 
     let Component = null;
 
