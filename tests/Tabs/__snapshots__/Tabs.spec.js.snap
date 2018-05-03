@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tabs/> should render 1`] = `
+<div
+  className="nice-tabs-wrapper"
+>
+  <ul
+    className="nice-tabs bold"
+  >
+    <Tab
+      badge="56"
+      context="default"
+      headerText="First"
+      icon="fa-home"
+      isActive={true}
+      key=".0"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      <p>
+        Tab number zero
+      </p>
+    </Tab>
+    <Tab
+      badge={null}
+      context="default"
+      headerText="Second"
+      icon="fa-angle-down"
+      isActive={false}
+      key=".1"
+      onClick={[Function]}
+      tabIndex={1}
+    >
+      <p>
+        Tab number one
+      </p>
+    </Tab>
+  </ul>
+  <ul
+    className="nice-tab-content"
+  >
+    <p>
+      Tab number zero
+    </p>
+  </ul>
+</div>
+`;
