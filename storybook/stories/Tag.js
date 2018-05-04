@@ -17,8 +17,8 @@ stories.add('normal tag', () => {
 
                 <Tag.Label label='Germany' />
 
-                <Tag.Badge label='16'>
-                    <Tag.Badge.Item> Item </Tag.Badge.Item>
+                <Tag.Badge onClick={() => alert('Badge click')} label='16'>
+                    <Tag.Badge.Item onClick={() => alert('Item')}> Item </Tag.Badge.Item>
                 </Tag.Badge>
 
                 <Tag.Button onClick={() => alert('Clicked on button')} icon='fa-trash-o' />

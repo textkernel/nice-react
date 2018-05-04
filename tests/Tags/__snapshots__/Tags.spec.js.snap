@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tags /> <Tag /> should render simple tag 1`] = `
+<div
+  className="nice-tags-container"
+  style={Object {}}
+>
+  <Tag
+    className=""
+    context=""
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <Label
+      className=""
+      label="Germany"
+      style={Object {}}
+    />
+  </Tag>
+</div>
+`;
+
+exports[`<Tags /> <Tag /> should render with badge and button 1`] = `
+<div
+  className="nice-tags-container"
+  style={Object {}}
+>
+  <Tag
+    className=""
+    context=""
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <Label
+      className=""
+      label="Germany"
+      style={Object {}}
+    />
+    <Badge
+      className=""
+      label="16"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <Item
+        className=""
+        href="#"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Item 1
+      </Item>
+      <Item
+        className=""
+        href="#"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Item 2
+      </Item>
+    </Badge>
+    <Button
+      className=""
+      icon="fa-trash-o"
+      onClick={[Function]}
+      style={Object {}}
+    />
+  </Tag>
+</div>
+`;
+
+exports[`<Tags /> <Tag /> should render with badge with items 1`] = `
+<div
+  className="nice-tags-container"
+  style={Object {}}
+>
+  <Tag
+    className=""
+    context=""
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <Label
+      className=""
+      label="Germany"
+      style={Object {}}
+    />
+    <Badge
+      className=""
+      label="16"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <Item
+        className=""
+        href="#"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Item 1
+      </Item>
+      <Item
+        className=""
+        href="#"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Item 2
+      </Item>
+    </Badge>
+  </Tag>
+</div>
+`;
+
+exports[`<Tags /> <Tag /> should render with badge without items 1`] = `
+<div
+  className="nice-tags-container"
+  style={Object {}}
+>
+  <Tag
+    className=""
+    context=""
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <Label
+      className=""
+      label="Germany"
+      style={Object {}}
+    />
+    <Badge
+      className=""
+      label="16"
+      onClick={[Function]}
+      style={Object {}}
+    />
+  </Tag>
+</div>
+`;
+
+exports[`<Tags /> <Tag /> should render with the input for new tags 1`] = `
+<div
+  className="nice-tags-container"
+  style={Object {}}
+>
+  <Tag
+    className=""
+    context=""
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <Label
+      className=""
+      label="Germany"
+      style={Object {}}
+    />
+  </Tag>
+  <Input
+    className=""
+    onChange={null}
+    placeholder="Add new tag..."
+    style={Object {}}
+    value=""
+  />
+</div>
+`;
