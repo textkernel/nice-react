@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 
-import { Tags } from 'nice-react';
+import { Tags, Tag } from 'nice-react';
 
 const stories = storiesOf('Tag', module);
 
@@ -13,17 +13,17 @@ stories.add('normal tag', () => {
     return (
         <Tags>
 
-            <Tags.Tag onClick={() => alert('Clicked on tag')}>
+            <Tag onClick={() => alert('Clicked on tag')}>
 
-                <Tags.Tag.Label label='Germany' />
+                <Tag.Label label='Germany' />
 
-                <Tags.Tag.Badge label='16'>
-                    <Tags.Tag.Badge.Item> Item </Tags.Tag.Badge.Item>
-                </Tags.Tag.Badge>
+                <Tag.Badge label='16'>
+                    <Tag.Badge.Item> Item </Tag.Badge.Item>
+                </Tag.Badge>
 
-                <Tags.Tag.Button onClick={() => alert('Clicked on button')} icon='fa-trash-o' />
+                <Tag.Button onClick={() => alert('Clicked on button')} icon='fa-trash-o' />
 
-            </Tags.Tag>
+            </Tag>
 
             <Tags.Input placeholder='Add new tag...'/>
 
