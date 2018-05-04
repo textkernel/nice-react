@@ -13,7 +13,12 @@ describe('<Toggle />', () => {
     });
 
     it('should render a small primary Toggle that is on by default', () => {
-        const wrapper = shallow(<Toggle context="primary" small on>Label</Toggle>);
+        const wrapper = shallow(<Toggle context="primary" small defaultOn>Label</Toggle>);
+        expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render a controlled Toggle that is off by state', () => {
+        const wrapper = shallow(<Toggle context="primary" small on={ false }>Label</Toggle>);
         expect(wrapper).toMatchSnapshot();
     });
 

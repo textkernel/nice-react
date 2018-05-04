@@ -1,10 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Toggle /> should render a disabled Toggle 1`] = `
+exports[`<Toggle /> should render a controlled Toggle that is off by state 1`] = `
 <span>
   <input
     checked={false}
+    className="nice-toggle primary"
+    defaultChecked={null}
+    disabled={false}
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="nice-toggle-btn small"
+    style={Object {}}
+  >
+    Label
+  </label>
+</span>
+`;
+
+exports[`<Toggle /> should render a disabled Toggle 1`] = `
+<span>
+  <input
+    checked={null}
     className="nice-toggle"
+    defaultChecked={false}
     disabled={true}
     onChange={[Function]}
     type="checkbox"
@@ -39,8 +59,9 @@ exports[`<Toggle /> should render a simple Toggle 1`] = `
 exports[`<Toggle /> should render a small primary Toggle that is on by default 1`] = `
 <span>
   <input
-    checked={true}
+    checked={null}
     className="nice-toggle primary"
+    defaultChecked={true}
     disabled={false}
     onChange={[Function]}
     type="checkbox"
@@ -57,8 +78,9 @@ exports[`<Toggle /> should render a small primary Toggle that is on by default 1
 exports[`<Toggle /> should render a toggle with custom class / style + muted label when switched off 1`] = `
 <span>
   <input
-    checked={false}
+    checked={null}
     className="nice-toggle"
+    defaultChecked={false}
     disabled={false}
     onChange={[Function]}
     type="checkbox"
