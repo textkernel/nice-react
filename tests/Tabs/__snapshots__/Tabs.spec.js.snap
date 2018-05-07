@@ -2,42 +2,39 @@
 
 exports[`<Tabs/> should render 1`] = `
 <div
-  className="nice-tabs-wrapper"
+  class="nice-tabs-wrapper"
 >
   <ul
-    className="nice-tabs bold"
+    class="nice-tabs bold"
   >
-    <Tab
-      badge="56"
-      context="default"
-      headerText="First"
-      icon="fa-home"
-      isActive={true}
-      key=".0"
-      onClick={[Function]}
-      tabIndex={0}
+    <li
+      class="current default"
     >
-      <p>
-        Tab number zero
-      </p>
-    </Tab>
-    <Tab
-      badge={null}
-      context="default"
-      headerText="Second"
-      icon="fa-angle-down"
-      isActive={false}
-      key=".1"
-      onClick={[Function]}
-      tabIndex={1}
+      <a
+        class="tab-link-class-0 icon fa-home"
+        href="#"
+      >
+        First
+        <span
+          class="nice-badge"
+        >
+          56
+        </span>
+      </a>
+    </li>
+    <li
+      class="default"
     >
-      <p>
-        Tab number one
-      </p>
-    </Tab>
+      <a
+        class="tab-link-class-1 icon fa-angle-down"
+        href="#"
+      >
+        Second
+      </a>
+    </li>
   </ul>
   <ul
-    className="nice-tab-content"
+    class="nice-tab-content"
   >
     <p>
       Tab number zero

@@ -4,7 +4,7 @@ import { Tabs, Tab } from '../../lib/Tabs';
 describe('<Tabs/>', () => {
 
     it('should render', () => {
-        const Component = shallow(
+        const Component = render(
             <Tabs>
                 <Tab headerText="First" badge="56" icon="fa-home">
                     <p>Tab number zero</p>
