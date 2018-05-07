@@ -2,7 +2,7 @@
 
 exports[`<Tabs/> should render 1`] = `
 <div
-  class="nice-tabs-wrapper"
+  class=""
 >
   <ul
     class="nice-tabs bold"
