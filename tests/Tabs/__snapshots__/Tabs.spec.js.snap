@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tabs/> should render 1`] = `
+<div
+  class=""
+>
+  <ul
+    class="nice-tabs bold"
+  >
+    <li
+      class="current default"
+    >
+      <a
+        class="tab-link-class-0 icon fa-home"
+        href="#"
+      >
+        First
+        <span
+          class="nice-badge"
+        >
+          56
+        </span>
+      </a>
+    </li>
+    <li
+      class="default"
+    >
+      <a
+        class="tab-link-class-1 icon fa-angle-down"
+        href="#"
+      >
+        Second
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="nice-tab-content"
+  >
+    <p>
+      Tab number zero
+    </p>
+  </ul>
+</div>
+`;

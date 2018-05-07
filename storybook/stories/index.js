@@ -17,3 +17,4 @@ import './Popover';
 import './ProductIcon';
 import './Progress';
 import './Scale';
+import './Tabs';
