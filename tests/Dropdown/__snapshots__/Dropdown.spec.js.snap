@@ -8,12 +8,15 @@ exports[`<Dropdown /> should render Dropdown with different context and alignmen
 >
   <Button
     alternative={false}
+    className=""
     context="primary"
+    disabled={false}
     href={null}
     icon={null}
     onClick={[Function]}
     pullRight={false}
     size="medium"
+    style={null}
     submit={false}
   >
     Primary
@@ -70,12 +73,15 @@ exports[`<Dropdown /> should render a simple Dropdown 1`] = `
 >
   <Button
     alternative={false}
+    className=""
     context="primary"
+    disabled={false}
     href={null}
     icon={null}
     onClick={[Function]}
     pullRight={false}
     size="medium"
+    style={null}
     submit={false}
   >
     Nice dropdown
@@ -161,12 +167,15 @@ exports[`<Dropdown /> should render with multiple selection 1`] = `
 >
   <Button
     alternative={false}
+    className=""
     context="primary"
+    disabled={false}
     href={null}
     icon={null}
     onClick={[Function]}
     pullRight={false}
     size="medium"
+    style={null}
     submit={false}
   >
     Multiselect
@@ -229,12 +238,15 @@ exports[`<Dropdown /> should render with radios 1`] = `
 >
   <Button
     alternative={false}
+    className=""
     context="primary"
+    disabled={false}
     href={null}
     icon={null}
     onClick={[Function]}
     pullRight={false}
     size="medium"
+    style={null}
     submit={false}
   >
     Multiselect

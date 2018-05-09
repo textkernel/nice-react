@@ -2,9 +2,11 @@
 
 exports[`<Button /> should render size Button 1`] = `
 <button
-  className="nice-btn default large"
-  href={null}
+  className="nice-btn default large "
+  disabled={false}
   onClick={[Function]}
+  style={null}
+  type="button"
 >
   Large
 </button>
@@ -12,9 +14,11 @@ exports[`<Button /> should render size Button 1`] = `
 
 exports[`<Button /> should render style Button 1`] = `
 <button
-  className="nice-btn primary medium"
-  href={null}
+  className="nice-btn primary medium "
+  disabled={false}
   onClick={[Function]}
+  style={null}
+  type="button"
 >
   Primary
 </button>
@@ -22,9 +26,11 @@ exports[`<Button /> should render style Button 1`] = `
 
 exports[`<Button /> should render style and size Button 1`] = `
 <button
-  className="nice-btn primary large"
-  href={null}
+  className="nice-btn primary large "
+  disabled={false}
   onClick={[Function]}
+  style={null}
+  type="button"
 >
   Primary large
 </button>
@@ -32,9 +38,11 @@ exports[`<Button /> should render style and size Button 1`] = `
 
 exports[`<Button /> should render the Button 1`] = `
 <button
-  className="nice-btn default medium"
-  href={null}
+  className="nice-btn default medium "
+  disabled={false}
   onClick={[Function]}
+  style={null}
+  type="button"
 >
   Default
 </button>
