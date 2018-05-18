@@ -7,11 +7,13 @@ exports[`<Toggle /> should render a controlled Toggle that is off by state 1`] =
     className="nice-toggle primary"
     defaultChecked={null}
     disabled={false}
+    id="myToggle"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="nice-toggle-btn small"
+    htmlFor="myToggle"
     style={Object {}}
   >
     Label
@@ -26,11 +28,13 @@ exports[`<Toggle /> should render a disabled Toggle 1`] = `
     className="nice-toggle"
     defaultChecked={false}
     disabled={true}
+    id="myToggle"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="nice-toggle-btn"
+    htmlFor="myToggle"
     style={Object {}}
   >
     Disabled toggle
@@ -41,14 +45,17 @@ exports[`<Toggle /> should render a disabled Toggle 1`] = `
 exports[`<Toggle /> should render a simple Toggle 1`] = `
 <span>
   <input
-    checked={false}
+    checked={null}
     className="nice-toggle"
+    defaultChecked={false}
     disabled={false}
+    id="myToggle"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="nice-toggle-btn"
+    htmlFor="myToggle"
     style={Object {}}
   >
     Label
@@ -63,11 +70,13 @@ exports[`<Toggle /> should render a small primary Toggle that is on by default 1
     className="nice-toggle primary"
     defaultChecked={true}
     disabled={false}
+    id="myToggle"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="nice-toggle-btn small"
+    htmlFor="myToggle"
     style={Object {}}
   >
     Label
@@ -82,11 +91,13 @@ exports[`<Toggle /> should render a toggle with custom class / style + muted lab
     className="nice-toggle"
     defaultChecked={false}
     disabled={false}
+    id="myToggle"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="nice-toggle-btn off-muted custom-class"
+    htmlFor="myToggle"
     style={
       Object {
         "visibility": "hidden",
