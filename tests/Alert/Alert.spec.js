@@ -9,6 +9,13 @@ describe('<Alert />', () => {
         expect(wrapper).toMatchSnapshot();
     });
 
+    it('should render Alert with custom classes / styles', () => {
+        const wrapper = shallow(<Alert className="test" style={{ display: 'none' }}>
+        <strong>Hey you!</strong> Here is some information
+    </Alert>);
+        expect(wrapper).toMatchSnapshot();
+    });
+
     it('should render Alert with heading', () => {
         const wrapper = shallow(<Alert heading="Warning" context="warning">
             <strong>Heads up</strong> This is a warning
