@@ -3,6 +3,7 @@
 exports[`<ButtonGroup /> should render a justified ButtonGroup 1`] = `
 <div
   className="nice-btn-group justified"
+  style={null}
 >
   <Button
     alternative={false}
@@ -55,6 +56,7 @@ exports[`<ButtonGroup /> should render a justified ButtonGroup 1`] = `
 exports[`<ButtonGroup /> should render a small ButtonGroup 1`] = `
 <div
   className="nice-btn-group"
+  style={null}
 >
   <Button
     alternative={false}
@@ -107,6 +109,7 @@ exports[`<ButtonGroup /> should render a small ButtonGroup 1`] = `
 exports[`<ButtonGroup /> should render a stacked ButtonGroup 1`] = `
 <div
   className="nice-btn-group stacked"
+  style={null}
 >
   <Button
     alternative={false}
@@ -159,6 +162,7 @@ exports[`<ButtonGroup /> should render a stacked ButtonGroup 1`] = `
 exports[`<ButtonGroup /> should render the Buttons inside ButtonGroup 1`] = `
 <div
   className="nice-btn-group"
+  style={null}
 >
   <Button
     alternative={false}
