@@ -1,5 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Card /> should render Card with custom classnames/styles 1`] = `
+<div
+  className="nice-card my-classname brand has-controls"
+  style={
+    Object {
+      "float": "none",
+      "width": "300px",
+    }
+  }
+>
+  <div
+    className="nice-card-title"
+  >
+    <h3>
+      This is a card with subs
+    </h3>
+  </div>
+  <Content
+    className="content-classname"
+    style={
+      Object {
+        "color": "red",
+      }
+    }
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper nulla ac quam hendrerit pharetra.
+  </Content>
+  <Sub
+    className="icon fa-reply"
+    style={
+      Object {
+        "backgroundColor": "blue",
+      }
+    }
+  >
+    In semper vel lectus sed finibus. Donec in erat risus. Aenean in lectus massa. Phasellus id malesuada arcu, vel ultricies enim.
+  </Sub>
+  <div
+    className="nice-card-controls"
+  >
+    <a
+      className="nice-card-control icon fa-check"
+      href="#"
+      key="0"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "green",
+        }
+      }
+    >
+      OK
+    </a>
+  </div>
+</div>
+`;
+
 exports[`<Card /> should render Card with subs, without controls 1`] = `
 <div
   className="nice-card brand"
@@ -20,11 +77,13 @@ exports[`<Card /> should render Card with subs, without controls 1`] = `
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper nulla ac quam hendrerit pharetra.
   <Sub
     className="icon fa-reply"
+    style={Object {}}
   >
     In semper vel lectus sed finibus. Donec in erat risus. Aenean in lectus massa. Phasellus id malesuada arcu, vel ultricies enim.
   </Sub>
   <Sub
     className="icon fa-reply"
+    style={Object {}}
   >
     In semper vel lectus sed finibus. Donec in erat risus. Aenean in lectus massa. Phasellus id malesuada arcu, vel ultricies enim.
   </Sub>
@@ -49,6 +108,7 @@ exports[`<Card /> should render default Card without subs 1`] = `
     </h3>
   </div>
   <img
+    alt=""
     className="nice-card-image"
     src="//placeholdit.imgix.net/~text?txtsize=33&txt=300%C3%97150&w=300&h=150"
   />
