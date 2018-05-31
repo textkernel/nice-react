@@ -3,9 +3,10 @@
 exports[`<Breadcrumb.Item /> should render Item as current Breadcrumb 1`] = `
 <li>
   <a
-    className="current"
+    className=" current"
     href="#"
     onClick={[Function]}
+    style={Object {}}
   >
     Level 1
   </a>
@@ -18,22 +19,27 @@ exports[`<Breadcrumb.Item /> should render Item with children 1`] = `
     className=""
     href="#"
     onClick={[Function]}
+    style={Object {}}
   >
     Level 2
   </a>
   <ul>
      
     <Item
+      className=""
       current={false}
       icon={null}
       onClick={[Function]}
+      style={Object {}}
       text="Some child node 1"
       value={null}
     />
     <Item
+      className=""
       current={false}
       icon={null}
       onClick={[Function]}
+      style={Object {}}
       text="Some child node 2"
       value={null}
     />
@@ -42,12 +48,30 @@ exports[`<Breadcrumb.Item /> should render Item with children 1`] = `
 </li>
 `;
 
+exports[`<Breadcrumb.Item /> should render Item with className and style 1`] = `
+<li>
+  <a
+    className="my-classname current"
+    href="#"
+    onClick={[Function]}
+    style={
+      Object {
+        "bottom": 0,
+      }
+    }
+  >
+    Level 1
+  </a>
+</li>
+`;
+
 exports[`<Breadcrumb.Item /> should render Item with icon 1`] = `
 <li>
   <a
-    className="icon fa-star"
+    className=" icon fa-star"
     href="#"
     onClick={[Function]}
+    style={Object {}}
   >
     Level 1
   </a>
@@ -60,6 +84,7 @@ exports[`<Breadcrumb.Item /> should render clickable Item 1`] = `
     className=""
     href="#"
     onClick={[Function]}
+    style={Object {}}
   >
     Level 1
   </a>

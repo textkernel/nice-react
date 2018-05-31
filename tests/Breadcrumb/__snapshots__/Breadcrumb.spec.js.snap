@@ -1,27 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Breadcrumb /> should render Breadcrumb with className and style 1`] = `
+<ol
+  className="nice-breadcrumb null my-classname"
+  style={
+    Object {
+      "top": 5,
+    }
+  }
+/>
+`;
+
 exports[`<Breadcrumb /> should render default Breadcrumb 1`] = `
 <ol
-  className="nice-breadcrumb null"
+  className="nice-breadcrumb null "
+  style={Object {}}
 >
   <Item
+    className=""
     current={false}
     icon={null}
     onClick={[Function]}
+    style={Object {}}
     text="Level 1"
     value={null}
   />
   <Item
+    className=""
     current={false}
     icon={null}
     onClick={[Function]}
+    style={Object {}}
     text="Level 2"
     value={null}
   />
   <Item
+    className=""
     current={false}
     icon={null}
     onClick={[Function]}
+    style={Object {}}
     text="Level 3"
     value={null}
   />
@@ -30,26 +48,33 @@ exports[`<Breadcrumb /> should render default Breadcrumb 1`] = `
 
 exports[`<Breadcrumb /> should render small Breadcrumb 1`] = `
 <ol
-  className="nice-breadcrumb small"
+  className="nice-breadcrumb small "
+  style={Object {}}
 >
   <Item
+    className=""
     current={false}
     icon={null}
     onClick={[Function]}
+    style={Object {}}
     text="Level 1"
     value={null}
   />
   <Item
+    className=""
     current={false}
     icon={null}
     onClick={[Function]}
+    style={Object {}}
     text="Level 2"
     value={null}
   />
   <Item
+    className=""
     current={false}
     icon={null}
     onClick={[Function]}
+    style={Object {}}
     text="Level 3"
     value={null}
   />
