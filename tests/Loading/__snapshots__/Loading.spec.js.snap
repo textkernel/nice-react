@@ -1,25 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Loading /> should render Loading with custom classes / styles 1`] = `
+<div
+  className="nice-loading small brand test"
+  style={
+    Object {
+      "display": "none",
+    }
+  }
+/>
+`;
+
 exports[`<Loading /> should render the Loading 1`] = `
 <div
   className="nice-loading small brand"
+  style={null}
 />
 `;
 
 exports[`<Loading /> should render the Loading with context 1`] = `
 <div
   className="nice-loading small good"
+  style={null}
 />
 `;
 
 exports[`<Loading /> should render the Loading with different size 1`] = `
 <div
   className="nice-loading large brand"
+  style={null}
 />
 `;
 
 exports[`<Loading /> should render the Loading with size and context properties 1`] = `
 <div
   className="nice-loading medium bad"
+  style={null}
 />
 `;

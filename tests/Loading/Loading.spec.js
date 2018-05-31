@@ -7,6 +7,11 @@ describe('<Loading />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should render Loading with custom classes / styles', () => {
+    const wrapper = shallow(<Loading className="test" style={{ display: 'none' }} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('should render the Loading with context', () => {
     const wrapper = shallow(<Loading context='good' />);
     expect(wrapper).toMatchSnapshot();
