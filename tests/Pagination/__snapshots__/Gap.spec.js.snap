@@ -3,6 +3,22 @@
 exports[`<Pagination.Gap /> should render pagination Gap 1`] = `
 <li
   className="disabled"
+  style={Object {}}
+>
+  <span>
+    …
+  </span>
+</li>
+`;
+
+exports[`<Pagination.Gap /> should render pagination Gap with custom className/style 1`] = `
+<li
+  className="disabled my-custom-class"
+  style={
+    Object {
+      "top": 0,
+    }
+  }
 >
   <span>
     …
