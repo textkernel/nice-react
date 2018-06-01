@@ -2,7 +2,6 @@ import React from 'react';
 import { Tab } from '../../lib/Tabs';
 
 describe.skip('<Tab/>', () => {
-
     let Component = null;
     let onClickHandler = null;
 
@@ -11,7 +10,7 @@ describe.skip('<Tab/>', () => {
         Component = shallow(
             <Tab onClick={onClickHandler}
                 tabIndex={2}
-                isActive={true}
+                isActive
                 iconClassName={'foo'}
                 linkClassName={'test'} />
         );
@@ -21,6 +20,13 @@ describe.skip('<Tab/>', () => {
         expect(Component.length).toBeTruthy();
     });
 
+    it('should render Tab with custom className/style', () => {
+        const wrapper = render(
+            <Tab headerText="My tab" className="my-custom-class" style={{ top: 0 }} />
+        );
+        expect(wrapper).toMatchSnapshot();
+    });
+
     it('should call onClick() prop when link is clicked', () => {
         Component.find('.tab-link').simulate('click', { preventDefault: () => { } });
         expect(onClickHandler).toHaveBeenCalledWith(Component.props().tabIndex);
@@ -28,7 +34,7 @@ describe.skip('<Tab/>', () => {
 
     it("should add '.active' className to component if tab is active", () => {
         const Component = shallow(
-            <Tab isActive={true}
+            <Tab isActive
                 iconClassName={'foo'}
                 linkClassName={'test'} />
         );

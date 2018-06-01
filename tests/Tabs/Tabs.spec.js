@@ -1,8 +1,8 @@
 import React from 'react';
 import { Tabs, Tab } from '../../lib/Tabs';
+import { wrap } from 'module';
 
 describe('<Tabs/>', () => {
-
     it('should render', () => {
         const Component = render(
             <Tabs>
@@ -15,6 +15,17 @@ describe('<Tabs/>', () => {
             </Tabs>
         );
         expect(Component).toMatchSnapshot();
+    });
+
+    it('should render Tabs with custom className/style', () => {
+        const wrapper = render(
+            <Tabs className="my-custom-prop" style={{ top: 0 }}>
+                <Tab headerText="First" badge="56" icon="fa-home">
+                    <p>Tab number zero</p>
+                </Tab>
+            </Tabs>
+        );
+        expect(wrapper).toMatchSnapshot();
     });
 
     it('should render tab 0 content by default', () => {

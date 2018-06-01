@@ -42,3 +42,33 @@ exports[`<Tabs/> should render 1`] = `
   </ul>
 </div>
 `;
+
+exports[`<Tabs/> should render Tabs with custom className/style 1`] = `
+<div
+  class="my-custom-prop"
+  style="top:0"
+>
+  <ul
+    class="nice-tabs bold"
+  >
+    <li
+      class="current default"
+    >
+      <a
+        class="tab-link-class-0 icon fa-home"
+        href="#"
+      >
+        First
+        <span
+          class="nice-badge"
+        >
+          56
+        </span>
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="nice-tab-content"
+  />
+</div>
+`;
