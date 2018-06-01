@@ -2,25 +2,28 @@
 
 exports[`<Scale /> <Scale.Item /> should render as controlled component 1`] = `
 <Scale
-  className=""
+  className={null}
   name="my-radio-name"
   onChange={[Function]}
+  style={Object {}}
   tickLabels={true}
   value={10}
 >
   <div
-    className="nice-scale "
+    className="nice-scale"
+    style={Object {}}
   >
     <ol
       className="nice-scale-selection"
     >
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".0"
         label="Nice to have"
         name="my-radio-name"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={1}
       >
@@ -38,6 +41,7 @@ exports[`<Scale /> <Scale.Item /> should render as controlled component 1`] = `
             <span />
             <span
               className="nice-scale-label"
+              style={Object {}}
             >
               Nice to have
             </span>
@@ -46,11 +50,12 @@ exports[`<Scale /> <Scale.Item /> should render as controlled component 1`] = `
       </Item>
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".1"
         label=""
         name="my-radio-name"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={5}
       >
@@ -71,11 +76,12 @@ exports[`<Scale /> <Scale.Item /> should render as controlled component 1`] = `
       </Item>
       <Item
         checked={true}
-        className=""
+        className={null}
         key=".2"
         label="Must have"
         name="my-radio-name"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={10}
       >
@@ -93,6 +99,7 @@ exports[`<Scale /> <Scale.Item /> should render as controlled component 1`] = `
             <span />
             <span
               className="nice-scale-label"
+              style={Object {}}
             >
               Must have
             </span>
@@ -106,25 +113,28 @@ exports[`<Scale /> <Scale.Item /> should render as controlled component 1`] = `
 
 exports[`<Scale /> <Scale.Item /> should render with all labels 1`] = `
 <Scale
-  className=""
+  className={null}
   name="my-radio-name"
   onChange={[Function]}
+  style={Object {}}
   tickLabels={true}
   value=""
 >
   <div
-    className="nice-scale "
+    className="nice-scale"
+    style={Object {}}
   >
     <ol
       className="nice-scale-selection"
     >
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".0"
         label="Nice to have"
         name="my-radio-name"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={1}
       >
@@ -142,6 +152,7 @@ exports[`<Scale /> <Scale.Item /> should render with all labels 1`] = `
             <span />
             <span
               className="nice-scale-label"
+              style={Object {}}
             >
               Nice to have
             </span>
@@ -150,11 +161,12 @@ exports[`<Scale /> <Scale.Item /> should render with all labels 1`] = `
       </Item>
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".1"
         label="Good to have"
         name="my-radio-name"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={5}
       >
@@ -172,6 +184,7 @@ exports[`<Scale /> <Scale.Item /> should render with all labels 1`] = `
             <span />
             <span
               className="nice-scale-label"
+              style={Object {}}
             >
               Good to have
             </span>
@@ -180,11 +193,12 @@ exports[`<Scale /> <Scale.Item /> should render with all labels 1`] = `
       </Item>
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".2"
         label="Must have"
         name="my-radio-name"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={10}
       >
@@ -202,6 +216,7 @@ exports[`<Scale /> <Scale.Item /> should render with all labels 1`] = `
             <span />
             <span
               className="nice-scale-label"
+              style={Object {}}
             >
               Must have
             </span>
@@ -213,16 +228,77 @@ exports[`<Scale /> <Scale.Item /> should render with all labels 1`] = `
 </Scale>
 `;
 
-exports[`<Scale /> <Scale.Item /> should render with custom classes over items 1`] = `
+exports[`<Scale /> <Scale.Item /> should render with custom className/style 1`] = `
 <Scale
-  className=""
-  name="projectid-radios"
+  className="my-custom-class"
+  name="my-radio-name"
   onChange={[Function]}
+  style={
+    Object {
+      "top": 0,
+    }
+  }
   tickLabels={true}
   value=""
 >
   <div
-    className="nice-scale "
+    className="nice-scale my-custom-class"
+    style={
+      Object {
+        "top": 0,
+      }
+    }
+  >
+    <ol
+      className="nice-scale-selection"
+    >
+      <Item
+        checked={false}
+        className="my-custom-class"
+        key=".0"
+        label=""
+        name="my-radio-name"
+        onSelect={[Function]}
+        style={
+          Object {
+            "top": 0,
+          }
+        }
+        tickLabel={true}
+        value="1"
+      >
+        <li
+          key="1"
+        >
+          <label>
+            <input
+              checked={false}
+              name="my-radio-name"
+              onChange={[Function]}
+              type="radio"
+              value="1"
+            />
+            <span />
+          </label>
+        </li>
+      </Item>
+    </ol>
+  </div>
+</Scale>
+`;
+
+exports[`<Scale /> <Scale.Item /> should render with custom classes over items 1`] = `
+<Scale
+  className={null}
+  name="projectid-radios"
+  onChange={[Function]}
+  style={Object {}}
+  tickLabels={true}
+  value=""
+>
+  <div
+    className="nice-scale"
+    style={Object {}}
   >
     <ol
       className="nice-scale-selection"
@@ -234,6 +310,7 @@ exports[`<Scale /> <Scale.Item /> should render with custom classes over items 1
         label="Nice to have"
         name="projectid-radios"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={1}
       >
@@ -251,6 +328,7 @@ exports[`<Scale /> <Scale.Item /> should render with custom classes over items 1
             <span />
             <span
               className="text-bold nice-scale-label"
+              style={Object {}}
             >
               Nice to have
             </span>
@@ -264,6 +342,7 @@ exports[`<Scale /> <Scale.Item /> should render with custom classes over items 1
         label=""
         name="projectid-radios"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={5}
       >
@@ -289,6 +368,7 @@ exports[`<Scale /> <Scale.Item /> should render with custom classes over items 1
         label="Must have"
         name="projectid-radios"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={10}
       >
@@ -306,6 +386,7 @@ exports[`<Scale /> <Scale.Item /> should render with custom classes over items 1
             <span />
             <span
               className="text-uppercase text-brand nice-scale-label"
+              style={Object {}}
             >
               Must have
             </span>
@@ -322,22 +403,25 @@ exports[`<Scale /> <Scale.Item /> should render with custom classes over outermo
   className="nice-bg-info"
   name="projectid-radios"
   onChange={[Function]}
+  style={Object {}}
   tickLabels={true}
   value=""
 >
   <div
     className="nice-scale nice-bg-info"
+    style={Object {}}
   >
     <ol
       className="nice-scale-selection"
     >
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".0"
         label="Nice to have"
         name="projectid-radios"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={1}
       >
@@ -355,6 +439,7 @@ exports[`<Scale /> <Scale.Item /> should render with custom classes over outermo
             <span />
             <span
               className="nice-scale-label"
+              style={Object {}}
             >
               Nice to have
             </span>
@@ -363,11 +448,12 @@ exports[`<Scale /> <Scale.Item /> should render with custom classes over outermo
       </Item>
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".1"
         label=""
         name="projectid-radios"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={5}
       >
@@ -388,11 +474,12 @@ exports[`<Scale /> <Scale.Item /> should render with custom classes over outermo
       </Item>
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".2"
         label="Must have"
         name="projectid-radios"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={10}
       >
@@ -410,6 +497,7 @@ exports[`<Scale /> <Scale.Item /> should render with custom classes over outermo
             <span />
             <span
               className="nice-scale-label"
+              style={Object {}}
             >
               Must have
             </span>
@@ -423,25 +511,28 @@ exports[`<Scale /> <Scale.Item /> should render with custom classes over outermo
 
 exports[`<Scale /> <Scale.Item /> should render without one label 1`] = `
 <Scale
-  className=""
+  className={null}
   name="my-radio-name"
   onChange={[Function]}
+  style={Object {}}
   tickLabels={true}
   value=""
 >
   <div
-    className="nice-scale "
+    className="nice-scale"
+    style={Object {}}
   >
     <ol
       className="nice-scale-selection"
     >
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".0"
         label="Nice to have"
         name="my-radio-name"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={1}
       >
@@ -459,6 +550,7 @@ exports[`<Scale /> <Scale.Item /> should render without one label 1`] = `
             <span />
             <span
               className="nice-scale-label"
+              style={Object {}}
             >
               Nice to have
             </span>
@@ -467,11 +559,12 @@ exports[`<Scale /> <Scale.Item /> should render without one label 1`] = `
       </Item>
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".1"
         label=""
         name="my-radio-name"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={5}
       >
@@ -492,11 +585,12 @@ exports[`<Scale /> <Scale.Item /> should render without one label 1`] = `
       </Item>
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".2"
         label="Must have"
         name="my-radio-name"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={true}
         value={10}
       >
@@ -514,6 +608,7 @@ exports[`<Scale /> <Scale.Item /> should render without one label 1`] = `
             <span />
             <span
               className="nice-scale-label"
+              style={Object {}}
             >
               Must have
             </span>
@@ -527,25 +622,28 @@ exports[`<Scale /> <Scale.Item /> should render without one label 1`] = `
 
 exports[`<Scale /> <Scale.Item /> should render without tick labels 1`] = `
 <Scale
-  className=""
+  className={null}
   name="my-radio-name"
   onChange={[Function]}
+  style={Object {}}
   tickLabels={false}
   value=""
 >
   <div
-    className="nice-scale "
+    className="nice-scale"
+    style={Object {}}
   >
     <ol
       className="nice-scale-selection"
     >
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".0"
         label="Nice to have"
         name="my-radio-name"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={false}
         value={1}
       >
@@ -563,6 +661,7 @@ exports[`<Scale /> <Scale.Item /> should render without tick labels 1`] = `
             <span />
             <span
               className=""
+              style={Object {}}
             >
               Nice to have
             </span>
@@ -571,11 +670,12 @@ exports[`<Scale /> <Scale.Item /> should render without tick labels 1`] = `
       </Item>
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".1"
         label=""
         name="my-radio-name"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={false}
         value={5}
       >
@@ -596,11 +696,12 @@ exports[`<Scale /> <Scale.Item /> should render without tick labels 1`] = `
       </Item>
       <Item
         checked={false}
-        className=""
+        className={null}
         key=".2"
         label="Must have"
         name="my-radio-name"
         onSelect={[Function]}
+        style={Object {}}
         tickLabel={false}
         value={10}
       >
@@ -618,6 +719,7 @@ exports[`<Scale /> <Scale.Item /> should render without tick labels 1`] = `
             <span />
             <span
               className=""
+              style={Object {}}
             >
               Must have
             </span>
