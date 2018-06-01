@@ -1,8 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Header.Menu.Item /> should render Header Menu Item with default className/style 1`] = `
+<li
+  className=""
+  style={
+    Object {
+      "top": 0,
+    }
+  }
+>
+  <a
+    className="my-custom-class"
+    href="#"
+    onClick={[Function]}
+    target={null}
+  />
+</li>
+`;
+
 exports[`<Header.Menu.Item /> should render default header menu Item 1`] = `
 <li
   className="highlight primary fixed-width w125"
+  style={Object {}}
 >
   <a
     className={null}
@@ -21,6 +40,7 @@ exports[`<Header.Menu.Item /> should render default header menu Item 1`] = `
       label="Item 1"
       level={1}
       onClick={null}
+      style={Object {}}
       target={null}
       width={null}
     />
@@ -32,6 +52,7 @@ exports[`<Header.Menu.Item /> should render default header menu Item 1`] = `
       label="Item 2"
       level={1}
       onClick={null}
+      style={Object {}}
       target={null}
       width={null}
     />
@@ -43,6 +64,7 @@ exports[`<Header.Menu.Item /> should render default header menu Item 1`] = `
       label="Item 3"
       level={1}
       onClick={null}
+      style={Object {}}
       target={null}
       width={null}
     />

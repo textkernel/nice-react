@@ -2,7 +2,12 @@
 
 exports[`<Header /> should render default Header 1`] = `
 <header
-  className="nice-header fixed"
+  className="nice-header my-custom-class fixed"
+  style={
+    Object {
+      "top": 0,
+    }
+  }
 >
   <div
     className="nice-header-container fluid"
@@ -59,7 +64,9 @@ exports[`<Header /> should render default Header 1`] = `
       </form>
       <Menu
         alternate={false}
+        className={null}
         level={0}
+        style={Object {}}
       >
         <Item
           className={null}
@@ -68,6 +75,7 @@ exports[`<Header /> should render default Header 1`] = `
           label="Menu 1"
           level={0}
           onClick={null}
+          style={Object {}}
           target={null}
           width="125"
         >
@@ -78,6 +86,7 @@ exports[`<Header /> should render default Header 1`] = `
             label="Item 1"
             level={0}
             onClick={null}
+            style={Object {}}
             target={null}
             width={null}
           />
@@ -88,6 +97,7 @@ exports[`<Header /> should render default Header 1`] = `
             label="Item 2"
             level={0}
             onClick={null}
+            style={Object {}}
             target={null}
             width={null}
           />
@@ -98,6 +108,7 @@ exports[`<Header /> should render default Header 1`] = `
             label="Item 3"
             level={0}
             onClick={null}
+            style={Object {}}
             target={null}
             width={null}
           >
@@ -108,6 +119,7 @@ exports[`<Header /> should render default Header 1`] = `
               label="Item 3.1"
               level={0}
               onClick={null}
+              style={Object {}}
               target={null}
               width={null}
             />
@@ -118,6 +130,7 @@ exports[`<Header /> should render default Header 1`] = `
               label="Item 3.2"
               level={0}
               onClick={null}
+              style={Object {}}
               target={null}
               width={null}
             />
@@ -128,6 +141,7 @@ exports[`<Header /> should render default Header 1`] = `
               label="Item 3.3"
               level={0}
               onClick={null}
+              style={Object {}}
               target={null}
               width={null}
             />
@@ -138,6 +152,7 @@ exports[`<Header /> should render default Header 1`] = `
               label="Item 3.4"
               level={0}
               onClick={null}
+              style={Object {}}
               target={null}
               width={null}
             />
@@ -149,6 +164,7 @@ exports[`<Header /> should render default Header 1`] = `
             label="Item 4"
             level={0}
             onClick={null}
+            style={Object {}}
             target={null}
             width={null}
           />
@@ -160,6 +176,7 @@ exports[`<Header /> should render default Header 1`] = `
           label="Menu 2"
           level={0}
           onClick={null}
+          style={Object {}}
           target={null}
           width="125"
         >
@@ -170,6 +187,7 @@ exports[`<Header /> should render default Header 1`] = `
             label="Item 1"
             level={0}
             onClick={null}
+            style={Object {}}
             target={null}
             width={null}
           />
@@ -180,6 +198,7 @@ exports[`<Header /> should render default Header 1`] = `
             label="Item 2"
             level={0}
             onClick={null}
+            style={Object {}}
             target={null}
             width={null}
           />
@@ -190,6 +209,7 @@ exports[`<Header /> should render default Header 1`] = `
             label="Item 3"
             level={0}
             onClick={null}
+            style={Object {}}
             target={null}
             width={null}
           >
@@ -200,6 +220,7 @@ exports[`<Header /> should render default Header 1`] = `
               label="Item 3.1"
               level={0}
               onClick={null}
+              style={Object {}}
               target={null}
               width={null}
             />
@@ -210,6 +231,7 @@ exports[`<Header /> should render default Header 1`] = `
               label="Item 3.2"
               level={0}
               onClick={null}
+              style={Object {}}
               target={null}
               width={null}
             />
@@ -220,6 +242,7 @@ exports[`<Header /> should render default Header 1`] = `
               label="Item 3.3"
               level={0}
               onClick={null}
+              style={Object {}}
               target={null}
               width={null}
             />
@@ -230,6 +253,7 @@ exports[`<Header /> should render default Header 1`] = `
               label="Item 3.4"
               level={0}
               onClick={null}
+              style={Object {}}
               target={null}
               width={null}
             />
@@ -241,6 +265,7 @@ exports[`<Header /> should render default Header 1`] = `
             label="Item 4"
             level={0}
             onClick={null}
+            style={Object {}}
             target={null}
             width={null}
           />
@@ -252,13 +277,16 @@ exports[`<Header /> should render default Header 1`] = `
           label="Textkernel"
           level={0}
           onClick={null}
+          style={Object {}}
           target="_blank"
           width="125"
         />
       </Menu>
       <Menu
         alternate={true}
+        className={null}
         level={0}
+        style={Object {}}
       >
         <Item
           className={null}
@@ -267,6 +295,7 @@ exports[`<Header /> should render default Header 1`] = `
           label="Alternate 1"
           level={0}
           onClick={null}
+          style={Object {}}
           target={null}
           width={null}
         >
@@ -277,6 +306,7 @@ exports[`<Header /> should render default Header 1`] = `
             label="Item 1"
             level={0}
             onClick={null}
+            style={Object {}}
             target={null}
             width={null}
           />
@@ -287,6 +317,7 @@ exports[`<Header /> should render default Header 1`] = `
             label="Item 2"
             level={0}
             onClick={null}
+            style={Object {}}
             target={null}
             width={null}
           />
@@ -298,6 +329,7 @@ exports[`<Header /> should render default Header 1`] = `
           label="Alternate 2"
           level={0}
           onClick={null}
+          style={Object {}}
           target={null}
           width={null}
         >
@@ -308,6 +340,7 @@ exports[`<Header /> should render default Header 1`] = `
             label="Item 1"
             level={0}
             onClick={null}
+            style={Object {}}
             target={null}
             width={null}
           />
@@ -318,6 +351,7 @@ exports[`<Header /> should render default Header 1`] = `
             label="Item 2"
             level={0}
             onClick={null}
+            style={Object {}}
             target={null}
             width={null}
           />

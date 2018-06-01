@@ -36,6 +36,8 @@ describe('<Header />', () => {
         fixed={ fixed }
         fluid={ fluid }
         product={ product }
+        style={{ top: 0 }}
+        className="my-custom-class"
     >
         <Header.Menu>
             <Header.Menu.Item label="Menu 1" context="primary" width="125">
