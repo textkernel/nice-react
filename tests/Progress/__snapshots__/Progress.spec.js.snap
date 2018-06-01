@@ -3,6 +3,7 @@
 exports[`<Progress /> should render the Progress 1`] = `
 <div
   className="nice-progress primary"
+  style={Object {}}
 >
   <div
     className="nice-progress-fill"
@@ -20,6 +21,7 @@ exports[`<Progress /> should render the Progress 1`] = `
 exports[`<Progress /> should render the Progress with context 1`] = `
 <div
   className="nice-progress good"
+  style={Object {}}
 >
   <div
     className="nice-progress-fill"
@@ -34,9 +36,32 @@ exports[`<Progress /> should render the Progress with context 1`] = `
 </div>
 `;
 
+exports[`<Progress /> should render the Progress with custom className/style 1`] = `
+<div
+  className="nice-progress primary my-custom-class"
+  style={
+    Object {
+      "top": 0,
+    }
+  }
+>
+  <div
+    className="nice-progress-fill"
+    style={
+      Object {
+        "width": "0%",
+      }
+    }
+  >
+    0%
+  </div>
+</div>
+`;
+
 exports[`<Progress /> should render the Progress with custom message 1`] = `
 <div
   className="nice-progress primary"
+  style={Object {}}
 >
   <div
     className="nice-progress-fill"
@@ -54,6 +79,7 @@ exports[`<Progress /> should render the Progress with custom message 1`] = `
 exports[`<Progress /> should render the Progress with custom message and context 1`] = `
 <div
   className="nice-progress bad"
+  style={Object {}}
 >
   <div
     className="nice-progress-fill"
