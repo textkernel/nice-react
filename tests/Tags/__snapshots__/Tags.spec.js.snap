@@ -1,5 +1,149 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Tags /> <Tag /> should render Tags with custom className/styles 1`] = `
+<Tags
+  className="my-custom-classname"
+  style={
+    Object {
+      "top": 0,
+    }
+  }
+>
+  <div
+    className="nice-tags-container my-custom-classname"
+    style={
+      Object {
+        "top": 0,
+      }
+    }
+  >
+    <Tag
+      className="my-custom-classname"
+      context=""
+      onClick={[Function]}
+      style={
+        Object {
+          "top": 0,
+        }
+      }
+    >
+      <div
+        className="nice-tag my-custom-classname"
+        onClick={[Function]}
+        role="button"
+        style={
+          Object {
+            "top": 0,
+          }
+        }
+        tabIndex="-1"
+      >
+        <Label
+          className="my-custom-classname"
+          label="Germany"
+          style={
+            Object {
+              "top": 0,
+            }
+          }
+        >
+          <div
+            className="nice-tag-label my-custom-classname"
+            style={
+              Object {
+                "top": 0,
+              }
+            }
+          >
+            Germany
+          </div>
+        </Label>
+        <Badge
+          className="my-custom-classname"
+          label="16"
+          onClick={[Function]}
+          style={
+            Object {
+              "top": 0,
+            }
+          }
+        >
+          <div
+            className="nice-tag-badge my-custom-classname"
+            onClick={[Function]}
+            role="button"
+            style={
+              Object {
+                "top": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            16
+            <div
+              className="nice-tag-dropdown hover"
+            >
+              <ul>
+                <Item
+                  className="my-custom-classname"
+                  href="#"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "top": 0,
+                    }
+                  }
+                >
+                  <li
+                    className="my-custom-classname"
+                    style={
+                      Object {
+                        "top": 0,
+                      }
+                    }
+                  >
+                    <a
+                      href="#"
+                      onClick={[Function]}
+                    >
+                       Item 
+                    </a>
+                  </li>
+                </Item>
+              </ul>
+            </div>
+          </div>
+        </Badge>
+      </div>
+    </Tag>
+    <Input
+      className="my-custom-classname"
+      onChange={null}
+      placeholder="Add new tag..."
+      style={
+        Object {
+          "top": 0,
+        }
+      }
+      value=""
+    >
+      <input
+        className="nice-tag-input my-custom-classname"
+        onChange={[Function]}
+        placeholder="Add new tag..."
+        style={
+          Object {
+            "top": 0,
+          }
+        }
+        type="text"
+        value=""
+      />
+    </Input>
+  </div>
+</Tags>
+`;
+
 exports[`<Tags /> <Tag /> should render simple tag 1`] = `
 <div
   className="nice-tags-container"
