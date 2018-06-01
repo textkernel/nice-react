@@ -1,8 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<LoginDialog /> should render a default LoginDialog 1`] = `
+exports[`<LoginDialog /> should render a default LoginDialog with custom className/style 1`] = `
 <div
-  className="nice-login"
+  className="nice-login my-class"
+  style={
+    Object {
+      "top": 0,
+    }
+  }
 >
   <div
     className="nice-login-brand"
@@ -156,6 +161,7 @@ exports[`<LoginDialog /> should render a default LoginDialog 1`] = `
 exports[`<LoginDialog /> should render a loading LoginDialog without attribution / version 1`] = `
 <div
   className="nice-login"
+  style={Object {}}
 >
   <div
     className="nice-login-brand"
