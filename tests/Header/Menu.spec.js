@@ -17,4 +17,11 @@ describe('<Header.Menu />', () => {
         </HeaderMenu>);
         expect(wrapper).toMatchSnapshot();
     });
+
+    it('should render Header Menu with custom className/style', () => {
+        const wrapper = shallow(
+            <HeaderMenu className="my-custom-class" style={{ top: 0 }} />
+        );
+        expect(wrapper).toMatchSnapshot();
+    });
 });

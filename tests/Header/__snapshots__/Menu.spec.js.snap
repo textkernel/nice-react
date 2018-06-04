@@ -1,8 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Header.Menu /> should render Header Menu with custom className/style 1`] = `
+<ul
+  className="nice-header-menu my-custom-class"
+  style={
+    Object {
+      "top": 0,
+    }
+  }
+/>
+`;
+
 exports[`<Header.Menu /> should render alternate header menu group 1`] = `
 <ul
   className="nice-header-menu menu-alt"
+  style={Object {}}
 >
   <Item
     className={null}
@@ -12,6 +24,7 @@ exports[`<Header.Menu /> should render alternate header menu group 1`] = `
     label="Item 1"
     level={0}
     onClick={null}
+    style={Object {}}
     target={null}
     width={null}
   />
@@ -23,6 +36,7 @@ exports[`<Header.Menu /> should render alternate header menu group 1`] = `
     label="Item 2"
     level={0}
     onClick={null}
+    style={Object {}}
     target={null}
     width={null}
   />
@@ -32,6 +46,7 @@ exports[`<Header.Menu /> should render alternate header menu group 1`] = `
 exports[`<Header.Menu /> should render default header menu group 1`] = `
 <ul
   className="nice-header-menu"
+  style={Object {}}
 >
   <Item
     className={null}
@@ -41,6 +56,7 @@ exports[`<Header.Menu /> should render default header menu group 1`] = `
     label="Item 1"
     level={0}
     onClick={null}
+    style={Object {}}
     target={null}
     width={null}
   />
@@ -52,6 +68,7 @@ exports[`<Header.Menu /> should render default header menu group 1`] = `
     label="Item 2"
     level={0}
     onClick={null}
+    style={Object {}}
     target={null}
     width={null}
   />
