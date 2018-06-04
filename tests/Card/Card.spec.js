@@ -40,12 +40,45 @@ describe('<Card />', () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             ullamcorper nulla ac quam hendrerit pharetra.
             <Card.Sub className="icon fa-reply">
-                In semper vel lectus sed finibus. Donec in erat risus. Aenean in lectus massa. Phasellus id malesuada arcu, vel ultricies enim.
+                In semper vel lectus sed finibus. Donec in erat risus. 
+                Aenean in lectus massa. Phasellus id malesuada arcu, vel ultricies enim.
             </Card.Sub>
             <Card.Sub className="icon fa-reply">
-                    In semper vel lectus sed finibus. Donec in erat risus. Aenean in lectus massa. Phasellus id malesuada arcu, vel ultricies enim.
+                    In semper vel lectus sed finibus. Donec in erat risus. 
+                    Aenean in lectus massa. Phasellus id malesuada arcu, vel ultricies enim.
             </Card.Sub>
         </Card>);
+        expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render Card with custom classnames/styles', () => {
+        const wrapper = shallow(
+            <Card
+                title="This is a card with subs"
+                context="brand"
+                className="my-classname"
+                style={{
+                    float: 'none',
+                    width: '300px'
+                }}
+                controls={ [{
+                    label: 'OK',
+                    className: 'icon fa-check',
+                    style: { color: 'green' },
+                    onClick
+                }]}
+            >
+                <Card.Content className="content-classname" style={{ color: 'red' }}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                    ullamcorper nulla ac quam hendrerit pharetra.
+                </Card.Content>
+
+                <Card.Sub className="icon fa-reply" style={{ backgroundColor: 'blue' }}>
+                    In semper vel lectus sed finibus. Donec in erat risus.
+                    Aenean in lectus massa. Phasellus id malesuada arcu, vel ultricies enim.
+                </Card.Sub>
+            </Card>
+        );
         expect(wrapper).toMatchSnapshot();
     });
 });
