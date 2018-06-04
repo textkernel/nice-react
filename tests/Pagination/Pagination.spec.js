@@ -48,4 +48,13 @@ describe('<Pagination />', () => {
         </Pagination>);
         expect(wrapper).toMatchSnapshot();
     });
+
+    it('should render Pagination with custom className/style', () => {
+        const wrapper = shallow(
+            <Pagination className="my-custom-class" style={{ top: 0 }}>
+                <Pagination.Item current>1</Pagination.Item>
+            </Pagination>
+        );
+        expect(wrapper).toMatchSnapshot();
+    });
 });

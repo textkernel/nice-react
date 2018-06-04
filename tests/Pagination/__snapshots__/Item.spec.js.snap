@@ -1,12 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Pagination.Item /> should render Item with custom className/style 1`] = `
+<li
+  className="my-custom-class"
+  style={
+    Object {
+      "top": 0,
+    }
+  }
+>
+  <a
+    href="#"
+    onClick={[Function]}
+  />
+</li>
+`;
+
 exports[`<Pagination.Item /> should render current Item 1`] = `
 <li
-  className={
-    Array [
-      "current",
-    ]
-  }
+  className="current"
+  style={Object {}}
 >
   <a
     href="#"
@@ -17,11 +30,8 @@ exports[`<Pagination.Item /> should render current Item 1`] = `
 
 exports[`<Pagination.Item /> should render disabled Item 1`] = `
 <li
-  className={
-    Array [
-      "disabled",
-    ]
-  }
+  className="disabled"
+  style={Object {}}
 >
   <span
     href=""

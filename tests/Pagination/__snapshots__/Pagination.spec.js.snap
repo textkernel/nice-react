@@ -1,37 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Pagination /> should render Pagination with custom className/style 1`] = `
+<nav
+  className="my-custom-class"
+  style={
+    Object {
+      "top": 0,
+    }
+  }
+>
+  <ul
+    className="nice-pagination"
+    role="navigation"
+  >
+    <Item
+      className={null}
+      current={true}
+      disabled={false}
+      onClick={null}
+      style={Object {}}
+    >
+      1
+    </Item>
+  </ul>
+</nav>
+`;
+
 exports[`<Pagination /> should render bordered Pagination 1`] = `
-<nav>
+<nav
+  className={null}
+  style={Object {}}
+>
   <ul
     className="nice-pagination bordered"
     role="navigation"
   >
     <Item
+      className={null}
       current={true}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       1
     </Item>
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       2
     </Item>
-    <Gap />
+    <Gap
+      className={null}
+      style={Object {}}
+    />
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       4
     </Item>
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       5
     </Item>
@@ -40,58 +80,78 @@ exports[`<Pagination /> should render bordered Pagination 1`] = `
 `;
 
 exports[`<Pagination /> should render default Pagination 1`] = `
-<nav>
+<nav
+  className={null}
+  style={Object {}}
+>
   <ul
     className="nice-pagination"
     role="navigation"
   >
     <Item
+      className={null}
       current={false}
       disabled={true}
       onClick={null}
+      style={Object {}}
     >
       « Previous
     </Item>
     <Item
+      className={null}
       current={true}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       1
     </Item>
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       2
     </Item>
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       3
     </Item>
-    <Gap />
+    <Gap
+      className={null}
+      style={Object {}}
+    />
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       4
     </Item>
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       5
     </Item>
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       Next »
     </Item>
@@ -100,37 +160,51 @@ exports[`<Pagination /> should render default Pagination 1`] = `
 `;
 
 exports[`<Pagination /> should render large Pagination 1`] = `
-<nav>
+<nav
+  className={null}
+  style={Object {}}
+>
   <ul
     className="nice-pagination large"
     role="navigation"
   >
     <Item
+      className={null}
       current={true}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       1
     </Item>
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       2
     </Item>
-    <Gap />
+    <Gap
+      className={null}
+      style={Object {}}
+    />
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       4
     </Item>
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       5
     </Item>
@@ -139,37 +213,51 @@ exports[`<Pagination /> should render large Pagination 1`] = `
 `;
 
 exports[`<Pagination /> should render small Pagination 1`] = `
-<nav>
+<nav
+  className={null}
+  style={Object {}}
+>
   <ul
     className="nice-pagination small"
     role="navigation"
   >
     <Item
+      className={null}
       current={true}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       1
     </Item>
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       2
     </Item>
-    <Gap />
+    <Gap
+      className={null}
+      style={Object {}}
+    />
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       4
     </Item>
     <Item
+      className={null}
       current={false}
       disabled={false}
       onClick={null}
+      style={Object {}}
     >
       5
     </Item>

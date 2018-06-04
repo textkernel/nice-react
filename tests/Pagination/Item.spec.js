@@ -19,4 +19,11 @@ describe('<Pagination.Item />', () => {
         wrapper.find('li.disabled span').simulate('click', { preventDefault() {} });
         expect(onClickHandler).not.toHaveBeenCalled();
     });
+
+    it('should render Item with custom className/style', () => {
+        const wrapper = shallow(
+            <Pagination.Item className="my-custom-class" style={{ top: 0 }} />
+        );
+        expect(wrapper).toMatchSnapshot();
+    });
 });
