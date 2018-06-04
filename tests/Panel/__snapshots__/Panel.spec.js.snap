@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Panel /> should render Panel with title 1`] = `
+<div
+  className="nice-panel"
+  style={null}
+>
+  <div
+    className="nice-panel-heading"
+  >
+    My title
+  </div>
+  <div
+    className="nice-panel-content"
+  />
+</div>
+`;
+
+exports[`<Panel /> should render a Panel with custom classes / styles 1`] = `
+<div
+  className="nice-panel test"
+  style={
+    Object {
+      "display": "none",
+    }
+  }
+>
+  <div
+    className="nice-panel-content"
+  >
+    Hello Jest!
+  </div>
+</div>
+`;
+
+exports[`<Panel /> should render content  the Panel 1`] = `
+<div
+  className="nice-panel"
+  style={null}
+>
+  <div
+    className="nice-panel-content"
+  >
+    Hello Jest!
+  </div>
+</div>
+`;
+
+exports[`<Panel /> should render the Panel header on the bottom 1`] = `
+<div
+  className="nice-panel"
+  style={null}
+>
+  <div
+    className="nice-panel-content"
+  />
+  <div
+    className="nice-panel-heading"
+  >
+    My title
+  </div>
+</div>
+`;
+
+exports[`<Panel /> should render with different color theme 1`] = `
+<div
+  className="nice-panel good"
+  style={null}
+>
+  <div
+    className="nice-panel-content"
+  />
+</div>
+`;
