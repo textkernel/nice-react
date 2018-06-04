@@ -3,7 +3,11 @@
 exports[`<Modal /> should render Modal.Content 1`] = `
 <div
   className="nice-modal-body"
-  style={null}
+  style={
+    Object {
+      "padding": null,
+    }
+  }
 >
   Modal content
 </div>
@@ -12,6 +16,7 @@ exports[`<Modal /> should render Modal.Content 1`] = `
 exports[`<Modal /> should render Modal.Footer 1`] = `
 <div
   className="nice-modal-footer"
+  style={Object {}}
 >
   Modal footer
 </div>
@@ -20,6 +25,7 @@ exports[`<Modal /> should render Modal.Footer 1`] = `
 exports[`<Modal /> should render Modal.Header 1`] = `
 <div
   className="nice-modal-header"
+  style={Object {}}
 >
   <a
     className="nice-modal-close"
@@ -36,6 +42,48 @@ exports[`<Modal /> should render Modal.Header 1`] = `
 </div>
 `;
 
+exports[`<Modal /> should render a Modal with custom classNames/styles 1`] = `
+<div
+  class="nice-modal-overlay"
+>
+  <div
+    class="nice-modal info my-custom-classname"
+    style="top:0"
+  >
+    <div
+      class="nice-modal-content"
+    >
+      <div
+        class="nice-modal-header my-custom-classname"
+        style="top:0"
+      >
+        <h4>
+          Modal header
+        </h4>
+      </div>
+      <div
+        class="nice-modal-sub my-custom-classname"
+        style="top:0"
+      >
+        Modal sub header
+      </div>
+      <div
+        class="nice-modal-body my-custom-classname"
+        style="top:0"
+      >
+        Modal content
+      </div>
+      <div
+        class="nice-modal-footer my-custom-classname"
+        style="top:0"
+      >
+        Modal footer
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<Modal /> should render a hidden, viewport centered Modal with overlay 1`] = `
 <div
   className="nice-modal info viewport-center hidden tall wide"
@@ -44,22 +92,32 @@ exports[`<Modal /> should render a hidden, viewport centered Modal with overlay 
   <div
     className="nice-modal-content"
   >
-    <ModalHeader
+    <Header
+      className={null}
       onClose={[Function]}
+      style={Object {}}
     >
       Modal header
-    </ModalHeader>
-    <ModalSub>
+    </Header>
+    <Sub
+      className={null}
+      style={Object {}}
+    >
       Modal sub header
-    </ModalSub>
-    <Component
+    </Sub>
+    <Content
+      className={null}
       padding={null}
+      style={Object {}}
     >
       Modal content
-    </Component>
-    <ModalFooter>
+    </Content>
+    <Footer
+      className={null}
+      style={Object {}}
+    >
       Modal footer
-    </ModalFooter>
+    </Footer>
   </div>
 </div>
 `;
@@ -75,22 +133,32 @@ exports[`<Modal /> should render a simple Modal 1`] = `
     <div
       className="nice-modal-content"
     >
-      <ModalHeader
+      <Header
+        className={null}
         onClose={null}
+        style={Object {}}
       >
         Modal header
-      </ModalHeader>
-      <ModalSub>
+      </Header>
+      <Sub
+        className={null}
+        style={Object {}}
+      >
         Modal sub header
-      </ModalSub>
-      <Component
+      </Sub>
+      <Content
+        className={null}
         padding={null}
+        style={Object {}}
       >
         Modal content
-      </Component>
-      <ModalFooter>
+      </Content>
+      <Footer
+        className={null}
+        style={Object {}}
+      >
         Modal footer
-      </ModalFooter>
+      </Footer>
     </div>
   </div>
 </div>
@@ -112,22 +180,32 @@ exports[`<Modal /> should render a styled Modal 1`] = `
     <div
       className="nice-modal-content"
     >
-      <ModalHeader
+      <Header
+        className={null}
         onClose={[Function]}
+        style={Object {}}
       >
         Modal header
-      </ModalHeader>
-      <ModalSub>
+      </Header>
+      <Sub
+        className={null}
+        style={Object {}}
+      >
         Modal sub header
-      </ModalSub>
-      <Component
+      </Sub>
+      <Content
+        className={null}
         padding={null}
+        style={Object {}}
       >
         Modal content
-      </Component>
-      <ModalFooter>
+      </Content>
+      <Footer
+        className={null}
+        style={Object {}}
+      >
         Modal footer
-      </ModalFooter>
+      </Footer>
     </div>
   </div>
 </div>

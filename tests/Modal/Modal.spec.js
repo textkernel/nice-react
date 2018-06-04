@@ -20,6 +20,31 @@ describe('<Modal />', () => {
         expect(wrapper).toMatchSnapshot();
     });
 
+    it('should render a Modal with custom classNames/styles', () => {
+        const props = { 
+            className: 'my-custom-classname',
+            style: { top: 0 }
+        };
+
+        const wrapper = render(
+            <Modal context="info" {...props}>
+                <Modal.Header {...props}>
+                    Modal header
+                </Modal.Header>
+                <Modal.Sub {...props}>
+                    Modal sub header
+                </Modal.Sub>
+                <Modal.Content {...props}>
+                    Modal content
+                </Modal.Content>
+                <Modal.Footer {...props}>
+                    Modal footer
+                </Modal.Footer>
+            </Modal>
+        );
+        expect(wrapper).toMatchSnapshot();
+    });
+
     it('should render a hidden, viewport centered Modal with overlay', () => {
         const mockCallback = jest.fn();
         const wrapper = shallow(<Modal context="info" viewportCenter overlay tall wide hidden>
