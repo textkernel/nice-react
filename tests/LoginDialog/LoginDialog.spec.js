@@ -3,8 +3,10 @@ import LoginDialog from '../../lib/LoginDialog';
 import { Button } from '../../lib/Button';
 
 describe('<LoginDialog />', () => {
-    it('should render a default LoginDialog', () => {
+    it('should render a default LoginDialog with custom className/style', () => {
         const wrapper = shallow(<LoginDialog
+            className="my-class"
+            style={{ top: 0 }}
             brand="textkernel"
             product="textkernel"
             intro="Welcome to Textkernel. Please log in using your credentials to access your account."
