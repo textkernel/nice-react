@@ -134,4 +134,23 @@ describe('<Tags /> <Tag />', () => {
         expect(mockCallback).toHaveBeenCalled();
     });
 
+    it('should render Tags with custom className/styles', () => {
+        const props = {
+            className: 'my-custom-classname',
+            style: { top: 0 }
+        };
+
+        const wrapper = mount(
+            <Tags {...props}>
+                <Tag {...props}>
+                    <Tag.Label {...props} label="Germany" />
+                    <Tag.Badge {...props} label="16">
+                        <Tag.Badge.Item {...props}> Item </Tag.Badge.Item>
+                    </Tag.Badge>
+                </Tag>
+                <Tags.Input {...props} placeholder="Add new tag..." />
+            </Tags>
+        );
+        expect(wrapper).toMatchSnapshot();
+    });
 });
