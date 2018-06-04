@@ -37,4 +37,19 @@ describe('<Code />', () => {
         </Code>);
         expect(wrapper).toMatchSnapshot();
     });
+
+    it('should render with a Code block with custom className/style', () => {
+        const wrapper = shallow(
+            <Code
+                context="good"
+                heading="Hello"
+                icon="icon fa-code"
+                className="my-custom-classname"
+                style={{ left: 50 }}
+            >
+                { '{ some": "json" }' }
+            </Code>
+        );
+        expect(wrapper).toMatchSnapshot();
+    });
 });

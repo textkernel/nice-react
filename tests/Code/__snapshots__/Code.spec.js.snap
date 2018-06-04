@@ -3,6 +3,7 @@
 exports[`<Code /> should render a Code block with custom context, size and icon 1`] = `
 <div
   className="nice-code-container"
+  style={Object {}}
 >
   <div
     className="nice-code-heading good icon fa-code"
@@ -22,6 +23,7 @@ exports[`<Code /> should render a Code block with custom context, size and icon 
 exports[`<Code /> should render a Code block with heading and syntax 1`] = `
 <div
   className="nice-code-container"
+  style={Object {}}
 >
   <div
     className="nice-code-heading"
@@ -46,6 +48,7 @@ exports[`<Code /> should render a Code block with heading and syntax 1`] = `
 exports[`<Code /> should render a Code block with heading but no syntax 1`] = `
 <div
   className="nice-code-container"
+  style={Object {}}
 >
   <div
     className="nice-code-heading"
@@ -65,6 +68,7 @@ exports[`<Code /> should render a Code block with heading but no syntax 1`] = `
 exports[`<Code /> should render a Code block without heading 1`] = `
 <div
   className="nice-code-container"
+  style={Object {}}
 >
   <code
     className="restrain-s"
@@ -72,6 +76,28 @@ exports[`<Code /> should render a Code block without heading 1`] = `
     {
     "some": "json"
 }
+  </code>
+</div>
+`;
+
+exports[`<Code /> should render with a Code block with custom className/style 1`] = `
+<div
+  className="nice-code-container my-custom-classname"
+  style={
+    Object {
+      "left": 50,
+    }
+  }
+>
+  <div
+    className="nice-code-heading good icon fa-code"
+  >
+    Hello
+  </div>
+  <code
+    className="restrain-s"
+  >
+    { some": "json" }
   </code>
 </div>
 `;
