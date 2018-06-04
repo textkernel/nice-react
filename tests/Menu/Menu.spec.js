@@ -29,4 +29,15 @@ describe('<Menu />', () => {
     </Menu>);
         expect(wrapper).toMatchSnapshot();
     });
+
+    it('should render default (horizontal) Menu/Item with custom className/style', () => {
+        const wrapper = shallow(
+            <Menu className="my-custom-class" style={{ top: 0 }}>
+                <Menu.Item className="icon fa-home" style={{ bottom: 0 }} label="Home" />
+                <Menu.Item className="icon fa-map-pin" style={{ bottom: 0 }} label="Cities" />
+            </Menu> 
+        );
+
+        expect(wrapper).toMatchSnapshot();
+    });
 });

@@ -3,6 +3,7 @@
 exports[`<Menu /> should render default (horizontal) Menu 1`] = `
 <ul
   className="nice-menu"
+  style={Object {}}
 >
   <Item
     className="icon fa-home"
@@ -11,6 +12,7 @@ exports[`<Menu /> should render default (horizontal) Menu 1`] = `
     href="#"
     label="Home"
     onClick={[Function]}
+    style={Object {}}
     target={null}
   />
   <Item
@@ -20,6 +22,7 @@ exports[`<Menu /> should render default (horizontal) Menu 1`] = `
     href="#"
     label="Cities"
     onClick={[Function]}
+    style={Object {}}
     target={null}
   />
   <Item
@@ -29,6 +32,7 @@ exports[`<Menu /> should render default (horizontal) Menu 1`] = `
     href="#"
     label="Regions"
     onClick={[Function]}
+    style={Object {}}
     target={null}
   />
   <Item
@@ -38,6 +42,47 @@ exports[`<Menu /> should render default (horizontal) Menu 1`] = `
     href="#"
     label="Countries"
     onClick={[Function]}
+    style={Object {}}
+    target={null}
+  />
+</ul>
+`;
+
+exports[`<Menu /> should render default (horizontal) Menu/Item with custom className/style 1`] = `
+<ul
+  className="nice-menu my-custom-class"
+  style={
+    Object {
+      "top": 0,
+    }
+  }
+>
+  <Item
+    className="icon fa-home"
+    current={false}
+    disabled={false}
+    href="#"
+    label="Home"
+    onClick={null}
+    style={
+      Object {
+        "bottom": 0,
+      }
+    }
+    target={null}
+  />
+  <Item
+    className="icon fa-map-pin"
+    current={false}
+    disabled={false}
+    href="#"
+    label="Cities"
+    onClick={null}
+    style={
+      Object {
+        "bottom": 0,
+      }
+    }
     target={null}
   />
 </ul>
@@ -46,6 +91,7 @@ exports[`<Menu /> should render default (horizontal) Menu 1`] = `
 exports[`<Menu /> should render stacked / narrow menu 1`] = `
 <ul
   className="nice-menu has-icons narrow stacked"
+  style={Object {}}
 >
   <Item
     className="icon fa-home"
@@ -54,6 +100,7 @@ exports[`<Menu /> should render stacked / narrow menu 1`] = `
     href="#"
     label="Home"
     onClick={[Function]}
+    style={Object {}}
     target={null}
   />
   <Item
@@ -63,6 +110,7 @@ exports[`<Menu /> should render stacked / narrow menu 1`] = `
     href="#"
     label="Cities"
     onClick={[Function]}
+    style={Object {}}
     target={null}
   >
     <Item
@@ -72,6 +120,7 @@ exports[`<Menu /> should render stacked / narrow menu 1`] = `
       href="#"
       label="Amsterdam"
       onClick={[Function]}
+      style={Object {}}
       target={null}
     />
     <Item
@@ -81,6 +130,7 @@ exports[`<Menu /> should render stacked / narrow menu 1`] = `
       href="#"
       label="Paris"
       onClick={[Function]}
+      style={Object {}}
       target={null}
     />
     <Item
@@ -90,6 +140,7 @@ exports[`<Menu /> should render stacked / narrow menu 1`] = `
       href="#"
       label="Berlin"
       onClick={[Function]}
+      style={Object {}}
       target={null}
     />
     <Item
@@ -99,6 +150,7 @@ exports[`<Menu /> should render stacked / narrow menu 1`] = `
       href="#"
       label="Rome"
       onClick={[Function]}
+      style={Object {}}
       target={null}
     />
     <Item
@@ -108,6 +160,7 @@ exports[`<Menu /> should render stacked / narrow menu 1`] = `
       href="#"
       label="Madrid"
       onClick={[Function]}
+      style={Object {}}
       target={null}
     />
   </Item>
@@ -118,6 +171,7 @@ exports[`<Menu /> should render stacked / narrow menu 1`] = `
     href="#"
     label="Regions"
     onClick={[Function]}
+    style={Object {}}
     target={null}
   />
   <Item
@@ -127,6 +181,7 @@ exports[`<Menu /> should render stacked / narrow menu 1`] = `
     href="#"
     label="Countries"
     onClick={[Function]}
+    style={Object {}}
     target={null}
   />
 </ul>
