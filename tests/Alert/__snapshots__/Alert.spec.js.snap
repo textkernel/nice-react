@@ -1,8 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Alert /> should render Alert with custom classes / styles 1`] = `
+<div
+  className="nice-alert info test"
+  style={
+    Object {
+      "display": "none",
+    }
+  }
+>
+  <strong>
+    Hey you!
+  </strong>
+   Here is some information
+</div>
+`;
+
 exports[`<Alert /> should render Alert with heading 1`] = `
 <div
   className="nice-alert warning"
+  style={null}
 >
   <div
     className="nice-alert-heading"
@@ -19,6 +36,7 @@ exports[`<Alert /> should render Alert with heading 1`] = `
 exports[`<Alert /> should render Alert with icon button 1`] = `
 <div
   className="nice-alert bad"
+  style={null}
 >
   <strong>
     Uh oh...
@@ -39,6 +57,7 @@ exports[`<Alert /> should render Alert with icon button 1`] = `
 exports[`<Alert /> should render Alert with large button 1`] = `
 <div
   className="nice-alert good"
+  style={null}
 >
   <div
     className="nice-alert-wrapper"
@@ -65,6 +84,7 @@ exports[`<Alert /> should render Alert with large button 1`] = `
 exports[`<Alert /> should render the default Alert 1`] = `
 <div
   className="nice-alert info"
+  style={null}
 >
   <strong>
     Hey you!
