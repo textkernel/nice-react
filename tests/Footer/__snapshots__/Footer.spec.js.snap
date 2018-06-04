@@ -1,8 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Footer /> should render a Footer with custom classes / styles 1`] = `
+<footer
+  className="nice-footer test"
+  style={
+    Object {
+      "display": "none",
+    }
+  }
+>
+  <div
+    className="nice-container"
+  >
+    <p
+      className="pull-left"
+    >
+      © 
+      2018
+      <span
+        className="text-brand"
+      >
+        textkernel
+      </span>
+    </p>
+    <ul
+      className="nice-footer-menu"
+    >
+      <Link
+        className={null}
+        href="#"
+        onClick={null}
+        target={null}
+      >
+        Test
+      </Link>
+    </ul>
+  </div>
+</footer>
+`;
+
 exports[`<Footer /> should render a default Footer 1`] = `
 <footer
   className="nice-footer"
+  style={null}
 >
   <div
     className="nice-container"
@@ -61,6 +101,7 @@ exports[`<Footer /> should render a default Footer 1`] = `
 exports[`<Footer /> should render a fluid Footer without copyright 1`] = `
 <footer
   className="nice-footer"
+  style={null}
 >
   <div
     className="nice-container-fluid"

@@ -28,4 +28,13 @@ describe('<Footer />', () => {
         </Footer>);
         expect(wrapper).toMatchSnapshot();
     });
+
+    it('should render a Footer with custom classes / styles', () => {
+        const wrapper = shallow(<Footer className="test" style={{ display: 'none' }}>
+            <Footer.Link>
+                Test
+            </Footer.Link>
+        </Footer>);
+        expect(wrapper).toMatchSnapshot();
+    });
 });
