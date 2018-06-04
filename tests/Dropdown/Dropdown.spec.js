@@ -67,4 +67,20 @@ describe('<Dropdown />', () => {
         }] } radios />);
         expect(wrapper).toMatchSnapshot();
     });
+
+    it('should render Dropdown with custom classname/style', () => {
+        const wrapper = shallow(
+            <Dropdown 
+                className="my-custom-classname"
+                style={{ right: 0 }}
+                label={ 'Primary' } 
+                items={ [{ label: 'First' }, { label: 'Second' }, { label: 'Third' }] }
+                context="primary"
+                dropUp
+                alignLeft 
+            />
+        );
+
+        expect(wrapper).toMatchSnapshot();
+    });
 });
