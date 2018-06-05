@@ -2,7 +2,7 @@
 
 exports[`<Breadcrumb /> should render Breadcrumb with className and style 1`] = `
 <ol
-  className="nice-breadcrumb null my-classname"
+  className="nice-breadcrumb my-classname"
   style={
     Object {
       "top": 5,
@@ -13,7 +13,7 @@ exports[`<Breadcrumb /> should render Breadcrumb with className and style 1`] = 
 
 exports[`<Breadcrumb /> should render default Breadcrumb 1`] = `
 <ol
-  className="nice-breadcrumb null "
+  className="nice-breadcrumb"
   style={Object {}}
 >
   <Item
@@ -48,7 +48,7 @@ exports[`<Breadcrumb /> should render default Breadcrumb 1`] = `
 
 exports[`<Breadcrumb /> should render small Breadcrumb 1`] = `
 <ol
-  className="nice-breadcrumb small "
+  className="nice-breadcrumb small"
   style={Object {}}
 >
   <Item
