@@ -13,7 +13,7 @@ stories.addDecorator(withKnobs);
 
 stories.add('Custom properties', () => {
     const contextOptions = props.toggleContexts;
-    const context = select('Context', contextOptions, null);
+    const context = select('Context', contextOptions, 'primary');
     const disabled = boolean('Disabled', false);
     const defaultOn = boolean('Initially switched on', false);
     const small = boolean('Small', false);
