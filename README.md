@@ -70,7 +70,7 @@ Nice! React supports [Storybook](https://storybook.js.org/).
 
 3. Go to `http://localhost:9001` to check out examples of all components
 
-...or check out https://nice.textkernel.nl
+...or check out https://nice.textkernel.nl/react
 
 ### Tests
 * Run tests: `npm test`
