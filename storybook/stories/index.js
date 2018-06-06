@@ -19,3 +19,4 @@ import './Progress';
 import './Scale';
 import './Tabs';
 import './Tag';
+import './Toggle';
