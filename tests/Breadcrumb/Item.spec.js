@@ -24,11 +24,16 @@ describe('<Breadcrumb.Item />', () => {
 
     it('should render Item with children', () => {
         const wrapper = shallow(
-          <Breadcrumb.Item text="Level 2">
-            <Breadcrumb.Item text="Some child node 1" />
-            <Breadcrumb.Item text="Some child node 2" />
-          </Breadcrumb.Item>
+            <Breadcrumb.Item text="Level 2">
+                <Breadcrumb.Item text="Some child node 1" />
+                <Breadcrumb.Item text="Some child node 2" />
+            </Breadcrumb.Item>
         );
+        expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render Item with className and style', () => {
+        const wrapper = shallow(<Breadcrumb.Item className='my-classname' style={{ bottom: 0 }} text="Level 1" current />);
         expect(wrapper).toMatchSnapshot();
     });
 });
