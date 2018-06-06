@@ -2,6 +2,8 @@
 
 Nice! React provides UI elements from the [Nice! UI library](https://nice.textkernel.nl) in the form of React components. It is maintained by the [Nice! circle](mailto:nice@textkernel.nl) within [Textkernel](http://textkernel.com).
 
+To get started, check out https://nice.textkernel.nl/react.
+
 ## Quick start
 Several quick start options are available:
 
@@ -67,6 +69,8 @@ Nice! React supports [Storybook](https://storybook.js.org/).
 2. Run `npm run storybook`
 
 3. Go to `http://localhost:9001` to check out examples of all components
+
+...or check out https://nice.textkernel.nl
 
 ### Tests
 * Run tests: `npm test`
