@@ -4,5 +4,5 @@ MAINTAINER Alexander I. Antipin <alex@antipin.com>
 
 WORKDIR /srv/nice-react
 COPY . ./
-RUN npm install
+RUN npm ci
 RUN npm run build-storybook
