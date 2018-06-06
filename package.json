@@ -1,7 +1,7 @@
 {
     "name": "@textkernel/nice-react",
     "author": "Nice! Circle",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "React Components for Nice!",
     "main": "./dist/nice-react.min.js",
     "license": "MIT",
