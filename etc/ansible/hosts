@@ -1,5 +1,0 @@
-[production]
-188.166.9.185
-
-[production:vars]
-ansible_python_interpreter=/usr/bin/python3
