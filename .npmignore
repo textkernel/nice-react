@@ -1,9 +1,17 @@
 ### nice-react project
+!/dist
+/lib
+/storybook
 /storybook-static
+/tests
+/config
 /coverage
-/node_modules
-/dist
-etc/ansible/*.retry
+.babelrc
+.dockerignore
+.eslintignore
+.eslintrc
+.travis.yml
+Dockerfile
 
 ### VisualStudioCode template
 .vscode/*
