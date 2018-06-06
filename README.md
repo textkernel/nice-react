@@ -1,5 +1,7 @@
 # Nice! React Components
 
+[![Build Status](https://travis-ci.com/textkernel/nice-react.svg?branch=master)](https://travis-ci.com/textkernel/nice-react)
+
 Nice! React provides UI elements from the [Nice! UI library](https://nice.textkernel.nl) in the form of React components. It is maintained by the [Nice! circle](mailto:nice@textkernel.nl) within [Textkernel](http://textkernel.com).
 
 To get started, check out https://nice.textkernel.nl/react.
