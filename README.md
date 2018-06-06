@@ -27,7 +27,7 @@ Several quick start options are available:
     ...or using ES6 import:
 
     ```js
-    import Alert from 'nice-react';
+    import { Alert } from 'nice-react';
     ```
 
 2. Include the component in your page
