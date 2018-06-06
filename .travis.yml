@@ -11,7 +11,6 @@ install:
   - sudo apt-add-repository -y ppa:ansible/ansible
   - sudo apt-get update
   - sudo apt-get install -y ansible
-  - npm install
+  - npm ci
 script:
-  - ansible --version
   - npm run test
