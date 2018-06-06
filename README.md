@@ -79,6 +79,12 @@ Nice! React supports [Storybook](https://storybook.js.org/).
 * Run tests in watch mode: `npm run test:watch`
 * Coverage report: `npm run test:coverage`
 
+### Publishing on NPM
+
+```bash
+npm publish --access=public
+```
+
 ## Bugs and feature requests
 Found a bug or have a feature request? [Please open a new issue](https://github.com/textkernel/nice-react/issues/new).
 

@@ -1,7 +1,7 @@
 {
-    "name": "nice-react",
+    "name": "@textkernel/nice-react",
     "author": "Nice! Circle",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "React Components for Nice!",
     "main": "./dist/nice-react.min.js",
     "license": "MIT",
@@ -12,7 +12,8 @@
         "build-storybook": "build-storybook --config-dir ./storybook --output-dir ./storybook-static",
         "test": "jest",
         "test:watch": "jest --watch",
-        "test:coverage": "jest --coverage"
+        "test:coverage": "jest --coverage",
+        "prepublish": "npm run test && npm run build:lib"
     },
     "jest": {
         "setupFiles": [
