@@ -1,0 +1,90 @@
+.nice-toggle {
+    display: none;
+
+    &.disabled,
+    &[disabled] {
+        + .nice-toggle-btn {
+            cursor: not-allowed;
+        }
+        &:checked {
+            + .nice-toggle-btn {
+                color: $color-muted;
+            }
+        }
+    }
+
+    + .nice-toggle-btn {
+        outline: none;
+        width: 48px;
+        height: 24px;
+        position: relative;
+        cursor: pointer;
+        padding: 2px;
+        background-color: $color-white;
+        border: 2px solid $gray-medium;
+        margin-right: 5px;
+        margin-bottom: -7px;
+        text-indent: 50px;
+        white-space: nowrap;
+        color: $color-text;
+        user-select: none;
+        @include nice-border-radius(2em);
+        @include nice-transition(all .2s ease);
+        @include nice-font($size: .9em, $weight: 400);
+        @extend %display-inline-block;
+
+        &:after,
+        &:before {
+            position: absolute;
+            display: block;
+            content: '';
+            width: 50%;
+            height: calc(100% - 4px);
+            top: 0;
+            margin: 2px 0;
+        }
+        &:after {
+            left: 2px;
+            background-color: $gray-medium;
+            @include nice-border-radius(1em);
+            @include nice-transition(all .2s ease);
+        }
+        &:before {
+            display: none;
+        }
+        &.off-muted {
+            color: $color-muted;
+        }
+        &.small {
+            width: 36px;
+            height: 18px;
+            text-indent: 36px;
+            padding: 0 2px;
+            line-height: 1.2em;
+        }
+    }
+    &:checked {
+        + .nice-toggle-btn {
+            border: 2px solid $color-brand;
+            color: $color-text;
+
+            &:after {
+                left: calc(50% - 2px);
+                background-color: $color-brand;
+            }
+        }
+    }
+    @each $type in (accent, primary, info, good, warning, bad) {
+        &.#{$type} {
+            &:checked {
+                + .nice-toggle-btn {
+                    border-color: map-get($color-scheme, #{$type});
+
+                    &:after {
+                        background-color: map-get($color-scheme, #{$type});
+                    }
+                }
+            }
+        }
+    }
+}

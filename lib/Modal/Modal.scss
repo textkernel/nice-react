@@ -1,0 +1,133 @@
+.nice-modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .75);
+    z-index: 998;
+
+    .nice-modal {
+        z-index: 999;
+        @include nice-box-shadow(5px 3px 50px 5px rgba(0,0,0, 1));
+    }
+}
+.nice-modal {
+    border: 1px solid $color-border;
+    @include nice-border-radius($radius-normal);
+    @include nice-box-shadow(1px 3px 6px rgba(0,0,0, .15));
+
+    .nice-modal-content {
+        background-color: $color-white;
+        @include nice-border-radius($radius-normal);
+
+        .nice-modal-header {
+            position: relative;
+            padding: 10px 15px;
+            border-bottom: 1px solid $color-border;
+            @include nice-border-radius($radius-normal $radius-normal 0 0);
+
+            .nice-modal-close {
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                width: 20px;
+                text-align: center;
+                margin-top: -15px;
+                color: $color-muted;
+                @include nice-line-height(30px);
+            }
+            h4 {
+                padding: 0;
+                margin: 0;
+                font-weight: 600;
+                @include nice-font-size(16px);
+            }
+        }
+        .nice-modal-sub {
+            padding: 10px 15px;
+            border-bottom: 1px solid $color-border;
+            background-color: $gray-vlight;
+            color: $color-muted;
+            @include nice-text-shadow(1px 1px 0 $color-white);
+            @include nice-font-size(14px);
+        }
+        .nice-modal-body {
+            padding: 15px;
+
+            > .nice-stepper {
+                margin: -15px;
+            }
+            > .nice-tabs,
+            > .nice-tab-content {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+            > .nice-tab-content {
+                margin-bottom: -15px;
+            }
+        }
+        .nice-modal-footer {
+            padding: 15px;
+            border-top: 1px solid $color-border;
+            @include nice-border-radius(0 0 $radius-normal $radius-normal);
+            @extend %clearfix;
+
+            .nice-btn-group {
+                margin: 0;
+            }
+        }
+    }
+    @each $type in (accent, primary, brand, info, good, warning, bad) {
+        &.#{$type} {
+            border-color: map-get($color-scheme, #{$type});
+
+            .nice-modal-content {
+                .nice-modal-header {
+                    border-bottom-color: map-get($color-scheme, #{$type});
+                    background-color: map-get($color-scheme, #{$type});
+                    color: $color-white;
+
+                    h4 {
+                        @include nice-text-shadow(1px 1px 0 darken(map-get($color-scheme, #{$type}), 20%));
+                    }
+                    .nice-modal-close {
+                        color: $color-white;
+                    }
+                }
+                .nice-modal-sub {
+                    border-bottom-color: lighten(map-get($color-scheme, #{$type}), 30%);
+                }
+            }    
+        }
+    }
+    &.viewport-center {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 350px;
+        margin-left: -200px;
+        margin-top: -175px;
+
+        .nice-modal-content {
+            position: relative;
+            height: 100%;
+
+            .nice-modal-footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 62px;
+            }
+        }
+        &.tall {
+            height: 600px;
+            margin-top: -300px;
+        }
+        &.wide {
+            width: 550px;
+            margin-left: -275px;
+        }
+    }
+}

@@ -1,0 +1,171 @@
+$login__easing: cubic-bezier(1.000, 0.185, 1.000, 0.980);
+
+.nice-login {
+    display: block;
+    width: 400px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid $color-brand;
+    background-color: $color-white;
+    @include nice-box-shadow(0 2px 6px rgba(0,0,0,.1));
+    @include nice-border-radius($radius-normal);
+
+    .nice-login-brand {
+        margin: -15px -15px 15px;
+        padding: 5px 15px;
+        text-align: left;
+        background-color: $color-brand;
+        color: $color-white;
+        @include nice-font-size(16px);
+
+        + .nice-login-intro {
+            @include nice-border-radius($top-left: 0, $top-right: 0);
+
+            .nice-login-intro-logo {
+                @include nice-border-radius($top-left: 0);
+            }
+            .nice-login-intro-content {
+                @include nice-border-radius($top-right: 0);
+            }
+        }
+    }
+    .nice-login-loading {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        overflow: hidden;
+        display: none;
+        @include nice-border-radius($radius-normal);
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -50%;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            background-color: $color-primary;
+            @include nice-animation(slide 3s $login__easing 0s infinite);
+            @include nice-border-radius($radius-normal);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: -50%;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            background-color: $color-info;
+            @include nice-animation(slide 2s $login__easing 1.5s infinite);
+            @include nice-border-radius($radius-normal);
+        }
+        &.shown {
+            display: block;
+        }
+    }
+    .nice-login-intro {
+        position: relative;
+        background-color: lighten($color-info, 35%);
+        color: darken($color-info, 20%);
+        display: table;
+        margin: -15px -15px 15px;
+        width: calc(100% + 30px);
+        @include nice-font-size(13px);
+        @include nice-border-radius($top-left: $radius-normal * 2, $top-right: $radius-normal * 2);
+
+        .nice-login-intro-logo {
+            display: table-cell;
+            background-color: $color-brand;
+            color: $color-white;
+            padding: 10px 15px;
+            vertical-align: middle;
+            width: 1%;
+            white-space: nowrap;
+            @include nice-font-size(32px);
+            @include nice-border-radius($top-left: $radius-normal * 2);
+
+            + .nice-login-intro-content {
+                background-color: lighten($color-info, 35%);
+                @include nice-border-radius($top-left: 0);
+            }
+        }
+        .nice-login-intro-content {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 15px;
+            background-color: lighten($color-info, 35%);
+            color: darken($color-info, 20%);
+            @include nice-border-radius($top-left: $radius-normal * 2, $top-right: $radius-normal * 2);
+        }
+    }
+    .nice-login-logo {
+        position: absolute;
+        left: 50%;
+        margin-left: -55px;
+        top: -55px;
+        width: 110px;
+        text-align: center;
+        color: $color-white;
+        background-color: $color-brand;
+        @include nice-border-radius(50%);
+        line-height: 90px;
+
+        i {
+            position: relative;
+            top: 10px;
+            @include nice-font-size(64px);
+        }
+    }
+    .nice-login-footer {
+        padding: 15px;
+        margin: 15px -15px -15px;
+        @extend %clearfix;
+
+        .nice-btn.link {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .nice-btn-group {
+            margin: 0;
+        }
+    }
+    .nice-login-version {
+        margin: 15px -15px -15px;
+        padding: 10px 15px;
+        border-top: 1px solid $gray-light;
+        background-color: $gray-vlight;
+        color: $color-muted;
+        @include nice-font-size(11px);
+        @include nice-border-radius($bottom-right: $radius-normal * 2, $bottom-left: $radius-normal * 2);
+        @include nice-text-shadow(1px 1px 0 $color-white);
+
+        .text-brand {
+            font-weight: 200;
+            @include nice-font-size(12px);
+        }
+    }
+}
+
+@include media($mobile) {
+    .nice-login {
+        margin: 0 -15px 60px;
+        border-width: 0;
+        width: calc(100% + 30px);
+        @include nice-border-radius(0);
+        @include nice-box-shadow(none);
+
+        .nice-login-intro {
+            @include nice-border-radius($top-left: 0, $top-right: 0);
+
+            .nice-login-intro-content {
+                @include nice-border-radius($top-left: 0);
+            }
+        }
+        .nice-login-version {
+            @include nice-border-radius($bottom-right: 0, $bottom-left: 0);
+        }
+    }
+}

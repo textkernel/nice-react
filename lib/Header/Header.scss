@@ -1,0 +1,855 @@
+body {
+    &.nice-fixed-header {
+        padding-top: 60px;
+    }
+}
+.nice-header {
+    position: relative;
+    z-index: 5;
+    background-color: $color-white;
+    border-bottom: 1px solid $color-border;
+    @include nice-box-shadow(0 1px 3px rgba($color-black, 0.1));
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .nice-header-container {
+        height: 60px;
+        @include nice-line-height(60px);
+        @include outer-container($max-containment);
+
+        &:after {
+            display: none;
+        }
+        &.fluid {
+            max-width: 100%;
+            @extend .nice-container-fluid;
+        }
+    }
+    .nice-header-brand {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 60px;
+        outline: none;
+        @include nice-font($size: 1.3em, $weight: 600, $family: $fonts-primary);
+        @include nice-background-size(contain);
+        @extend %display-inline-block;
+
+        a {
+            display: inline-block;
+        }
+        img,
+        svg {
+            margin: 15px 0;
+            border: 0;
+        }
+    }
+    .nice-header-collapse {
+        float: right;
+
+        > form, ul, div {
+            float: left;
+        }
+    }
+    .nice-header-form {
+        float: right;
+        padding: 0 15px;
+
+        input[type="text"] {
+            display: inline-block;
+            border-color: $gray-light;
+            padding: 5px 10px;
+            @include nice-border-radius(15px);
+            @include nice-transition(border-color 0.3s, margin-left 0.3s, width 0.3s);
+
+            &:hover {
+                border-color: darken($gray-light, 10%);
+            }
+            &:focus {
+                width: 150%;
+                margin-left: -50%;
+                border-color: $color-brand;
+
+                + button {
+                    display: block;
+                    color: $gray-medium;
+                }
+            }
+        }
+        .nice-header-input-wrapper {
+            position: relative;
+
+            button {
+                position: absolute;
+                width: 24px;
+                margin-top: -12px;
+                top: 50%;
+                padding: 0;
+                right: 5px;
+                border: none;
+                color: $gray-light;
+                cursor: pointer;
+                display: none;
+                outline: none;
+                background-color: transparent;
+                @include nice-border-radius(50%);
+                @include nice-line-height(24px);
+                @include nice-transition(background-color 0.3s, color 0.3s);
+
+                i {
+                    font-size: 1em;
+                }
+            }
+            &:hover {
+                button {
+                    display: block;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: $color-brand;
+                    }
+                    &:active {
+                        color: $color-brand;
+                        @include nice-transition(none);
+                        @include nice-box-shadow(none);
+                    }
+                }
+            }
+        }
+    }
+    .nice-header-menu {
+        float: right;
+        padding: 0;
+        margin: 0;
+        @include nice-line-height(60px);
+
+        > li {
+            &.highlight {
+                > a, > span {
+                    padding: 4px 10px 0;
+                    border-bottom: 4px solid transparent;
+                    @include nice-line-height(52px);
+                }
+                @each $type in (primary, brand, accent, info, good, warning, bad) {
+                    &.#{$type} {
+                        > a, > span {
+                            border-color: map-get($color-scheme, #{$type});
+                            @include nice-transition(background-color 0.1s, border-color 0.3s);
+
+                            &:hover {
+                                border-color: lighten(map-get($color-scheme, #{$type}), 15%);
+                            }
+                        }
+                    }
+                }
+            }
+            &.fixed-width {
+                > a {
+                    width: 100px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    text-align: center;
+                }
+                &.w125 {
+                    > a {
+                        width: 125px;
+                    }
+                }
+                &.w150 {
+                    > a {
+                        width: 150px;
+                    }
+                }
+                &.w175 {
+                    > a {
+                        width: 175px;
+                    }
+                }
+                &.w200 {
+                    > a {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        li {
+            list-style: none;
+            display: block;
+            float: left;
+            position: relative;
+
+            a, span {
+                display: block;
+                line-height: normal;
+                font-size: 1.1em;
+                padding: 0 10px;
+                height: 60px;
+                @include nice-font-size(15px);
+                @include nice-line-height(60px);
+
+                &.icon,
+                &.product-icon,
+                &.additional-icon {
+                    &:before {
+                        margin-right: 5px;
+                    }
+                }
+            }
+            ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: $color-accent;
+                padding: 0;
+                @include nice-animation(slide-in-down .15s ease-out forwards);
+
+                .multi-column {
+                    float: none;
+                    background-color: $color-accent;
+                    white-space: nowrap;
+                    @extend %clearfix;
+
+                    &.col-2 {
+                        min-width: 200%;
+                    }
+                    &.col-3 {
+                        min-width: 300%;
+                    }
+
+                    ul {
+                        position: relative;
+                        float: left;
+                        left: auto;
+                    }
+                }
+
+                li {
+                    float: none;
+
+                    a, span {
+                        min-width: 200px;
+                        color: $color-white;
+                        display: block;
+                        height: 42px;
+                        @include nice-font($size: 13px);
+                        @include nice-transition(background-color 0.1s);
+                        @include nice-line-height(42px);
+
+                        &:hover {
+                            background-color: $color-brand;
+                        }
+                    }
+                    ul {
+                        position: absolute;
+                        left: 100%;
+                        top: 0;
+                        display: none;
+                    }
+                    &.align-left {
+                        ul {
+                            right: 100%;
+                        }
+                    }
+                    &:hover {
+                        > ul {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                > ul {
+                    display: block;
+
+                    .multi-column {
+                        ul {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            &.align-left {
+                > ul {
+                    left: auto;
+                    right: 0;
+                    > .multi-column {
+                        position: relative;
+                        right: 100%;
+
+                        > ul {
+                            right: auto;
+                        }
+                    }
+                }
+            }
+            &.has-children {
+                > a, > span {
+                    &:after {
+                        font-family: $fonts-icon;
+                        content: '\f107';
+                        color: $color-white;
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        margin-top: -10px;
+                        @include nice-line-height(20px);
+                    }
+                }
+                &:hover {
+                    > a, > span {
+                        &:after {
+                            color: $color-white;
+                            @include nice-animation(flip .15s linear forwards 0s 1);
+                        }
+                    }
+                }
+                &.align-left {
+                    &:hover {
+                        > a, > span {
+                            &:after {
+                                @include nice-animation(flip-opposite .15s linear forwards);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.menu-pills {
+            li {
+                a {
+                    &:hover {
+                        background-color: $gray-vlight;
+                    }
+                }
+                ul {
+                    li {
+                        a {
+                            &:hover {
+                                background-color: $color-brand;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.menu-alt {
+            > li {
+                padding: 16px 0;
+
+                > a {
+                    border: 0;
+                    padding: 0 10px;
+                    background-color: $gray-light;
+                    color: $color-link;
+                    height: 28px;
+                    @include nice-font($family: $fonts-primary);
+                    @include nice-font-size(12px);
+                    @include nice-transition(color .1s, background-color .1s);
+                    @include nice-border-radius($radius-normal * 5);
+                    @include nice-line-height(28px);
+
+                    &:hover {
+                        background-color: $color-link;
+                        color: $color-white;
+                    }
+                    &.icon {
+                        &:before {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                &:first-child {
+                    > a {
+                        @include nice-border-radius($top-right: 0, $bottom-right: 0);
+                    }
+                }
+                + li {
+                    > a {
+                        border-left: 1px solid $gray-vlight;
+                        @include nice-border-radius(0);
+                    }
+                }
+                &:last-child {
+                    > a {
+                        @include nice-border-radius($top-right: $radius-normal * 5, $bottom-right: $radius-normal * 5);
+                    }
+                }
+            }
+        }
+        + .nice-header-menu {
+            margin-left: 15px;
+        }
+    }
+    .nice-header-toggle {
+        display: none;
+    }
+    .nice-header-product {
+        float: right;
+        padding-left: 15px;
+        @include nice-font($weight: 400, $size: 1em);
+    }
+}
+
+@include media($mobile-and-tablet) {
+    body {
+        &.expanded {
+            .nice-header {
+                .nice-header-collapse {
+                    @include nice-box-shadow(-1px 0 15px rgba($color-accent, .3));
+                }
+            }
+        }
+    }
+    .nice-header {
+        margin: 0 -15px;
+        position: relative;
+
+        &.fixed {
+            @include nice-transition(left .2s ease-out);
+            margin: 0;
+        }
+        .nice-header-container {
+            padding: 0 15px;
+        }
+        .nice-header-menu {
+            + .nice-header-menu {
+                margin-left: 0;
+            }
+        }
+        .nice-header-collapse {
+            top: 0;
+            height: 100%;
+            position: fixed;
+            background-color: $color-accent;
+            overflow: hidden;
+            overflow-y: auto;
+            @include nice-transition(left .2s ease-out, right .2s ease-out, box-shadow .5s);
+
+            > form, ul, div, span {
+                float: none;
+            }
+            .nice-header-menu {
+                z-index: 5;
+                width: 100%;
+                @include nice-transition(left .2s ease-in-out);
+
+                > li {
+                    &.fixed-width {
+                        > a {
+                            width: auto;
+                            text-align: left;
+                        }
+                        &.w125,
+                        &.w150,
+                        &.w175,
+                        &.w200 {
+                            width: auto;
+                        }
+                    }
+                }
+                li {
+                    float: none;
+
+                    a, span {
+                        position: relative;
+                        color: $color-white;
+                        @include nice-transition(background-color .1s, color .1s);
+
+                        &:before {
+                            display: -moz-inline-stack;
+                            display: inline-block;
+                            *display: inline-block;
+                            zoom: 1;
+                            width: 20px;
+                            text-align: center;
+                            margin-right: 10px;
+                        }
+                    }
+                    ul {
+                        display: block;
+                        position: relative;
+
+                        li {
+                            white-space: normal;
+
+                            a, span {
+                                padding-left: 50px;
+                                @include nice-font($size: .9em);
+
+                                &:hover,
+                                &:focus,
+                                &:active {
+                                    background-color: transparent;
+                                }
+                            }
+                            ul {
+                                display: block;
+                                position: relative;
+                                left: auto;
+                                padding-left: 15px;
+
+                                .multi-column {
+                                    min-width: 100%;
+                                    width: 100%;
+
+                                    ul {
+                                        float: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.has-children {
+                        > a, > span {
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                    &.align-left {
+                        ul {
+                            right: auto;
+
+                            .multi-column {
+                                right: auto;
+                            }
+                        }
+                    }
+                }
+                &.menu-pills {
+                    li {
+                        a {
+                            &:hover,
+                            &:active {
+                                background-color: $color-white;
+                                color: $color-link;
+                                outline: none;
+                            }
+                        }
+                        ul {
+                            li {
+                                a {
+                                    &:hover,
+                                    &:focus,
+                                    &:active {
+                                        background-color: transparent;
+                                        color: $color-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.menu-alt {
+                    margin-left: 0;
+                    margin-top: 0;
+                    left: auto;
+                    width: auto;
+                    height: auto;
+                    padding-top: 0;
+
+                    li {
+                        padding: 0;
+                        background-color: lighten($color-accent, 15%);
+
+                        > a {
+                            padding: 0 20px;
+                            background-color: transparent;
+                            color: $color-white;
+                            height: 50px;
+                            @include nice-font($size: 13px);
+                            @include nice-line-height(50px);
+
+                            &.icon {
+                                &:before {
+                                    width: 20px;
+                                    text-align: center;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+
+                        + li {
+                            padding-top: 0;
+                            border-top: 1px solid lighten($color-accent, 20%);
+
+                            > a {
+                                border-left: none;
+                                @include nice-border-radius($top-right: 0, $bottom-right: 0);
+                            }
+                        }
+                        &:first-child {
+                            a {
+                                @include nice-border-radius($top-left: $radius-normal, $top-right: $radius-normal, $bottom-left: 0);
+                            }
+                        }
+                        &:last-child {
+                            a {
+                                @include nice-border-radius($bottom-left: $radius-normal, $bottom-right: $radius-normal);
+                            }
+                        }
+                        ul {
+                            border-top: 1px solid lighten($color-accent, 20%);
+
+                            li {
+                                background-color: lighten($color-accent, 20%);
+
+                                a {
+                                    padding: 0 20px;
+                                    @include nice-line-height(42px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .nice-header-form {
+            padding: 0 20px;
+            background-color: lighten($color-accent, 15%);
+            position: fixed;
+            width: calc(100% - 60px);
+            z-index: 6;
+
+            input[type="text"] {
+                color: $color-white;
+                border-color: transparent;
+                background-color: transparent;
+                padding: 5px 0;
+                @include nice-box-shadow(none);
+                @include nice-border-radius(0);
+                @include nice-transition(border-bottom-color 0.3s);
+                @include nice-placeholder-color {
+                    color: lighten($color-accent, 50%);
+                }
+
+                &:hover {
+                    border-color: transparent;
+                }
+                &:focus {
+                    border-color: transparent;
+                    border-bottom-color: lighten($color-accent, 40%);
+                    width: 100%;
+                    margin-left: 0;
+                    @include nice-box-shadow(none);
+                    @include nice-placeholder-color {
+                        color: $gray-vlight;
+                    }
+                }
+            }
+
+            ~ .nice-header-menu {
+                margin-top: 60px;
+            }
+        }
+        .nice-header-toggle {
+            display: block;
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            margin-top: -16px;
+            border: none;
+            padding: 10px;
+            background-color: transparent;
+            outline: none;
+            text-align: center;
+            cursor: pointer;
+
+            .icon-bar {
+                display: block;
+                width: 22px;
+                height: 2px;
+                background-color: $color-accent;
+                @include nice-transition(all 0.2s);
+
+                &.top-bar {
+                    transform-origin: 10% 10%;
+                    @include nice-transform(rotate(45deg));
+                }
+                &.middle-bar {
+                    @include nice-opacity(0);
+                }
+                &.bottom-bar {
+                    transform-origin: 10% 90%;
+                    @include nice-transform(rotate(-45deg));
+                }
+                + .icon-bar {
+                    margin-top: 4px;
+                }
+            }
+            &.collapsed {
+                .icon-bar {
+                    &.top-bar {
+                        @include nice-transform(rotate(0));
+                    }
+                    &.middle-bar {
+                        @include nice-opacity(1);
+                    }
+                    &.bottom-bar {
+                        @include nice-transform(rotate(0));
+                    }
+                }
+            }
+            &:hover {
+                .icon-bar {
+                    background-color: $color-brand;
+                }
+            }
+            &:focus,
+            &:active {
+                background-color: transparent;
+                @include nice-box-shadow(none);
+            }
+        }
+        .nice-header-product {
+            display: block;
+            padding: 0 20px;
+            color: $color-white;
+            background-color: lighten($color-accent, 15%);
+            @include nice-font($size: .9em, $weight: 600);
+
+            + .nice-header-form {
+                border-top: 1px solid lighten($color-accent, 30%);
+            }
+        }
+    }
+}
+
+@include media($mobile) {
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+        left: 0;
+        right: auto;
+        @include nice-transition(left .2s ease-in-out);
+
+        &.expanded {
+            position: relative;
+            left: calc(-100% + 60px);
+            z-index: 999;
+            overflow: visible;
+
+            .nice-header {
+                &.fixed {
+                    left: calc(-100% + 60px);
+                }
+                .nice-header-collapse {
+                    left: 60px;
+                }
+            }
+        }
+    }
+    header,
+    .nice-header {
+        .nice-header-collapse {
+            left: 105%;
+            right: auto;
+            width: calc(100% - 60px);
+
+            .nice-header-form {
+                .nice-header-input-wrapper {
+                    button {
+                        right: 0;
+
+                        &:active {
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+            .nice-header-menu {
+                > li {
+                    &.highlight {
+                        > a {
+                            padding: 0 20px 0 16px;
+                            border-bottom-width: 0;
+                            border-left-width: 4px;
+                            border-left-style: solid;
+                            height: 50px;
+                            @include nice-line-height(50px);
+                        }
+                    }
+                }
+                ul {
+                    li {
+                        a, span {
+                            padding: 0 20px;
+                            height: 42px;
+                            @include nice-line-height(42px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media($tablet) {
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+        left: auto;
+        right: 0;
+        @include nice-transition(right .2s ease-in-out);
+
+        &.expanded {
+            position: relative;
+            right: 340px;
+            z-index: 999;
+            overflow: visible;
+
+            .nice-header {
+                &.fixed {
+                    left: -340px;
+                }
+                .nice-header-collapse {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+    header,
+    .nice-header {
+        .nice-header-collapse {
+            right: -340px;
+            left: auto;
+            width: 340px;
+
+            .nice-header-form {
+                width: 340px;
+
+                input[type="text"] {
+                    &:focus {
+                        width: 100%;
+                        margin-left: auto;
+                    }
+                }
+            }
+            .nice-header-menu {
+                > li {
+                    &.highlight {
+                        > a {
+                            padding: 0 20px 0 16px;
+                            border-bottom-width: 0;
+                            border-left-width: 4px;
+                            border-left-style: solid;
+                            height: 50px;
+                            @include nice-line-height(50px);
+                        }
+                    }
+                    > a {
+                        padding: 0 20px;
+                        height: 42px;
+                        @include nice-line-height(42px);
+                    }
+                }
+            }
+        }
+    }
+}

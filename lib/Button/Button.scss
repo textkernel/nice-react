@@ -1,0 +1,253 @@
+.nice-btn {
+    color: $color-black;
+    position: relative;
+    border: 1px solid $color-border;
+    background-color: $color-white;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+    user-select: none;
+    outline: none;
+    @include nice-font($family: $fonts-primary);
+    @include nice-line-height(20px);
+    @include nice-border-radius($radius-normal);
+    @include nice-transition(border 0.1s, background 0.1s);
+    @include nice-font-size(14px);
+    @extend %display-inline-block;
+
+    &:hover,
+    &:focus {
+        color: $color-black;
+        border: 1px solid darken($color-border, 15%);
+        background-color: $gray-vlight;
+    }
+    &:focus,
+    .nice-btn-focus {
+        border: 1px solid $color-brand;
+    }
+    &:active,
+    .nice-btn-active {
+        background-color: $gray-light;
+        @include nice-box-shadow(inset 0 2px 1px rgba($gray-medium, 1));
+    }
+    &[disabled],
+    &.disabled {
+        background-color: lighten($color-border, 20%);
+        border-color: lighten($color-border, 5%);
+        color: $color-muted;
+        cursor: default;
+
+        &:active,
+        &:hover,
+        &:focus {
+            background-color: lighten($color-border, 20%);
+            border-color: lighten($color-border, 5%);
+            @include nice-box-shadow(none);
+        }
+    }
+    &.icon {
+        &:before {
+            margin-right: 5px;
+        }
+        &.text-bold {
+            &:before {
+                font-weight: normal;
+            }
+        }
+    }
+    &.link {
+        color: $color-link;
+        border: none;
+        padding: 6px 10px;
+        background-color: transparent;
+        @include nice-transition(color 0.3s);
+
+        &:hover,
+        &:focus {
+            color: lighten($color-link, 10%);
+            background-color: transparent;
+            @include nice-box-shadow(none);
+        }
+        &[disabled],
+        &.disabled {
+            color: $color-muted;
+        }
+    }
+    @each $type in (brand, primary, accent, info, good, warning, bad) {
+        &.#{$type} {
+            color: $color-white;
+            background-color: map-get($color-scheme, #{$type});
+            border: none;
+            padding: 6px 11px;
+
+            &:hover,
+            &:focus,
+            .nice-btn-focus {
+                background-color: lighten(map-get($color-scheme, #{$type}), 5%);
+            }
+            &:active,
+            .nice-btn-active {
+                @include nice-box-shadow(inset 0 2px 1px darken(map-get($color-scheme, #{$type}), 5%));
+            }
+            &[disabled],
+            &.disabled {
+                $btn-lightened: lighten(map-get($color-scheme, #{$type}), 25%);
+                $btn-desaturated: desaturate($btn-lightened, 30%);
+                background-color: $btn-desaturated;
+
+                &:active {
+                    @include nice-box-shadow(none);
+                }
+            }
+            &.small {
+                padding: 4px 5px;
+            }
+        }
+    }
+    &.small {
+        padding: 3px 5px;
+        @include nice-line-height(15px);
+        @include nice-font-size($font-size-small);
+    }
+    &.large {
+        padding: 0 15px;
+        @include nice-line-height(42px);
+        @include nice-font-size($font-size-large);
+    }
+    &.bold {
+        font-weight: 600;
+    }
+}
+.nice-btn-alt {
+    border: 0;
+    padding: 5px 10px;
+    background-color: $gray-light;
+    color: $color-link;
+    @include nice-font($family: $fonts-primary);
+    @include nice-font-size(12px);
+    @include nice-transition(color .1s, background-color .1s);
+    @include nice-border-radius($radius-normal * 5);
+
+    &:hover {
+        background-color: $color-link;
+        color: $color-white;
+    }
+    &.icon {
+        &:before {
+            margin-right: 5px;
+        }
+    }
+}
+.nice-btn-group {    
+    margin: 15px 0;
+    @extend %clearfix;
+
+    > {
+        .nice-btn,
+        .nice-dropdown {
+            position: relative;
+            float: left;
+
+            &:not(:first-child):not(:last-child) {
+                @include nice-border-radius(0);
+            }
+            &:first-child {
+                @include nice-border-radius($radius-normal 0 0 $radius-normal);
+            }
+            &:last-child {
+                @include nice-border-radius(0 $radius-normal $radius-normal 0);
+            }
+            &:first-child:last-child {
+                @include nice-border-radius($radius-normal);
+            }
+            + .nice-btn,
+            + .nice-dropdown {
+                margin-left: -1px;
+            }
+            &:hover {
+                z-index: 2;
+            }
+        }
+        .nice-dropdown {
+            .nice-btn {
+                @include nice-border-radius(inherit);
+            }
+        }
+        .nice-btn-alt {
+            position: relative;
+            float: left;
+            @include nice-border-radius(0);
+
+            &:first-child {
+                @include nice-border-radius($top-left: $radius-normal * 5, $bottom-left: $radius-normal * 5);
+            }
+            &:last-child {
+                @include nice-border-radius($top-right: $radius-normal * 5, $bottom-right: $radius-normal * 5);
+            }
+            + .nice-btn-alt {
+                margin-left: 1px;
+            }
+        }
+    }
+    &.stacked {
+        > {
+            .nice-btn,
+            .nice-dropdown {
+                float: none;
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                margin-left: 0;
+
+                &:first-child {
+                    @include nice-border-radius($radius-normal $radius-normal 0 0);
+                }
+                &:last-child {
+                    @include nice-border-radius(0 0 $radius-normal $radius-normal);
+                }
+                + .nice-btn {
+                    margin-top: -1px;
+                }
+            }
+            .nice-dropdown {
+                .nice-btn {
+                    @include nice-border-radius(inherit);
+                }
+            }
+        }
+    }
+    &.justified {
+        display: table;
+        table-layout: fixed;
+        border-collapse: separate;
+        width: 100%;
+
+        > {
+            .nice-btn,
+            .nice-dropdown {
+                display: table-cell;
+                float: none;
+                width: 100%;
+            }
+        }
+    }
+    &.small {
+        > {
+            .nice-btn {
+                @extend .nice-btn.small;
+            }
+            .nice-dropdown {
+                @extend .nice-dropdown.small;
+            }
+        }
+    }
+    &.large {
+        > {
+            .nice-btn {
+                @extend .nice-btn.large;
+            }
+        }
+    }
+}

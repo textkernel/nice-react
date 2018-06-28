@@ -1,0 +1,126 @@
+.nice-scale {
+    position: relative;
+
+    + .nice-scale {
+        margin-top: 15px;
+    }
+
+    .nice-scale-selection {
+        z-index: 999;
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: table;
+        table-layout: fixed;
+
+        li {
+            text-align: center;
+            vertical-align: top;
+            display: table-cell;
+
+            input[type='radio'] {
+                display: none;
+
+                + span {
+                    cursor: pointer;
+                    position: relative;
+                    top: -2px;
+                    width: 19px;
+                    height: 19px;
+                    border: 3px solid $color-border;
+                    background-color: $color-white;
+                    display: block;
+                    margin: 0 auto;
+                    @include nice-transition(border-color .1s, background-color .3s);
+                    @include nice-border-radius(50%);
+
+                }
+                &:checked {
+                    + span {
+                        border-color: $color-white;
+                        background-color: $color-primary;
+                        @include nice-box-shadow(0 1px 4px rgba($color-black, .3));
+                    }
+                }
+            }
+            label {
+                cursor: pointer;
+                display: block;
+                width: 100%;
+                font-weight: normal;
+                user-select: none;
+                @include nice-font-size(13px);
+
+                &:hover {
+                    input[type='radio']:not(:checked) {
+                        + span {
+                            border-color: $color-brand;
+                        }
+                    }
+                    .nice-scale-label {
+                        color: $color-white;
+                        background-color: $color-brand;
+
+                        &:before {
+                            border-bottom-color: $color-brand;
+                        }
+                    }
+                }
+                input[type='radio']:checked {
+                    ~ .nice-scale-label {
+                        color: $color-white;
+                        background-color: $color-primary;
+
+                        &:before {
+                            border-bottom-color: $color-primary;
+                        }
+                    }
+                }
+                .nice-scale-label {
+                    position: relative;
+                    display: inline-block;
+                    margin-top: 3px;
+                    padding: 3px 8px;
+                    min-width: 26px;
+                    text-align: center;
+                    background-color: $gray-light;
+                    @include nice-transition(color .2s, background-color .2s);
+                    @include nice-border-radius($radius-normal * 1.5);
+
+                    &:before {
+                        position: absolute;
+                        top: -4px;
+                        left: 50%;
+                        margin-left: -4px;
+                        content: '';
+                        width: 0; 
+                        height: 0; 
+                        border-left: 4px solid transparent;
+                        border-right: 4px solid transparent;
+                        border-bottom: 4px solid $gray-light;
+                        @include nice-transition(border-bottom-color .2s);
+                    }
+                }
+            }
+        }
+    }
+    &:before {
+        z-index: 0;
+        content: '';
+        position: absolute;
+        display: block;
+        top: 5px;
+        left: 10%;
+        background-color: $gray-light;
+        height: 4px;
+        width: 80%;
+        @include nice-border-radius($radius-normal);
+        @include nice-transition(background-color .2s);
+    }
+    &:hover {
+        &:before {
+            background-color: darken($gray-light, 5%)   ;
+        }
+    }
+}

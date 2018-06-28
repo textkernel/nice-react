@@ -1,0 +1,200 @@
+.nice-tags-container {
+    background-color: $color-white;
+    padding: 0 0 3px 3px;
+    white-space: nowrap;
+    border: 1px solid $color-border;
+    @include nice-border-radius($radius-normal);
+    @extend %clearfix;
+
+    .nice-tag-input {
+        float: left;
+        margin: 3px 3px 0 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        color: $color-text;
+        @include nice-line-height(26px);
+        @include nice-font($family: $fonts-primary);
+    }
+
+    .nice-tag {
+        background-color: $color-brand;
+        color: $color-white;
+        display: block;
+        float: left;
+        margin: 3px 3px 0 0;
+        @include nice-border-radius($radius-normal);
+        @include nice-box-shadow(inset 0 -2px 0 darken($color-brand, 20%));
+
+        .nice-tag-label,
+        .nice-tag-btn,
+        .nice-tag-badge {
+            @include nice-line-height(26px);
+            @include nice-font($size: .9em);
+        }
+        .nice-tag-btn,
+        .nice-tag-badge {
+            position: relative;
+            background-color: lighten($color-brand, 15%);
+            text-align: center;
+            color: $color-white;
+            display: block;
+            float: left;
+            padding: 0 7px;
+            @include nice-box-shadow(inset 0 -2px 0 $color-brand);
+
+            &:last-child {
+                @include nice-border-radius($top-right: $radius-normal, $bottom-right: $radius-normal);
+            }
+        }
+
+        .nice-tag-label {
+            padding: 0 7px;
+            display: block;
+            float: left;
+            @include nice-border-radius($top-left: $radius-normal, $bottom-left: $radius-normal);
+        }
+        .nice-tag-btn {
+            border: none;
+            cursor: pointer;
+            margin: 0;
+            vertical-align: middle;
+            height: 26px;
+            line-height: auto;
+            @include nice-transition(background-color .3s);
+
+            &:hover {
+                background-color: lighten($color-brand, 20%);
+            }
+        }
+        .nice-tag-badge {
+            + .nice-tag-btn {
+                margin-left: 1px;
+            }
+            &:after {
+                right: 100%;
+                top: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(136, 183, 213, 0);
+                border-right-color: lighten($color-brand, 15%);
+                border-width: 4px;
+                margin-top: -4px;
+            }
+            &:hover {
+                .nice-tag-dropdown {
+                    &.hover {
+                        display: block;
+                    }
+                }
+            }
+            .nice-tag-dropdown {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                padding-top: 3px;
+                z-index: 1;
+                text-align: left;
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    background-color: $color-brand;
+                    max-height: 260px;
+                    overflow: hidden;
+                    overflow-y: auto;
+                    @include nice-border-radius($radius-normal);
+                    @include nice-animation(slide-in-down .15s ease-out forwards);
+
+                    li {
+                        a {
+                            display: block;
+                            color: $color-white;
+                            padding: 0 7px;
+                            @include nice-font($size: .9em);
+                            @include nice-transition(none);
+
+                            &:hover {
+                                background-color: lighten($color-brand, 15%);
+                            }
+                        }
+                        &:first-child {
+                            a {
+                                @include nice-border-radius($top-right: $radius-normal);
+                            }
+                        }
+                        &:last-child {
+                            a {
+                                @include nice-border-radius($bottom-right: $radius-normal, $bottom-left: $radius-normal);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @each $type in (primary, accent, muted, info, good, warning, bad) {
+            &.#{$type} {
+                background-color: map-get($color-scheme, #{$type});
+                color: $color-white;
+
+                .nice-tag-btn {
+                    background-color: lighten(map-get($color-scheme, #{$type}), 15%);
+                    @include nice-box-shadow(inset 0 -2px 0 darken(map-get($color-scheme, #{$type}), 20%));
+
+                    &:hover {
+                        background-color: lighten(map-get($color-scheme, #{$type}), 20%);
+                    }
+                }
+                .nice-tag-badge {
+                    background-color: lighten(map-get($color-scheme, #{$type}), 15%);
+                    @include nice-box-shadow(inset 0 -2px 0 darken(map-get($color-scheme, #{$type}), 20%));
+
+                    &:after {
+                        border-right-color: lighten(map-get($color-scheme, #{$type}), 15%);
+                    }
+                    .nice-tag-dropdown {
+                        ul {
+                            background-color: map-get($color-scheme, #{$type});
+
+                            li {
+                                a {
+                                    &:hover {
+                                        background-color: lighten(map-get($color-scheme, #{$type}), 15%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media($mobile-and-tablet) {
+    .nice-tags-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        .nice-tag {
+            display: flex;
+            flex-grow: 1;
+
+            .nice-tag-label {
+                flex-grow: 1;
+                text-align: center;
+            }
+
+            &:last-child {
+                flex-grow: 0;
+            }
+        }
+    }
+}
