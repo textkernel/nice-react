@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tags, Tag } from '../../lib/Tag';
+import { Tags, Tag } from '../../dist';
 
 describe('<Tags /> <Tag />', () => {
     it('should render simple tag', () => {

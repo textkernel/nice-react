@@ -1,0 +1,163 @@
+@import '../../styles/nice';
+
+.nice-popover {
+    position: relative;
+    background-color: $color-white;
+    border: 1px solid $color-accent;
+    @include nice-border-radius($radius-normal);
+    @include nice-box-shadow(1px 2px 6px rgba($color-black, .15));
+
+    .nice-popover-title {
+        background-color: $color-accent;
+        padding: 10px 15px;
+        font-weight: 600;
+        color: $color-white;
+        @include nice-border-radius($radius-normal $radius-normal 0 0);
+        @include nice-font-size(14px);
+
+        .icon,
+        .product-icon,
+        .additional-icon {
+            width: 15px;
+            text-align: center;
+            margin-right: 5px;
+            @extend %display-inline-block;
+
+            &.pull-right {
+                margin-right: 0;
+                margin-left: 5px;
+            }
+        }
+    }
+    .nice-popover-body {
+        padding: 15px;
+        @include nice-font-size(14px);
+        @extend %clearfix;
+
+        + .nice-popover-title {
+            @include nice-border-radius(0 0 $radius-normal $radius-normal);
+        }
+        .nice-popover-image {
+            margin: -15px 15px -15px -15px;
+            float: left;
+            @include nice-border-radius($radius-normal 0 0 $radius-normal);
+
+            &.right {
+                margin: -15px -15px -15px 15px;
+                float: right;
+                @include nice-border-radius(0 $radius-normal $radius-normal 0);
+            }
+        }
+    }
+    .nice-popover-controls {
+        border-top: 1px solid $gray-light;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+
+        .nice-popover-control {
+            padding: 10px 15px;
+            display: table-cell;
+            text-align: center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            cursor: pointer;
+            @include nice-font-size(14px);
+            @include nice-transition(background-color 0.2s, color 0.2s);
+
+            + .nice-popover-control {
+                border-left: 1px solid $gray-light;
+            }
+            &:first-child {
+                @include nice-border-radius(0 0 0 $radius-normal);
+            }
+            &:last-child {
+                @include nice-border-radius(0 0 $radius-normal 0);
+            }
+            &:hover {
+                background-color: $gray-vlight;
+            }
+            &:active {
+                background-color: $gray-light;
+                @include nice-transition(background-color 0s);
+            }
+        }
+    }
+    &:not(.no-arrow) {
+        &:before {
+            position: absolute;
+            bottom: 100%;
+            left: 10px;
+            content: '';
+            width: 0; 
+            height: 0; 
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid $color-accent;
+        }
+        &.top {
+            @include nice-box-shadow(1px 2px 6px rgba($color-black, .15));
+
+            &:before {
+                top: auto;
+                bottom: 100%;
+            }
+        }
+        &.bottom {
+            @include nice-box-shadow(1px -2px 6px rgba($color-black, .15));
+
+            &:before {
+                top: 100%;
+                bottom: auto;
+                border-bottom: none;
+                border-top: 10px solid $color-info;
+            }
+        }
+        &.left {
+            &:before {
+                left: 10px;
+                right: auto;
+            }
+        }
+        &.center {
+            &:before {
+                left: 50%;
+                right: auto;
+                margin-left: -10px;
+            }
+        }
+        &.right {
+            &:before {
+                left: auto;
+                right: 10px;
+            }
+        }
+    }
+    @each $type in (info, good, warning, bad) {
+        &.#{$type} {
+            border-color: map-get($color-scheme, #{$type});
+
+            .nice-popover-title {
+                background-color: lighten(map-get($color-scheme, #{$type}), 35%);
+                color: darken(map-get($color-scheme, #{$type}), 20%);
+            }
+            .nice-popover-controls {
+                a, button {
+                    color: darken(map-get($color-scheme, #{$type}), 20%);   
+                }
+            }
+            &:not(.no-arrow) {
+                &:before {
+                    border-bottom-color: map-get($color-scheme, #{$type});
+
+                    &.top {
+                        border-bottom-color: map-get($color-scheme, #{$type});
+                    }
+                    &.bottom {
+                        border-top-color: map-get($color-scheme, #{$type});
+                    }
+                }
+            }
+        }
+    }
+}

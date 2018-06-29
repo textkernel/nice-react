@@ -1,5 +1,5 @@
 import React from 'react';
-import Pagination from '../../lib/Pagination';
+import { Pagination } from '../../dist';
 
 describe('<Pagination.Item />', () => {
     it('should render current Item', () => {

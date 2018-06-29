@@ -1,0 +1,75 @@
+@keyframes pulse {
+    0% {
+        background-color: lighten($color-primary, 15%);
+    }    
+    50% {
+        background-color: $color-primary;
+    }
+    100% {
+        background-color: lighten($color-primary, 15%);
+    }
+}
+
+@keyframes spin {
+    0% {
+        @include nice-transform(rotate(0deg));
+    }
+    100% {
+        @include nice-transform(rotate(360deg));
+    }
+}
+
+@keyframes flip {
+    from {
+        @include nice-transform(rotate(0deg));
+    }
+    to {
+        @include nice-transform(rotate(-90deg));
+    }
+}
+
+@keyframes flip-opposite {
+    from {
+        @include nice-transform(rotate(0deg));
+    }
+    to {
+        @include nice-transform(rotate(90deg));
+    }
+}
+
+@keyframes slide {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes slide-in-down {
+    from {
+        opacity: 0;
+        @include nice-transform(translateY(-7px));
+    }
+    to {
+        opacity: 1;
+        @include nice-transform(translateY(0));
+    }
+}
+
+@keyframes stepper-bullet-in {
+    from {
+        background-color: $gray-medium;
+    }
+    to {
+        background-color: $color-primary;
+    }
+}
+@keyframes scale-in {
+    from {
+        transform: scale(.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,46 @@
+// Are you using Autoprefixer or should Nice! do that?
+$using-autoprefixer:    true !default;
+
+$font-path:             'fonts' !default;
+$fa-font-path:          'fonts/font-awesome' !global;
+
+// Fonts
+$fonts-primary:         'Open Sans', sans-serif, helvetica !default;
+$fonts-heading:         'Titillium Web', $fonts-primary !default;
+$fonts-brand:           Colaborate, 'Open Sans', sans-serif;
+$fonts-icon:            FontAwesome;
+$font-weight:           400 !default;
+$font-weight-bold:      600 !default;
+$font-size:             14px !default;
+$font-size-small:       13px !default;
+$font-size-large:       18px !default;
+
+$tablet-size:           641px !default;
+$desktop-size:          1025px !default;
+$max-containment:       1170px !default;
+
+// Breakpoints
+$mobile:                new-breakpoint(max-width $tablet-size 12);
+$tablet:                new-breakpoint(min-width $tablet-size max-width $desktop-size 12);
+$mobile-and-tablet:     new-breakpoint(max-width $desktop-size 12);
+$desktop:               new-breakpoint(min-width $desktop-size 12);
+
+// Spatial
+$radius-normal:         3px !default;
+$footer-height:         100px !default;
+
+// Color scheme map
+$color-scheme: (
+    'brand':    $color-brand,
+    'primary':  $color-primary,
+    'accent':   $color-accent,
+    'link':     $color-link,
+    'text':     $color-text,
+    'muted':    $color-muted,
+    'info':     $color-info,
+    'good':     $color-good,
+    'warning':  $color-warning,
+    'bad':      $color-bad,
+    'white':    $color-white,
+    'black':    $color-black
+);

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobsOptions, withKnobs, text, boolean, select, number } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
-import niceProps from '../../lib/props';
+import niceProps from '../../src/props';
 
 import { Dropdown } from 'nice-react';
 

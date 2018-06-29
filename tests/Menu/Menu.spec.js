@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from '../../lib/Menu';
+import { Menu } from '../../dist';
 
 const onClick = () => {};
 

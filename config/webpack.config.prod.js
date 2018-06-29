@@ -5,14 +5,14 @@ const LIBRARY_NAME = 'nice-react';
 
 module.exports = {
 
-    entry: [path.resolve(__dirname, '../lib/index.js')],
+    entry: [path.resolve(__dirname, '../src/index.js')],
 
     output: {
         path: path.resolve(__dirname, '../dist'),
         library: LIBRARY_NAME,
         libraryTarget: 'umd',
         umdNamedDefine: true,
-        filename: `${LIBRARY_NAME}.min.js`,
+        filename: `index.js`,
     },
 
     resolve: {
@@ -34,8 +34,12 @@ module.exports = {
                 exclude: /node_modules/,
             },
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                test: /\.scss$/,
+                use: [
+                    "style-loader", // creates style nodes from JS strings
+                    "css-loader", // translates CSS into CommonJS
+                    "sass-loader" // compiles Sass to CSS
+                ]
             },
             {
                 test: /\.(png|jpg)$/,
@@ -53,7 +57,9 @@ module.exports = {
         new webpack.optimize.ModuleConcatenationPlugin(),
         new webpack.HashedModuleIdsPlugin(),
         new webpack.optimize.UglifyJsPlugin({
-            mangle: true,
+            mangle: {
+                keep_fnames: true,
+            },
             compress: {
                 warnings: false,
                 pure_getters: true,
@@ -67,7 +73,8 @@ module.exports = {
                 dead_code: true,
                 evaluate: true,
                 if_return: true,
-                join_vars: true
+                join_vars: true,
+                keep_fnames: true,
             },
             output: {
                 comments: false,

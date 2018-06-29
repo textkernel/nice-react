@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductIcon from '../../lib/ProductIcon';
+import { ProductIcon } from '../../dist';
 
 describe('<ProductIcon />', () => {
     it('should render nothing', () => {

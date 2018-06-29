@@ -1,0 +1,124 @@
+@import '../../styles/nice';
+
+table {
+    th {
+        text-align: left;
+    }
+    td[class*="nice-col"],
+    th[class*="nice-col"] {
+        float: none;
+        position: static;
+        display: table-cell;
+    }
+    &.nice-table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        @extend %border-box-sizing;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        thead {
+            tr {
+                th, td {
+                    border-bottom: 1px solid $color-border;
+                    padding: 8px;
+                    background-color: $color-white;
+                    @include nice-font($weight: 600);
+                }
+            }
+        }
+        tbody { 
+            tr {
+                th, td {
+                    vertical-align: top;
+                    padding: 8px;
+                }
+                th {
+                    background-color: $color-white;
+                    @include nice-font($weight: 600);
+                }
+                td {
+                    @each $type in (info, good, warning, bad) {
+                        &.#{$type} {
+                            background-color: lighten(map-get($color-scheme, #{$type}), 35%);
+                        }
+                    }
+                }
+                @each $type in (info, good, warning, bad) {
+                    &.#{$type} {
+                        th, td {
+                            background-color: lighten(map-get($color-scheme, #{$type}), 35%);
+                        }
+                    }
+                }
+            }
+        }
+        &.condensed {
+            tbody {
+                tr {
+                    th, td {
+                        @include nice-line-height(24px);
+                    }
+                }
+            }
+        }
+        &.striped {
+            tbody {
+                tr:nth-child(odd) {
+                    background-color: $gray-light;
+                }
+                tr:nth-child(even) {
+                    background-color: transparent;
+                }
+            }
+        }
+        &.bordered {
+            border: 1px solid $color-border;
+            thead, tbody {
+                tr {
+                    th, td {
+                        border: 1px solid $color-border;
+                    }
+                }
+            }
+        }
+        &.hover {
+            tbody {
+                tr {
+                    &:hover {
+                        th, td {
+                            background-color: $gray-light;
+                            color: $color-black;
+
+                            @each $type in (info, good, warning, bad) {
+                                &.#{$type} {
+                                    background-color: lighten(map-get($color-scheme, #{$type}), 30%);
+                                }
+                            }
+                        }
+                        @each $type in (info, good, warning, bad) {
+                            &.#{$type} {
+                                th, td {
+                                    background-color: lighten(map-get($color-scheme, #{$type}), 30%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.small-body {
+            tbody {
+                tr {
+                    td {
+                        @include nice-font-size(13px);
+                    }
+                }
+            }
+        }
+    }
+}

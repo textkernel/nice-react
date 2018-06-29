@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, boolean, number, object, select, text } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
-import props from '../../lib/props';
+import props from '../../src/props';
 
 import { Button, Modal } from 'nice-react';
 

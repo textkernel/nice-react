@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tab } from '../../lib/Tabs';
+import { Tab } from '../../dist';
 
 describe.skip('<Tab/>', () => {
     let Component = null;

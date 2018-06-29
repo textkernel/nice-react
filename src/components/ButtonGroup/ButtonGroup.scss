@@ -1,0 +1,115 @@
+@import '../../styles/nice';
+@import '../Button/Button';
+@import '../Dropdown/Dropdown';
+
+.nice-btn-group {    
+    margin: 15px 0;
+    @extend %clearfix;
+
+    > {
+        .nice-btn,
+        .nice-dropdown {
+            position: relative;
+            float: left;
+
+            &:not(:first-child):not(:last-child) {
+                @include nice-border-radius(0);
+            }
+            &:first-child {
+                @include nice-border-radius($radius-normal 0 0 $radius-normal);
+            }
+            &:last-child {
+                @include nice-border-radius(0 $radius-normal $radius-normal 0);
+            }
+            &:first-child:last-child {
+                @include nice-border-radius($radius-normal);
+            }
+            + .nice-btn,
+            + .nice-dropdown {
+                margin-left: -1px;
+            }
+            &:hover {
+                z-index: 2;
+            }
+        }
+        .nice-dropdown {
+            .nice-btn {
+                @include nice-border-radius(inherit);
+            }
+        }
+        .nice-btn-alt {
+            position: relative;
+            float: left;
+            @include nice-border-radius(0);
+
+            &:first-child {
+                @include nice-border-radius($top-left: $radius-normal * 5, $bottom-left: $radius-normal * 5);
+            }
+            &:last-child {
+                @include nice-border-radius($top-right: $radius-normal * 5, $bottom-right: $radius-normal * 5);
+            }
+            + .nice-btn-alt {
+                margin-left: 1px;
+            }
+        }
+    }
+    &.stacked {
+        > {
+            .nice-btn,
+            .nice-dropdown {
+                float: none;
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                margin-left: 0;
+
+                &:first-child {
+                    @include nice-border-radius($radius-normal $radius-normal 0 0);
+                }
+                &:last-child {
+                    @include nice-border-radius(0 0 $radius-normal $radius-normal);
+                }
+                + .nice-btn {
+                    margin-top: -1px;
+                }
+            }
+            .nice-dropdown {
+                .nice-btn {
+                    @include nice-border-radius(inherit);
+                }
+            }
+        }
+    }
+    &.justified {
+        display: table;
+        table-layout: fixed;
+        border-collapse: separate;
+        width: 100%;
+
+        > {
+            .nice-btn,
+            .nice-dropdown {
+                display: table-cell;
+                float: none;
+                width: 100%;
+            }
+        }
+    }
+    &.small {
+        > {
+            .nice-btn {
+                @extend .nice-btn.small;
+            }
+            .nice-dropdown {
+                @extend .nice-dropdown.small;
+            }
+        }
+    }
+    &.large {
+        > {
+            .nice-btn {
+                @extend .nice-btn.large;
+            }
+        }
+    }
+}

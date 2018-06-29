@@ -1,0 +1,30 @@
+@import '../../styles/nice';
+
+.nice-loading {
+    border: .25rem solid rgba($color-black, .15);
+    border-top-color: rgba($color-accent, 1);
+    height: 24px;
+    width: 24px;
+    @include nice-animation(spin 1s linear 0s infinite);
+    @include nice-border-radius(50%);
+    @include nice-transition(border-top-color .5s);
+    @extend %display-inline-block;
+
+    @each $type in (brand, primary, info, good, warning, bad) {
+        &.#{$type} {
+            border-top-color: rgba(map-get($color-scheme, $type), 1);
+        }
+    }
+    &.medium {
+        border-width: .35rem;
+        height: 48px;
+        width: 48px;
+        @include nice-animation($duration: 1.25s);
+    }
+    &.large {
+        border-width: .45rem;
+        height: 128px;
+        width: 128px;
+        @include nice-animation($duration: 1.5s);
+    }
+}
