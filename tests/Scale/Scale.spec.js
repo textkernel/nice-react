@@ -1,5 +1,5 @@
 import React from 'react';
-import Scale from '../../lib/Scale';
+import { Scale } from '../../dist';
 
 describe('<Scale /> <Scale.Item />', () => {
     it('should render with all labels', () => {

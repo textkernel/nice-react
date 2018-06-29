@@ -1,0 +1,166 @@
+/**
+ * Nice! Mixins collection
+ **/
+
+@if $using-autoprefixer {
+    @warn "Dont forget to use Autoprefixer for vendor prefixing (or set variable $using-autoprefixer to `false`)";
+}
+
+@function calculateRem ($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin nice-font ($style: null, $variant: null, $weight: null, $size: null, $family: null) {
+    font: {
+        family: $family;
+        style: $style;
+        variant: $variant;
+        weight: $weight;
+        size: $size;
+    }
+}
+
+@mixin nice-font-size ($size: 12px) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+@mixin nice-line-height ($height: 12px) {
+    line-height: $height;
+    line-height: calculateRem($height);
+}
+
+@mixin nice-transform ($params...) {
+    transform: $params;
+
+    @if not $using-autoprefixer {
+        /* stylelint-disable property-no-vendor-prefix */
+        -webkit-transform: $params;
+        -ms-tranform: $params;
+        /* stylelint-enable */
+    }
+}
+
+@mixin nice-box-sizing ($param) {
+    box-sizing: $param;
+
+    @if not $using-autoprefixer {
+        /* stylelint-disable property-no-vendor-prefix */
+        -webkit-box-sizing: $param;
+        /* stylelint-enable */
+    }
+}
+
+@mixin nice-transition ($params...) {
+    transition: $params;
+
+    @if not $using-autoprefixer {
+        /* stylelint-disable property-no-vendor-prefix */
+        -webkit-transition: $params;
+        -o-transition: $params;
+        /* stylelint-enable */
+    }
+}
+
+@mixin nice-box-shadow ($params...) {
+    box-shadow: $params;
+
+    @if not $using-autoprefixer {
+        /* stylelint-disable property-no-vendor-prefix */
+        -webkit-box-shadow: $params;
+        /* stylelint-enable */
+    }
+}
+
+@mixin nice-text-shadow ($params...) {
+    text-shadow: $params;
+}
+
+@mixin nice-border-radius ($radiuses: null, $top-left: null, $top-right: null, $bottom-right: null, $bottom-left: null) {
+    border-radius: $radiuses;
+    /* stylelint-disable */
+    border-top-left-radius: $top-left;
+    border-top-right-radius: $top-right;
+    border-bottom-right-radius: $bottom-right;
+    border-bottom-left-radius: $bottom-left;
+    /* stylelint-enable */
+    background-clip: padding-box;
+
+    @if not $using-autoprefixer {
+        /* stylelint-disable */
+        -webkit-border-radius: $radiuses;
+        -webkit-border-top-left-radius: $top-left;
+        -webkit-border-top-right-radius: $top-right;
+        -webkit-border-bottom-right-radius: $bottom-right;
+        -webkit-border-bottom-left-radius: $bottom-left;
+        /* stylelint-enable */
+    }
+}
+
+@mixin nice-opacity ($transparency) {
+    opacity: $transparency;
+}
+
+@mixin nice-background-size ($param) {
+    background-size: $param;
+
+    @if not $using-autoprefixer {
+        /* stylelint-disable property-no-vendor-prefix */
+        -webkit-background-size: $param;
+        /* stylelint-enable */
+    }
+}
+
+@mixin nice-appearance ($param) {
+    appearance: $param;
+
+    @if not $using-autoprefixer {
+        /* stylelint-disable property-no-vendor-prefix */
+        -webkit-appearance: $param;
+        -moz-appearance: $param;
+        /* stylelint-enable */
+    }
+}
+
+@mixin nice-animation ($params: null, $duration: null, $easing: null, $delay: null, $iterations: null) {
+    animation: $params;
+    animation-duration: $duration;
+    animation-delay: $delay;
+
+    @if not $using-autoprefixer {
+        /* stylelint-disable property-no-vendor-prefix */
+        -webkit-animation: $params;
+        -webkit-animation-duration: $duration;
+        -webkit-animation-delay: $delay;
+        -webkit-animation-timing-function: $easing;
+        -webkit-animation-iteration-count: $iterations;
+        /* stylelint-enable */
+    }
+}
+
+@mixin nice-placeholder-color {
+    &::placeholder {
+        @content;
+    }
+}
+
+@mixin nice-linear-gradient ($color-from, $color-to) {
+    background: linear-gradient($color-from, $color-to);
+
+    @if not $using-autoprefixer {
+        /* stylelint-disable value-no-vendor-prefix */
+        background: -moz-linear-gradient(top, $color-from 0%, $color-to 100%);
+        background: -webkit-linear-gradient(top, $color-from 0%, $color-to 100%);
+        background: -o-linear-gradient(top, $color-from 0%, $color-to 100%);
+        /* stylelint-enable */
+    }
+}
+
+@mixin nice-abs-pos ($top: null, $right: null, $bottom: null, $left: null) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    position: absolute;
+}

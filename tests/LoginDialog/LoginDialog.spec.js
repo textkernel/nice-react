@@ -1,6 +1,5 @@
 import React from 'react';
-import LoginDialog from '../../lib/LoginDialog';
-import { Button } from '../../lib/Button';
+import { LoginDialog, Button } from '../../dist';
 
 describe('<LoginDialog />', () => {
     it('should render a default LoginDialog with custom className/style', () => {

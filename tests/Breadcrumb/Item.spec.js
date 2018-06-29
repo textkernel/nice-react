@@ -1,5 +1,5 @@
 import React from 'react';
-import Breadcrumb from '../../lib/Breadcrumb';
+import { Breadcrumb } from '../../dist';
 
 describe('<Breadcrumb.Item />', () => {
     it('should render clickable Item', () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Toggle from '../../lib/Toggle';
+import { Toggle } from '../../dist';
 
 describe('<Toggle />', () => {
     it('should render a simple Toggle', () => {

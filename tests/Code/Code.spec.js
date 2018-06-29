@@ -1,5 +1,5 @@
 import React from 'react';
-import Code from '../../lib/Code';
+import { Code } from '../../dist';
 
 describe('<Code />', () => {
     it('should render a Code block without heading', () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown from '../../lib/Dropdown';
+import { Dropdown } from '../../dist';
 
 describe('<Dropdown />', () => {
     it('should render a simple Dropdown', () => {

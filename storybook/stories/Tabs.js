@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobsOptions, withKnobs, text, boolean, select, number } from '@storybook/addon-knobs';
 
 import { Tabs, Tab } from 'nice-react';
-import niceProps from '../../lib/props';
+import niceProps from '../../src/props';
 
 const stories = storiesOf('Tabs', module);
 

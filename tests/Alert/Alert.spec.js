@@ -1,5 +1,5 @@
 import React from 'react';
-import Alert from '../../lib/Alert';
+import { Alert } from '../../dist';
 
 describe('<Alert />', () => {
     it('should render the default Alert', () => {

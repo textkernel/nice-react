@@ -1,5 +1,5 @@
 import React from 'react';
-import Popover from '../../lib/Popover';
+import { Popover } from '../../dist';
 
 const onClick = jest.fn();
 

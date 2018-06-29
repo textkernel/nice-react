@@ -1,0 +1,36 @@
+@import '../../styles/nice';
+
+.nice-progress {
+    background-color: darken($gray-light, 5%);
+    height: 28px;
+    padding: 4px;
+    margin: 5px 0;
+    @include nice-border-radius(15px);
+
+    .nice-progress-fill {
+        text-align: center;
+        color: $color-white;
+        background-color: $color-primary;
+        max-width: 100%;
+        min-width: 10%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        @include nice-font($size: .8em, $weight: 600);
+        @include nice-line-height(20px);
+        @include nice-border-radius(15px);
+        @include nice-transition(width 0.3s ease-in-out);
+        @include nice-text-shadow(1px 1px 0 rgba(0,0,0,.5));
+    }
+    @each $type in (brand, primary, accent, info, good, warning, bad) {
+        &.#{$type} {
+            .nice-progress-fill {
+                background-color: map-get($color-scheme, $type);
+            }
+        }
+    }
+    &.pulse {
+        .nice-progress-fill {
+            @include nice-animation(pulse 1.5s ease-out 0s infinite);
+        }
+    }
+}

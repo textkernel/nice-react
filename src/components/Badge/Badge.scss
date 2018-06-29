@@ -1,0 +1,19 @@
+@import '../../styles/nice';
+
+.badge,
+.nice-badge {
+    font-family: $fonts-primary;
+    background-color: $gray-medium;
+    color: $color-white;
+    padding: 3px 8px;
+
+    @include nice-font($size: 80%, $weight: 600);
+    @include nice-border-radius(15px);
+    @include nice-transition(background-color .1s, color .1s);
+
+    @each $type in (brand, primary, accent, info, good, warning, bad) {
+        &.#{$type} {
+            background-color: map-get($color-scheme, #{$type});
+        }
+    }
+}

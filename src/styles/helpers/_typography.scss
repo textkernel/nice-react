@@ -1,0 +1,74 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $fonts-heading;
+    font-weight: 400;
+    padding: 0;
+
+    small {
+        font-size: .75em;
+    }
+}
+h1, h2, h3, .h1, .h2, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;  
+}
+h4, h5, h6, .h4, .h5, .h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h1, .h1 {
+    @include nice-font-size(36px);
+}
+h2, .h2 {
+    @include nice-font-size(30px);
+}
+h3, .h3 {
+    @include nice-font-size(24px);
+}
+h4, .h4 {
+    @include nice-font-size(18px);
+}
+h5, .h5 {
+    @include nice-font-size(14px);
+}
+h6, .h6 {
+    @include nice-font-size(12px);
+}
+@each $value in (left, right, center, justify) {
+    .text-align-#{$value} {
+        text-align: $value;
+    }
+}
+@each $type in (brand, link, primary, accent, muted, good, info, warning, bad, white, black) {
+    .text-color-#{$type} {
+        color: map-get($color-scheme, #{$type});
+    }
+}
+.text-brand {
+    letter-spacing: 1px;
+    @include nice-font($family: $fonts-brand, $weight: 300);
+}
+.text-muted {
+    color: $color-muted;
+}
+.text-bold {
+    font-weight: 600;
+
+    &.icon {
+        &:before {
+            font-weight: normal;
+        }
+    }
+}
+.text-italic {
+    font-style: italic;
+}
+.text-small-caps {
+    font-variant: small-caps;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-default {
+    @include nice-font();
+}

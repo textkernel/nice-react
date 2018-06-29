@@ -1,0 +1,100 @@
+@import '../../styles/nice';
+
+$padding-y: calculateRem(5px);
+$padding-x: calculateRem(10px);
+
+nav {
+    @extend %clearfix;
+}
+.nice-pagination {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    @extend %display-inline-block;
+
+    li {
+        display: inline;
+        @extend %border-box-sizing;
+
+        span, a {
+            margin: 0 1px;
+            float: left;
+            display: block;
+            padding: $padding-y $padding-x;
+            @include nice-border-radius($radius-normal);
+        }
+        a {
+            text-decoration: none;
+            @include nice-transition(none);
+
+            &:hover {
+                background-color: $color-brand;
+                color: $color-white;
+            }
+        }
+        &.current {
+            span, a {
+                background: $color-accent;
+                color: $color-white;
+            }
+        }
+        &.disabled {
+            span, a {
+                color: darken($gray-medium, 5%);
+                cursor: default;
+                @include nice-text-shadow(1px 1px 0 $color-white);
+            }
+        }
+    }
+
+    &.small {
+        li {
+            span, a {
+                @include nice-font-size($font-size-small);
+            }
+        }
+    }
+    &.large {
+        li {
+            span, a {
+                @include nice-font-size($font-size-large);
+            }
+        }
+    }
+    &.bordered {
+        li {
+            span, a {
+                margin: 0;
+                position: relative;
+                border: 1px solid lighten($color-border, 5%);
+                margin-left: -1px;
+                background-color: $color-white;
+                @include nice-border-radius(0);
+            }
+            a {
+                &:hover {
+                    z-index: 2;
+                    background-color: $color-brand;
+                    border-color: $color-brand;
+                }
+            }
+            &:first-child {
+                span, a {
+                    margin-left: 0;
+                    @include nice-border-radius(25px 0 0 25px);
+                }
+            }
+            &:last-child {
+                span, a {
+                    @include nice-border-radius(0 25px 25px 0);
+                }
+            }
+            &.current {
+                span, a {
+                    background-color: $color-accent;
+                    border-color: $color-accent;
+                }
+            }
+        }
+    }
+}

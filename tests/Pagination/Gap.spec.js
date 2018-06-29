@@ -1,5 +1,5 @@
 import React from 'react';
-import Pagination from '../../lib/Pagination';
+import Pagination from '../../../../../nice-react/src/components/Pagination';
 
 describe('<Pagination.Gap />', () => {
     it('should render pagination Gap', () => {

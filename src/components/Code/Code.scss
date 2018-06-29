@@ -1,0 +1,99 @@
+@import '../../styles/nice';
+
+code {
+    padding: 3px;
+    color: $color-bad;
+    position: relative;
+    border: 1px solid $gray-light;
+    background-color: $color-white;
+    font-size: 12px; 
+    line-height: inherit;
+    overflow: auto;
+    white-space: pre-wrap;
+    @include nice-transition(max-height 0.5s);
+    @include nice-border-radius($radius-normal);
+
+    &.restrain-s {
+        max-height: 250px;
+    }
+    &.restrain-m {
+        max-height: 500px;
+    }
+    &.restrain-l {
+        max-height: 750px;
+    }
+    &.restrain-max {
+        max-height: 100%;
+    }
+    &.inline {
+        display: inline;
+        background-color: $color-white;
+        
+    }
+}
+.nice-code-container {
+    margin-bottom: 20px;
+
+    code {
+        color: $color-text;
+        display: block;
+        padding: 15px;
+        line-height: 18px;
+        border: 1px solid $color-border;
+        border-bottom: none;
+        @include nice-border-radius($radius-normal $radius-normal 0 0);
+
+        + .nice-code-title {
+            border: 1px solid $color-border;
+            border-top: none;
+            @include nice-border-radius(0 0 $radius-normal $radius-normal);
+        }
+    }
+    .nice-code-heading {
+        border: 1px solid $color-border;
+        border-bottom: none;
+        background-color: $gray-vlight;
+        color: $color-black;
+        padding: 0 15px;
+        font-size: 0.7em;
+        font-weight: 600;
+        @include nice-line-height(32px);
+        @include nice-border-radius($radius-normal $radius-normal 0 0);
+
+        + code {
+            border: 1px solid $color-border;
+            border-top: none;
+            @include nice-border-radius(0 0 $radius-normal $radius-normal);
+        }
+        &:before {
+            position: relative;
+            left: -5px;
+        }
+        &.brand,
+        &.good,
+        &.warning,
+        &.bad {
+            color: $color-white;
+        }
+        &.brand {
+            border-color: $color-good;
+            background-color: $color-good;
+        }
+        &.good {
+            border-color: $color-good;
+            background-color: $color-good;
+        }
+        &.warning {
+            border-color: $color-warning;
+            background-color: $color-warning;
+        }
+        &.bad {
+            border-color: $color-bad;
+            background-color: $color-bad;
+        }
+        .nice-code-syntax {
+            float: right;
+            @include nice-border-radius($radius-normal);
+        }
+    }
+}

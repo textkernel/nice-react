@@ -1,5 +1,5 @@
 import React from 'react';
-import Progress from '../../lib/Progress';
+import { Progress } from '../../dist';
 
 describe('<Progress />', () => {
     it('should render the Progress', () => {

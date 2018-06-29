@@ -1,5 +1,5 @@
 import React from 'react';
-import Loading from '../../lib/Loading';
+import { Loading } from '../../dist';
 
 describe('<Loading />', () => {
   it('should render the Loading', () => {

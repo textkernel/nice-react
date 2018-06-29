@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderMenu from '../../lib/Header/Menu';
+import { HeaderMenu } from '../../dist';
 
 describe('<Header.Menu />', () => {
     it('should render default header menu group', () => {

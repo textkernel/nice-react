@@ -1,0 +1,115 @@
+/* stylelint-disable declaration-no-important  */
+body {
+    color: $color-text;
+    background-color: $gray-vlight;
+    font-family: $fonts-primary;
+    font-weight: $font-weight;
+    text-rendering: geometricPrecision;
+    line-height: 1.5;
+    @include nice-font-size(14px);
+}
+a {
+    color: $color-link;
+    text-decoration: none;
+    @include nice-transition(color 0.3s);
+
+    &:hover {
+        color: lighten($color-link, 10%);
+    }
+}
+p {
+    margin: 0 0 15px;
+}
+strong {
+    font-weight: 600;
+}
+pre {
+    display: block;
+    padding: 10px;
+    margin: 0 0 10px;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: $gray-light;
+    border: 1px solid $color-border;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    overflow: auto;
+    @include nice-font-size(14px);
+    @include nice-border-radius($radius-normal);
+}
+.icon {
+    font-style: normal;
+
+    &:before {
+        font-family: FontAwesome;
+    }
+}
+.nice-responsive-container {
+    overflow: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    margin-bottom: 15px;
+}
+.nice-circle {
+    @include nice-border-radius(50%);
+}
+@each $type  in (brand, link, text, primary, accent, muted, good, info, warning, bad, white, black) {
+    .nice-bg-#{$type} {
+        background-color: map-get($color-scheme, #{$type});
+    }
+}
+@each $type  in (brand, link, text, primary, accent, muted, good, info, warning, bad) {
+    .nice-bg-light-#{$type} {
+        background-color: lighten(map-get($color-scheme, #{$type}), 35%);
+    }
+}
+.clearfix {
+    @extend %clearfix;
+}
+.shown {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+.invisible {
+    visibility: hidden;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.center-block {
+    margin: 0 auto;
+}
+@each $value in (fixed, relative, absolute, static) {
+    .position-#{$value} {
+        position: $value;
+    }
+}
+@each $value in (top, right, bottom, left) {
+    .position-#{$value} {
+        #{$value}: 0;
+    }
+}
+@each $value in (pointer, move, grab, not-allowed, help, wait, text, zoom-in, zoom-out) {
+    .cursor-#{$value} {
+        cursor: $value;
+    }
+}
+@each $value in (scroll, hidden, visible, auto) {
+    .overflow-#{$value} {
+        overflow: #{$value};
+    }
+    .overflow-x-#{$value} {
+        overflow-x: #{$value};
+    }
+    .overflow-y-#{$value} {
+        overflow-y: #{$value};
+    }
+}
+.no-animation {
+    animation: none !important;
+}
+/* stylelint-enable */

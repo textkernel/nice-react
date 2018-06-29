@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../../lib/Footer';
+import Footer from '../../../../../nice-react/src/components/Footer';
 
 describe('<Footer />', () => {
     it('should render a default Footer', () => {

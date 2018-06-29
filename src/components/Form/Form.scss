@@ -1,0 +1,290 @@
+/**
+ * Module variables
+ **/
+$select-caret-base64: 'data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+';
+
+/**
+ * Module placeholders
+ **/
+%form-control {
+    border: 1px solid $color-border;
+    outline: none;
+    padding: 5px;
+    font-family: $fonts-primary;
+    width: 100%;
+    display: block;
+    background-color: $color-white;
+    @include nice-border-radius($radius-normal);
+    @include nice-transition(box-shadow .1s, border .1s, background-color .1s);
+    @include nice-font-size($font-size);
+    @extend %border-box-sizing;
+
+    &:focus {
+        border: 1px solid $color-brand;
+        @include nice-box-shadow(inset 0 2px 2px $gray-light);
+    }
+    &[disabled] {
+        background-color: $gray-vlight;
+        cursor: not-allowed;
+        @include nice-box-shadow(inset 0 1px 2px $gray-light);
+    }
+    @each $type in (info, good, warning, bad) {
+        &.#{$type} {
+            border-color: map-get($color-scheme, $type);
+
+            &:focus {
+                border-color: $color-brand;
+            }
+        }
+    }
+    &.small {
+        padding: 3px;
+        @include nice-font-size($font-size-small);
+    }
+}
+input {
+    &.nice-form-control {
+        @extend %form-control;
+        @include nice-line-height(20px);
+
+        &.small {
+            padding: 3px;
+            @include nice-line-height(15px);
+        }
+    }
+}
+select {
+    &.nice-form-control {
+        height: calculateRem(32px);
+        @include nice-line-height(20px);
+        @extend %form-control;
+
+        &.small {
+            padding: 3px;
+            height: calculateRem(23px);
+            @include nice-line-height(15px);
+        }
+        &[multiple] {
+            padding: 5px;
+            height: auto;
+
+            &.small {
+                padding: 3px;
+            }
+        }
+    }
+}
+textarea {
+    &.nice-form-control {
+        padding: 5px;
+        @include nice-line-height(18px);
+        @extend %form-control;
+    }
+}
+.nice-form-group {
+    label {
+        margin-bottom: 5px;
+        font-weight: 600;
+        display: block;
+
+        &.small {
+            @include nice-font-size($font-size-small);
+        }
+    }
+    + .nice-form-group {
+        margin-top: 15px;
+    }
+}
+.nice-form-inline {
+    .nice-form-group {
+        margin-top: 0;
+        vertical-align: middle;
+        @extend %display-inline-block;
+
+        input,
+        select {
+            &.nice-form-control {
+                width: auto;
+                vertical-align: middle;
+                @extend %display-inline-block;
+            }
+        }
+        label {
+            @extend %display-inline-block;
+        }
+    }
+    .nice-control-group {
+        > {
+            input.nice-form-control, 
+            select.nice-form-control,
+            .nice-control-group-btn {
+                display: table-cell;
+            }
+        }
+    }
+}
+.nice-form-horizontal {
+    .nice-form-group {
+        margin-bottom: 15px;
+        @extend %clearfix;
+
+        .nice-control-label {
+            padding-top: 7px;
+            margin-bottom: 0;
+            text-align: right;
+        }
+    }
+}
+.nice-control-group {
+    display: table;
+    white-space: nowrap;
+    border-collapse: separate;
+    margin-bottom: 10px;
+
+    > {
+        input.nice-form-control, 
+        select.nice-form-control,
+        .nice-control-group-btn {
+            margin: 0;
+            display: table-cell;
+        }
+        *:first-child {
+            @include nice-border-radius($radius-normal 0 0 $radius-normal);
+        }
+        *:last-child {
+            @include nice-border-radius(0 $radius-normal $radius-normal 0);
+        }
+        *:not(:first-child):not(:last-child) {
+            margin-left: -1px;
+            @include nice-border-radius(0);
+        }
+        .nice-form-control {
+            position: relative;
+            float: left;
+            width: 100%;
+            z-index: 2;
+
+            &:focus {
+                z-index: 3;
+            }
+        }
+        .nice-input-addon,
+        .nice-control-group-btn {
+            white-space: nowrap;
+            vertical-align: middle;
+            width: 1%;
+        }
+        .nice-control-group-btn {
+            font-size: 0;
+            position: relative;
+
+            .nice-btn {
+                z-index: 2;
+                position: relative;
+                margin-left: -1px;
+                @include nice-border-radius(0);
+
+                &:first-child {
+                    margin-left: -2px;
+                }
+                &:last-child {                    
+                    @include nice-border-radius(0 $radius-normal $radius-normal 0);
+                }
+                &:hover,
+                &:focus {
+                    z-index: 3;
+                }
+            }
+
+            *:not(:first-child):not(:last-child) {
+                @include nice-border-radius(none);
+            }
+        }
+    }
+    .nice-input-addon {
+        background-color: $gray-light;
+        text-align: center;
+        display: table-cell;
+        padding: 0 10px;
+        border: 1px solid $color-border;
+
+        &:first-child {
+            border-right-width: 0;
+            @include nice-border-radius($top-left: $radius-normal, $bottom-left: $radius-normal);
+        }
+        &.small {
+            padding: 0 5px;
+            @include nice-font-size($font-size-small);
+        }
+    }
+    @each $type in (info, good, warning, bad) {
+        &.#{$type} {
+            .nice-input-addon {
+                background-color: lighten(map-get($color-scheme, $type), 35%);
+                border-color: map-get($color-scheme, $type);
+                color: darken(map-get($color-scheme, #{$type}), 20%);
+            }
+            .nice-form-control {
+                @extend .#{$type};
+            }
+            .nice-btn {
+                @extend .#{$type};
+            }
+        }
+    }
+    &.small {
+        .nice-form-control {
+            @extend .small;
+        }
+        .nice-input-addon {
+            @extend .small;
+        }
+        .nice-control-group-btn {
+            button,
+            .nice-btn {
+                @extend .small;
+            }
+        }
+    }
+}
+.nice-radio,
+.nice-checkbox {
+    label {
+        cursor: pointer;
+        min-height: 20px;
+        margin-bottom: 0;
+        font-weight: normal;
+        @extend %display-inline-block;
+
+        &.small {
+            @include nice-font-size($font-size-small);
+        }
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        vertical-align: middle;
+        position: relative;
+        bottom: 1px;
+        @extend %border-box-sizing;
+    }
+    input[type="radio"] {
+        bottom: 2px;
+    }
+}
+
+/**
+ * Normalize <select /> appearance across browsers
+ * Target Webkit-browsers only
+ **/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select {
+        &.nice-form-control {
+            background: $color-white url($select-caret-base64) no-repeat right 50%;
+            @include nice-appearance(none);
+
+            &[multiple] {
+                background-image: none;
+            }
+        }
+    }
+}

@@ -1,23 +1,24 @@
 const path = require('path');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const SRC_DIR = path.resolve(__dirname, '../src');
+const DIST_DIR = path.resolve(__dirname, '../dist');
 
 module.exports = {
 
-    entry: [
-        'webpack-dev-server/client?http://localhost:3000',
-        'webpack/hot/only-dev-server',
-        path.resolve(__dirname, '../docs/index.js')
-    ],
+    context: SRC_DIR,
+    entry: [ './index.js' ],
 
     output: {
         filename: 'index.js',
-        path: path.resolve(__dirname, './dist'),
-        publicPath: '/'
+        path: DIST_DIR,
+        publicPath: '/',
+        libraryTarget: 'umd',
+        umdNamedDefine: true,
     },
 
     devServer: {
-        contentBase: path.resolve(__dirname, './dist'),
+        contentBase: DIST_DIR,
         hot: true,
         port: 3000,
         historyApiFallback: true,
@@ -36,17 +37,12 @@ module.exports = {
                 use: ['babel-loader'],
                 exclude: /node_modules/,
             },
-            // {
-            //     test: /\.css$/,
-            //     use: ['style-loader', 'css-loader']
-            //
-            // },
             {
                 test: /\.scss$/,
                 use: [
-                    "style-loader", // creates style nodes from JS strings
-                    "css-loader", // translates CSS into CommonJS
-                    "sass-loader" // compiles Sass to CSS
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
                 ]
             },
             {
@@ -62,17 +58,15 @@ module.exports = {
 
     resolve: {
         alias: {
-            'nice-react': path.resolve(__dirname, '../lib')
+            'nice-react': SRC_DIR
         },
-        modules: [path.resolve(__dirname, '../node_modules')],
+        modules: [
+            path.resolve(__dirname, '../node_modules')
+        ],
         extensions: ['.js', '.jsx'],
     },
 
     plugins: [
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, '../docs/index.html'),
-            inject: true,
-        }),
         new webpack.NamedModulesPlugin(),
         new webpack.DefinePlugin({
             'process.env': {

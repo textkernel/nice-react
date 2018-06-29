@@ -1,5 +1,6 @@
 import React from 'react';
-import Pagination from '../../lib/Pagination';
+import { Pagination } from '../../dist';
+
 
 describe('<Pagination />', () => {
     it('should render default Pagination', () => {

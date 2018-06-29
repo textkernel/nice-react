@@ -1,5 +1,5 @@
 import React from 'react';
-import Panel from '../../lib/Panel';
+import { Panel } from '../../dist';
 
 describe('<Panel />', () => {
   it('should render content  the Panel', () => {

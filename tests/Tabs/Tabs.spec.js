@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, Tab } from '../../lib/Tabs';
+import { Tabs, Tab } from '../../dist';
 import { wrap } from 'module';
 
 describe('<Tabs/>', () => {

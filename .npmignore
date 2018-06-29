@@ -1,6 +1,6 @@
 ### nice-react project
 !/dist
-/lib
+/src
 /storybook
 /storybook-static
 /tests

@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../lib/Header';
+import { Header } from '../../dist';
 
 const product = 'Nice! React Components';
 const svg = '//nice.textkernel.nl/assets/textkernel.svg';

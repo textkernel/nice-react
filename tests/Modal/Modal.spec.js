@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from '../../lib/Modal';
+import { Modal } from '../../dist';
 
 describe('<Modal />', () => {
     it('should render a simple Modal', () => {

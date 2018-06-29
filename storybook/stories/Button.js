@@ -5,7 +5,7 @@ import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 
 import { Button } from 'nice-react';
-import props from '../../lib/props';
+import props from '../../src/props';
 
 const stories = storiesOf('Button', module);
 stories.addDecorator((story, context) => withInfo('')(story)(context));

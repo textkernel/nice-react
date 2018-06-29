@@ -6,14 +6,14 @@
     "main": "./dist/nice-react.min.js",
     "license": "MIT",
     "scripts": {
-        "start": "webpack-dev-server -d --progress --colors --hot --config config/webpack.config.dev.js",
-        "build:lib": "webpack --progress --config config/webpack.config.prod.js",
+        "build:dev": "webpack --progress --config config/webpack.config.dev.js",
+        "build": "webpack --progress --config config/webpack.config.prod.js",
         "storybook": "start-storybook -p 9001 -c ./storybook",
         "build-storybook": "build-storybook --config-dir ./storybook --output-dir ./storybook-static",
-        "test": "jest",
-        "test:watch": "jest --watch",
-        "test:coverage": "jest --coverage",
-        "prepublish": "npm run test && npm run build:lib"
+        "test": "npm run build && jest",
+        "test:watch": "npm run build:dev && jest --watch",
+        "test:coverage": "npm run:dev build && jest --coverage",
+        "prepublish": "npm run test && npm run build"
     },
     "jest": {
         "setupFiles": [
@@ -30,7 +30,6 @@
         ]
     },
     "dependencies": {
-        "@textkernel/nice": "^2.0.0",
         "classnames": "^2.2.5",
         "prop-types": "^15.5.10"
     },
@@ -72,7 +71,6 @@
         "style-loader": "^0.21.0",
         "url-loader": "^1.0.1",
         "webpack": "^3.12.0",
-        "webpack-cleanup-plugin": "^0.5.1",
-        "webpack-dev-server": "^2.7.1"
+        "webpack-cleanup-plugin": "^0.5.1"
     }
 }
