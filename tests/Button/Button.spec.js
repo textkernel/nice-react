@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../../../../../nice-react/src/components/Button';
+import { Button } from '../../dist';
 
 describe('<Button />', () => {
     it('should render the Button', () => {

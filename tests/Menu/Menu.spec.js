@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from '../../../../../nice-react/src/components/Menu';
+import { Menu } from '../../dist';
 
 const onClick = () => {};
 
