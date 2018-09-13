@@ -1,7 +1,7 @@
 {
     "name": "nice-react",
     "author": "Nice! Circle",
-    "version": "1.0.0",
+    "version": "2.0.2",
     "description": "React Components for Nice!",
     "main": "./dist/nice-react.min.js",
     "license": "MIT",
@@ -23,10 +23,12 @@
         ]
     },
     "browserify": {
-        "transform": ["babelify"]
+        "transform": [
+            "babelify"
+        ]
     },
     "dependencies": {
-        "@textkernel/nice": "^2.0.0",
+        "@textkernel/nice": "^2.0.2",
         "classnames": "^2.2.5",
         "prop-types": "^15.5.10"
     },
