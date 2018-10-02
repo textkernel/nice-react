@@ -27,7 +27,7 @@ stories.add('Default', () => {
     return (
         <Tabs {...knobs} onChangeTab={(tabIndex) => alert(`Tab ${tabIndex} selected!`)}>
             <Tab headerText="First" badge="56" icon="fa-home" {...tabItemKnobs}>
-                <p>Tab number zero</p>
+                <p>Tab number one</p>
             </Tab>
             <Tab headerText="Second Tab" icon="fa-angle-down" {...tabItemKnobs}>
                 <p>Tab number two</p>
